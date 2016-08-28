@@ -1,0 +1,35 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+
+# =======================
+# 定义语法信息
+# =======================
+name: Sass-property
+scope: source.sass
+hidden: true
+
+# =======================
+# 定义变量
+# =======================
+variables:
+
+  a: 'abbr|address|area|article|aside|audio|a|base|bdi|bdo|blockquote|body|br|button|b|canvas|caption|cite|code|colgroup'
+  b: 'col|datalist|data|dd|del|details|dfn|dialog|div|dl|dt|embed|em|fieldset|figcaption|figure|footer|form|h[1-6]|header'
+  c: 'head|hr|html|iframe|i|img|input|ins|kbd|keygen|label|legend|link|li|main|map|mark|math|menuitem|menu|meta|meter|nav'
+  d: 'noscript|object|ol|optgroup|option|output|param|pre|progress|p|q|rb|rp|rtc?|ruby|samp|script|section|select|small|source'
+  e: 'span|strong|style|sub|summary|sup|svg|s|table|tbody|td|template|textarea|tfoot|thead|th|time|title|track|tr|ul?|var|video|wbr'
+  f: 'svg|desc|defs|g|line|rect|circle|ellipse|polyline|polygon|path|text|tspan|use|clipPath|pattern|symbol|linearGadient|radialGradient|stop'
+  tag: '({{a}}|{{b}}|{{c}}|{{d}}|{{d}}|{{f}})'
+
+# =======================
+# 定义语法内容
+# =======================
+contexts:
+
+  # =======================
+  # 定义语法规则
+  # =======================
+  main:
+    - match: '\b{{tag}}\b'
+      scope: keyword.control.tag.sass

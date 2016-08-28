@@ -1,0 +1,35 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "new Error\tError",
+            "contents": "new Error(${1:message})"
+        },
+        {
+            "trigger": "new EvalError\tError",
+            "contents": "new EvalError(${1:message})"
+        },
+        {
+            "trigger": "new RangeError\tError",
+            "contents": "new RangeError(${1:message})"
+        },
+        {
+            "trigger": "new ReferenceError\tError",
+            "contents": "new ReferenceError(${1:message})"
+        },
+        {
+            "trigger": "new SyntaxError\tError",
+            "contents": "new SyntaxError(${1:message})"
+        },
+        {
+            "trigger": "new TypeError\tError",
+            "contents": "new TypeError(${1:message})"
+        },
+        {
+            "trigger": "new URIError\tError",
+            "contents": "new URIError(${1:message})"
+        }
+    ]
+}

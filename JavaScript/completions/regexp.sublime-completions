@@ -1,0 +1,43 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "new RegExp\tRegExp",
+            "contents": "new RegExp()"
+        },
+        {
+            "trigger": "global\tRegExp",
+            "contents": "global"
+        },
+        {
+            "trigger": "ignoreCase\tRegExp",
+            "contents": "ignoreCase"
+        },
+        {
+            "trigger": "lastIndex\tRegExp",
+            "contents": "lastIndex"
+        },
+        {
+            "trigger": "multiline\tRegExp",
+            "contents": "multiline"
+        },
+        {
+            "trigger": "source\tRegExp",
+            "contents": "source"
+        },
+        {
+            "trigger": "exec\tRegExp",
+            "contents": "exec(${1:string})"
+        },
+        {
+            "trigger": "test\tRegExp",
+            "contents": "test(${1:string})"
+        },
+        {
+            "trigger": "compile\tRegExp",
+            "contents": "compile(${1:regexp}, ${2:modifier})"
+        },
+    ]
+}

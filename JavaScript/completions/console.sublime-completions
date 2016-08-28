@@ -1,0 +1,71 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "console\tConsole",
+            "contents": "console"
+        },
+        {
+            "trigger": "log\tConsole",
+            "contents": "log(${1:message})"
+        },
+        {
+            "trigger": "info\tConsole",
+            "contents": "info(${1:message})"
+        },
+        {
+            "trigger": "debug\tConsole",
+            "contents": "debug(${1:message})"
+        },
+        {
+            "trigger": "warn\tConsole",
+            "contents": "warn(${1:message})"
+        },
+        {
+            "trigger": "error\tConsole",
+            "contents": "error(${1:message})"
+        },
+        {
+            "trigger": "group\tConsole",
+            "contents": "group(${1:title})"
+        },
+        {
+            "trigger": "groupEnd\tConsole",
+            "contents": "groupEnd()"
+        },
+        {
+            "trigger": "dir\tConsole",
+            "contents": "dir(${1:Object})"
+        },
+        {
+            "trigger": "dirxml\tConsole",
+            "contents": "dirxml(${1:Element})"
+        },
+        {
+            "trigger": "assert\tConsole",
+            "contents": "assert(${1:condition})"
+        },
+        {
+            "trigger": "trace\tConsole",
+            "contents": "trace()"
+        },
+        {
+            "trigger": "time\tConsole",
+            "contents": "time(${1:title})"
+        },
+        {
+            "trigger": "timeEnd\tConsole",
+            "contents": "timeEnd(${1:title})"
+        },
+        {
+            "trigger": "profile\tConsole",
+            "contents": "profile(${1:title})"
+        },
+        {
+            "trigger": "profileEnd\tConsole",
+            "contents": "profileEnd()"
+        }
+    ]
+}

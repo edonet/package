@@ -1,0 +1,107 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "new Object\tObject",
+            "contents": "new Object()"
+        },
+        {
+            "trigger": "in\tObject",
+            "contents": "in ${1:Object}"
+        },
+        {
+            "trigger": "instanceof\tObject",
+            "contents": "instanceof ${1:Object}"
+        },
+        {
+            "trigger": "typeof\tObject",
+            "contents": "typeof ${1:Object}"
+        },
+        {
+            "trigger": "hasOwnProperty\tObject",
+            "contents": "hasOwnProperty(${1:property})"
+        },
+        {
+            "trigger": "getOwnPropertyNames\tObject",
+            "contents": "getOwnPropertyNames(${1:Object})"
+        },
+        {
+            "trigger": "getOwnPropertyDescriptor\tObject",
+            "contents": "getOwnPropertyDescriptor(${1:Object}, ${2:prop})"
+        },
+        {
+            "trigger": "getOwnPropertySymbols\tObject",
+            "contents": "getOwnPropertySymbols(${1:Object})"
+        },
+        {
+            "trigger": "getPrototypeOf\tObject",
+            "contents": "getPrototypeOf(${1:Object})"
+        },
+        {
+            "trigger": "keys\tObject",
+            "contents": "keys(${1:Object})"
+        },
+        {
+            "trigger": "create\tObject",
+            "contents": "create(${1:proto})"
+        },
+        {
+            "trigger": "defineProperty\tObject",
+            "contents": "defineProperty(${1:Object}, ${2:prop}, ${3:descriptor})"
+        },
+        {
+            "trigger": "defineProperties\tObject",
+            "contents": "defineProperties(${1:Object}, ${2:props})"
+        },
+        {
+            "trigger": "propertyIsEnumerable\tObject",
+            "contents": "propertyIsEnumerable(${1:prop})"
+        },
+        {
+            "trigger": "assign\tObject",
+            "contents": "assign(${1:target}, ${2:sources})"
+        },
+        {
+            "trigger": "freeze\tObject",
+            "contents": "freeze(${1:Object})"
+        },
+        {
+            "trigger": "is\tObject",
+            "contents": "is(${1:value1}, ${2:value2});"
+        },
+        {
+            "trigger": "isExtensible\tObject",
+            "contents": "isExtensible(${1:Object})"
+        },
+        {
+            "trigger": "isFrozen\tObject",
+            "contents": "isFrozen(${1:Object})"
+        },
+        {
+            "trigger": "isSealed\tObject",
+            "contents": "isSealed(${1:Object})"
+        },
+        {
+            "trigger": "preventExtensions\tObject",
+            "contents": "preventExtensions(${1:Object})"
+        },
+        {
+            "trigger": "seal\tObject",
+            "contents": "seal(${1:Object})"
+        },
+        {
+            "trigger": "setPrototypeOf\tObject",
+            "contents": "setPrototypeOf(${1:Object}, ${2:prototype})"
+        },
+        {
+            "trigger": "toSource\tObject",
+            "contents": "toSource()"
+        },
+        {
+            "trigger": "isPrototypeOf\tObject",
+            "contents": "isPrototypeOf(${1:Object})"
+        }
+    ]
+}

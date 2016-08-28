@@ -1,0 +1,272 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        // global
+        {
+            "trigger": "window\tGlobal",
+            "contents": "window"
+        },
+        {
+            "trigger": "document\tGlobal",
+            "contents": "document"
+        },
+        {
+            "trigger": "location\tGlobal",
+            "contents": "location"
+        },
+        {
+            "trigger": "history\tGlobal",
+            "contents": "history"
+        },
+        {
+            "trigger": "this\tGlobal",
+            "contents": "this"
+        },
+
+        // window
+        {
+            "trigger": "innerWidth\tWindow",
+            "contents": "innerWidth"
+        },
+        {
+            "trigger": "innerHeight\tWindow",
+            "contents": "innerHeight"
+        },
+        {
+            "trigger": "outerWidth\tWindow",
+            "contents": "outerWidth"
+        },
+        {
+            "trigger": "outerHeight\tWindow",
+            "contents": "outerHeight"
+        },
+        {
+            "trigger": "navigator\tWindow",
+            "contents": "navigator"
+        },
+        {
+            "trigger": "parent\tWindow",
+            "contents": "parent"
+        },
+        {
+            "trigger": "screen\tWindow",
+            "contents": "screen"
+        },
+        {
+            "trigger": "screenX\tWindow",
+            "contents": "screenX"
+        },
+        {
+            "trigger": "screenY\tWindow",
+            "contents": "screenY"
+        },
+        {
+            "trigger": "scrollX\tWindow",
+            "contents": "scrollX"
+        },
+        {
+            "trigger": "scrollY\tWindow",
+            "contents": "scrollY"
+        },
+        {
+            "trigger": "scrollTo\tWindow",
+            "contents": "scrollTo(${1:x_coord}, ${2:y_coord})"
+        },
+        {
+            "trigger": "scrollBy\tWindow",
+            "contents": "scrollBy(${1:X}, ${2:Y})"
+        },
+        {
+            "trigger": "status\tWindow",
+            "contents": "status"
+        },
+        {
+            "trigger": "alert\tWindow",
+            "contents": "alert(${1:message})"
+        },
+        {
+            "trigger": "prompt\tWindow",
+            "contents": "prompt(${1:text}, ${2:value})"
+        },
+        {
+            "trigger": "confirm\tWindow",
+            "contents": "confirm(${1:message})"
+        },
+        {
+            "trigger": "setTimeout\tWindow",
+            "contents": "setTimeout(${1:func}, ${2:delay})"
+        },
+        {
+            "trigger": "setInterval\tWindow",
+            "contents": "setInterval(${1:func}, ${2:delay})"
+        },
+        {
+            "trigger": "setImmediate\tWindow",
+            "contents": "setImmediate(${1:func}, ${2:delay})"
+        },
+        {
+            "trigger": "clearInterval\tWindow",
+            "contents": "clearInterval(${1:timeId})"
+        },
+        {
+            "trigger": "clearImmediate\tWindow",
+            "contents": "clearImmediate(${1:timeId})"
+        },
+        {
+            "trigger": "open\tWindow",
+            "contents": "open()"
+        },
+        {
+            "trigger": "close\tWindow",
+            "contents": "close()"
+        },
+        {
+            "trigger": "encodedURI\tWindow",
+            "contents": "encodedURI(${1:decodeURI})"
+        },
+        {
+            "trigger": "decodeURI\tWindow",
+            "contents": "decodeURI(${1:encodedURI})"
+        },
+        {
+            "trigger": "getComputedStyle\tWindow",
+            "contents": "getComputedStyle(${1:element})"
+        },
+        {
+            "trigger": "getSelection\tWindow",
+            "contents": "getSelection()"
+        },
+        {
+            "trigger": "requestAnimationFrame\tWindow",
+            "contents": "requestAnimationFrame(${1:callback})"
+        },
+        {
+            "trigger": "localStorage\tWindow",
+            "contents": "localStorage"
+        },
+        {
+            "trigger": "sessionStorage\tWindow",
+            "contents": "sessionStorage"
+        },
+        {
+            "trigger": "isFinite\tWindow",
+            "contents": "isFinite(${1:testValue})"
+        },
+        {
+            "trigger": "isNaN\tWindow",
+            "contents": "isNaN(${1:testValue})"
+        },
+        {
+            "trigger": "parseFloat\tWindow",
+            "contents": "parseFloat(${1:string})"
+        },
+        {
+            "trigger": "parseInt\tWindow",
+            "contents": "parseInt(${1:string})"
+        },
+
+        // location
+        {
+            "trigger": "hash\tLocation",
+            "contents": "hash"
+        },
+        {
+            "trigger": "host\tLocation",
+            "contents": "host"
+        },
+        {
+            "trigger": "hostname\tLocation",
+            "contents": "hostname"
+        },
+        {
+            "trigger": "href\tLocation",
+            "contents": "href"
+        },
+        {
+            "trigger": "origin\tLocation",
+            "contents": "origin"
+        },
+        {
+            "trigger": "pathname\tLocation",
+            "contents": "pathname"
+        },
+        {
+            "trigger": "port\tLocation",
+            "contents": "port"
+        },
+        {
+            "trigger": "protocol\tLocation",
+            "contents": "protocol"
+        },
+        {
+            "trigger": "search\tLocation",
+            "contents": "search"
+        },
+        {
+            "trigger": "reload\tLocation",
+            "contents": "reload()"
+        },
+
+        // object
+        {
+            "trigger": "toLocaleString()\tObject",
+            "contents": "toLocaleString()"
+        },
+        {
+            "trigger": "toString\tObject",
+            "contents": "toString()"
+        },
+        {
+            "trigger": "valueOf\tObject",
+            "contents": "valueOf()"
+        },
+        {
+            "trigger": "parse\tObject",
+            "contents": "parse()"
+        },
+        {
+            "trigger": "length\tObject",
+            "contents": "length"
+        },
+
+        // number
+        {
+            "trigger": "Number\tNumber",
+            "contents": "Number"
+        },
+        {
+            "trigger": "new Number\tNumber",
+            "contents": "new Number(${1:value})"
+        },
+        {
+            "trigger": "MAX_VALUE\tNumber",
+            "contents": "MAX_VALUE"
+        },
+        {
+            "trigger": "MIN_VALUE\tNumber",
+            "contents": "MIN_VALUE"
+        },
+        {
+            "trigger": "NEGATIVE_INFINITY\tNumber",
+            "contents": "NEGATIVE_INFINITY"
+        },
+        {
+            "trigger": "POSITIVE_INFINITY\tNumber",
+            "contents": "POSITIVE_INFINITY"
+        },
+        {
+            "trigger": "toExponential\tNumber",
+            "contents": "toExponential(${1:fractionDigits})"
+        },
+        {
+            "trigger": "toFixed\tNumber",
+            "contents": "toFixed(${1:digits})"
+        },
+        {
+            "trigger": "toPrecision(precision)\tNumber",
+            "contents": "toPrecision(${1:precision})"
+        }
+    ]
+}

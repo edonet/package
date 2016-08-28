@@ -1,0 +1,115 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "Math\tMath",
+            "contents": "Math"
+        },
+        {
+            "trigger": "abs\tMath",
+            "contents": "abs($1)"
+        },
+        {
+            "trigger": "PI\tMath",
+            "contents": "PI"
+        },
+        {
+            "trigger": "sin\tMath",
+            "contents": "sin($1)"
+        },
+        {
+            "trigger": "cos\tMath",
+            "contents": "cos($1)"
+        },
+        {
+            "trigger": "tan\tMath",
+            "contents": "tan($1)"
+        },
+        {
+            "trigger": "acos\tMath",
+            "contents": "acos($1)"
+        },
+        {
+            "trigger": "asin\tMath",
+            "contents": "asin($1)"
+        },
+        {
+            "trigger": "atan\tMath",
+            "contents": "atan($1)"
+        },
+        {
+            "trigger": "atan2\tMath",
+            "contents": "atan2(${1:y}, ${2:x})"
+        },
+        {
+            "trigger": "exp\tMath",
+            "contents": "exp($1)"
+        },
+        {
+            "trigger": "log\tMath",
+            "contents": "log($1)"
+        },
+        {
+            "trigger": "ceil\tMath",
+            "contents": "ceil($1)"
+        },
+        {
+            "trigger": "floor\tMath",
+            "contents": "floor($1)"
+        },
+        {
+            "trigger": "min\tMath",
+            "contents": "min(${1:value1}, ${2:value2})"
+        },
+        {
+            "trigger": "max\tMath",
+            "contents": "max(${1:value1}, ${2:value2})"
+        },
+        {
+            "trigger": "pow\tMath",
+            "contents": "pow(${1:base}, ${2:exponent})"
+        },
+        {
+            "trigger": "random\tMath",
+            "contents": "random()"
+        },
+        {
+            "trigger": "round\tMath",
+            "contents": "round($1)"
+        },
+        {
+            "trigger": "sqrt\tMath",
+            "contents": "sqrt($1)"
+        },
+        {
+            "trigger": "E\tMath",
+            "contents": "E"
+        },
+        {
+            "trigger": "LN2\tMath",
+            "contents": "LN2"
+        },
+        {
+            "trigger": "LN10\tMath",
+            "contents": "LN10"
+        },
+        {
+            "trigger": "LOG2E\tMath",
+            "contents": "LOG2E"
+        },
+        {
+            "trigger": "LOG10E\tMath",
+            "contents": "LOG10E"
+        },
+        {
+            "trigger": "SQRT1_2\tMath",
+            "contents": "SQRT1_2"
+        },
+        {
+            "trigger": "SQRT2\tMath",
+            "contents": "SQRT2"
+        }
+    ]
+}

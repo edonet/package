@@ -1,0 +1,83 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "new String\tString",
+            "contents": "new String()"
+        },
+        {
+            "trigger": "replace\tString",
+            "contents": "replace(${1:regexp|substr}, ${2:'string'})"
+        },
+        {
+            "trigger": "match\tString",
+            "contents": "match(${1:regexp})"
+        },
+        {
+            "trigger": "search\tString",
+            "contents": "search(${1:regexp})"
+        },
+        {
+            "trigger": "split\tString",
+            "contents": "split(${1:separator})"
+        },
+        {
+            "trigger": "fromCharCode\tString",
+            "contents": "fromCharCode(${1:num1})"
+        },
+        {
+            "trigger": "charAt\tString",
+            "contents": "charAt(${1:index})"
+        },
+        {
+            "trigger": "charCodeAt\tString",
+            "contents": "charCodeAt(${1:index})"
+        },
+        {
+            "trigger": "concat\tString",
+            "contents": "concat(${1:value1}, ${2:value2})"
+        },
+        {
+            "trigger": "indexOf\tString",
+            "contents": "indexOf(${1:searchValue})"
+        },
+        {
+            "trigger": "lastIndexOf\tString",
+            "contents": "lastIndexOf(${1:searchValue})"
+        },
+        {
+            "trigger": "localeCompare\tString",
+            "contents": "localeCompare(${1:compareString})"
+        },
+        {
+            "trigger": "substring\tString",
+            "contents": "substring(${1:indexA})"
+        },
+        {
+            "trigger": "substr\tString",
+            "contents": "substr(${1:start})"
+        },
+        {
+            "trigger": "toLowerCase\tString",
+            "contents": "toLowerCase()"
+        },
+        {
+            "trigger": "toLocaleLowerCase\tString",
+            "contents": "toLocaleLowerCase()"
+        },
+        {
+            "trigger": "toUpperCase\tString",
+            "contents": "toUpperCase()"
+        },
+        {
+            "trigger": "toLocaleUpperCase\tString",
+            "contents": "toLocaleUpperCase()"
+        },
+        {
+            "trigger": "trim\tString",
+            "contents": "trim()"
+        }
+    ]
+}

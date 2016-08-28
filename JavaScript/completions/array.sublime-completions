@@ -1,0 +1,87 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        {
+            "trigger": "new Array\tArray",
+            "contents": "new Array()"
+        },
+        {
+            "trigger": "join\tArray",
+            "contents": "join(${1:separator})"
+        },
+        {
+            "trigger": "push\tArray",
+            "contents": "push(${1:element1})"
+        },
+        {
+            "trigger": "pop\tArray",
+            "contents": "pop()"
+        },
+        {
+            "trigger": "shift\tArray",
+            "contents": "shift()"
+        },
+        {
+            "trigger": "unshift\tArray",
+            "contents": "unshift(${1:element1})"
+        },
+        {
+            "trigger": "slice\tArray",
+            "contents": "slice(${1:begin})"
+        },
+        {
+            "trigger": "splice\tArray",
+            "contents": "splice(${1:index}, ${2:howMany})"
+        },
+        {
+            "trigger": "reverse\tArray",
+            "contents": "reverse()"
+        },
+        {
+            "trigger": "sort\tArray",
+            "contents": "sort(${1:compareFunction})"
+        },
+        {
+            "trigger": "map\tArray",
+            "contents": "map(${1:callback})"
+        },
+        {
+            "trigger": "filter\tArray",
+            "contents": "filter(${1:callback})"
+        },
+        {
+            "trigger": "every\tArray",
+            "contents": "every(${1:callback})"
+        },
+        {
+            "trigger": "some\tArray",
+            "contents": "some(${1:callback})"
+        },
+        {
+            "trigger": "reduce\tArray",
+            "contents": "reduce(${1:callback})"
+        },
+        {
+            "trigger": "reduceRight\tArray",
+            "contents": "reduceRight(${1:callback})"
+        },
+        {
+            "trigger": "indexOf\tArray",
+            "contents": "indexOf(${1:searchElement})"
+        },
+        {
+            "trigger": "isArray\tArray",
+            "contents": "isArray(${1:Object})"
+        },
+        {
+            "trigger": "lastIndexOf\tArray",
+            "contents": "lastIndexOf(${1:searchElement})"
+        },
+        {
+            "trigger": "forEach\tArray",
+            "contents": "forEach(${1:callback})"
+        }
+    ]
+}

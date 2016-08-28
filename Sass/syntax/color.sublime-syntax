@@ -1,0 +1,53 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+
+# =======================
+# 定义语法信息
+# =======================
+name: Sass-color
+scope: source.sass
+hidden: true
+
+# =======================
+# 定义变量
+# =======================
+variables:
+  a: 'yellowgreen|yellow|whitesmoke|white|wheat|violet|turquoise|transparent|tomato|thistle|teal|tan|steelblue'
+  b: 'springgreen|snow|slategrey|slategray|slateblue|skyblue|silver|sienna|seashell|seagreen|sandybrown|salmon'
+  c: 'saddlebrown|royalblue|rosybrown|red|rebeccapurple|purple|powderblue|plum|pink|peru|peachpuff|papayawhip'
+  d: 'palevioletred|paleturquoise|palegreen|palegoldenrod|orchid|orangered|orange|olivedrab|olive|oldlace|navy'
+  e: 'navajowhite|moccasin|mistyrose|mintcream|midnightblue|mediumvioletred|mediumturquoise|mediumspringgreen'
+  f: 'mediumslateblue|mediumseagreen|mediumpurple|mediumorchid|mediumblue|mediumaquamarine|maroon|magenta|linen'
+  g: 'limegreen|lime|lightyellow|lightsteelblue|lightslategrey|lightslategray|lightskyblue|lightseagreen|lightsalmon'
+  h: 'lightpink|lightgrey|lightgreen|lightgray|lightgoldenrodyellow|lightcyan|lightcoral|lightblue|lemonchiffon'
+  i: 'lawngreen|lavenderblush|lavender|khaki|ivory|indigo|indianred|hotpink|honeydew|grey|greenyellow|green|gray'
+  j: 'goldenrod|gold|ghostwhite|gainsboro|fuchsia|forestgreen|floralwhite|firebrick|dodgerblue|dimgrey|dimgray'
+  k: 'deepskyblue|deeppink|darkviolet|darkturquoise|darkslategrey|darkslategray|darkslateblue|darkseagreen|darksalmon'
+  l: 'darkred|darkorchid|darkorange|darkolivegreen|darkmagenta|darkkhaki|darkgrey|darkgreen|darkgray|darkgoldenrod'
+  m: 'darkcyan|darkblue|cyan|currentColor|currentcolor|crimson|cornsilk|cornflowerblue|coral|chocolate|chartreuse'
+  o: 'cadetblue|burlywood|brown|blueviolet|blue|blanchedalmond|black|bisque|beige|azure|aquamarine|aqua|antiquewhite|aliceblue'
+  color: '{{a}}|{{b}}|{{c}}|{{d}}|{{e}}|{{f}}|{{g}}|{{h}}|{{i}}|{{j}}|{{k}}|{{l}}|{{m}}|{{o}}'
+
+# =======================
+# 定义语法内容
+# =======================
+contexts:
+
+  # =======================
+  # 定义语法规则
+  # =======================
+  main:
+
+    # hex
+    - match: '#(?:\h{8}|\h{6}|\h{3,4})'
+      scope: constant.other.hex.color.sass
+
+    # function
+    - match: '(?<=\s)(rgb|rgba|hsl|hsla?)(?=\()'
+      scope: support.function.color.sass
+
+    # named
+    - match: '\b({{color}})\b'
+      scope: keyword.constant.color.sass
+

@@ -1,0 +1,182 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        // Syntax
+        {
+            "trigger": "use strict\tSyntax",
+            "contents": "'use strict';"
+        },
+        {
+            "trigger": "var\tSyntax",
+            "contents": "var"
+        },
+        {
+            "trigger": "let\tSyntax",
+            "contents": "let"
+        },
+        {
+            "trigger": "const\tSyntax",
+            "contents": "const"
+        },
+        {
+            "trigger": "new\tSyntax",
+            "contents": "new"
+        },
+        {
+            "trigger": "class\tSyntax",
+            "contents": "class"
+        },
+        {
+            "trigger": "prototype\tSyntax",
+            "contents": "prototype"
+        },
+        {
+            "trigger": "constructor\tSyntax",
+            "contents": "constructor"
+        },
+        {
+            "trigger": "if\tSyntax",
+            "contents": "if ($1) {\n\t$2\n}"
+        },
+        {
+            "trigger": "else\tSyntax",
+            "contents": "else {\n\t$1\n}"
+        },
+        {
+            "trigger": "else if\tSyntax",
+            "contents": "else if ($1) {\n\t$2\n}"
+        },
+        {
+            "trigger": "for\tSyntax",
+            "contents": "for ($1; $2; $3) {\n\t$4\n}"
+        },
+        {
+            "trigger": "for:in\tSyntax",
+            "contents": "for ($1 in $2) {\n\t$3\n}"
+        },
+        {
+            "trigger": "for:of\tSyntax",
+            "contents": "for ($1 of $2) {\n\t$3\n}"
+        },
+        {
+            "trigger": "while\tSyntax",
+            "contents": "while ($1) {\n\t$2\n}"
+        },
+        {
+            "trigger": "do while\tSyntax",
+            "contents": "do {\n\t$2\n} while ($1)"
+        },
+        {
+            "trigger": "switch\tSyntax",
+            "contents": "switch ($1) {\n\tcase $2: break;\n\tdefault: $3break;\n}"
+        },
+        {
+            "trigger": "try\tSyntax",
+            "contents": "try {\n\t$1\n}"
+        },
+        {
+            "trigger": "catch\tSyntax",
+            "contents": "catch (e) {\n\t$1\n}"
+        },
+        {
+            "trigger": "finally\tSyntax",
+            "contents": "finally {\n\t$1\n}"
+        },
+        {
+            "trigger": "throw\tSyntax",
+            "contents": "throw $1;"
+        },
+        {
+            "trigger": "default\tSyntax",
+            "contents": "default"
+        },
+        {
+            "trigger": "continue\tSyntax",
+            "contents": "continue;"
+        },
+        {
+            "trigger": "break\tSyntax",
+            "contents": "break;"
+        },
+        {
+            "trigger": "return\tSyntax",
+            "contents": "return$1;"
+        },
+        {
+            "trigger": "delete\tSyntax",
+            "contents": "delete $1;"
+        },
+
+        // value
+        {
+            "trigger": "new Boolean\tBoolean",
+            "contents": "new Boolean()"
+        },
+        {
+            "trigger": "true\tBoolean",
+            "contents": "true"
+        },
+        {
+            "trigger": "false\tBoolean",
+            "contents": "false"
+        },
+        {
+            "trigger": "null\tObject",
+            "contents": "null"
+        },
+        {
+            "trigger": "undefined\tUndefined",
+            "contents": "undefined"
+        },
+        {
+            "trigger": "NaN\tNumber",
+            "contents": "NaN"
+        },
+        {
+            "trigger": "Infinity\tNumber",
+            "contents": "Infinity"
+        },
+
+        // module
+        {
+            "trigger": "require\tSyntax",
+            "contents": "require('${1:module}')"
+        },
+        {
+            "trigger": "exports\tSyntax",
+            "contents": "exports"
+        },
+        {
+            "trigger": "module\tSyntax",
+            "contents": "module"
+        },
+        {
+            "trigger": "import\tSyntax",
+            "contents": "import"
+        },
+        {
+            "trigger": "export\tSyntax",
+            "contents": "export"
+        },
+        {
+            "trigger": "from\tSyntax",
+            "contents": "from"
+        },
+        {
+            "trigger": "extends\tSyntax",
+            "contents": "extends"
+        },
+
+        // function
+        {
+            "trigger": "function\tSyntax",
+            "contents": "function ($1) {\n\t$2\n}"
+        },
+        {
+            "trigger": "function name\tSyntax",
+            "contents": "function $1($2) {\n\t$3\n}"
+        },
+    ]
+}
