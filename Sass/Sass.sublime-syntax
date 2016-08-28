@@ -52,7 +52,7 @@ variables:
   overflow: 'overflow-style|overflow-wrap|overflow-x|overflow-y|overflow'
   padding: 'padding-bottom|padding-left|padding-right|padding-top|padding'
   position: 'position|left|right|top|bottom|z-index'
-  size: 'height|width|max-height|max-width|min-height|min-width|zoom|max-zoom|min-zoom|max-lines'
+  size: 'height|width|max-height|max-width|min-height|min-width|zoom|max-zoom|min-zoom|max-lines|initial-scale|min-scale|max-scale|user-zoom'
   scroll: 'scroll-snap-coordinate|scroll-snap-destination|scroll-snap-points-x|scroll-snap-points-y|scroll-snap-type'
   shape: 'shape-image-threshold|shape-margin|shape-outside|image-orientation|image-resolution'
   text: 'direction|text-align-last|text-align|text-combine-upright|text-decoration-color|text-decoration-line|text-decoration-skip|text-decoration-style|text-decoration|text-emphasis-color|text-emphasis-position|text-emphasis-style|text-emphasis|text-height|text-indent|text-justify|text-orientation|text-overflow|text-shadow|text-transform|text-underline-position|font-smoothing|text-stroke-width|osx-font-smoothing'
@@ -66,7 +66,6 @@ variables:
 
   # 字体名
   fontName: 'arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace'
-
 
 
 # =======================
@@ -146,7 +145,7 @@ contexts:
   # =======================
 
   at-rule:
-    - match: '((@)(charset|import|font-face|media|keyframes|namespace|page|supports|viewport))\b'
+    - match: '((@)(charset|import|font-face|namespace|viewport))\b'
       scope: keyword.control.sass
     - match: '@(at-root|debug|error|extend|for|each|return|warn|while|if|else|content)\b'
       scope: keyword.control.sass
@@ -158,17 +157,70 @@ contexts:
       scope: keyword.control.sass
     - match: '&(?=[:\.\[\s])'
       scope: keyword.control.sass
+    - include: at-media
+    - include: at-supports
+    - include: at-keyframes
+    - include: at-page
     - include: at-function
 
-  at-function:
-    - match: '(@(?:function|mixin))\s([\w-]+)\('
+  at-media:
+    - match: '(@)(media)(?=\s)'
+      scope: keyword.control.at-rule.sass
       captures:
-        1: keyword.control.sass
-        2: entity.name.type
+        1: punctuation.definition.entity.sass
+        2: keyword.control.at-media.sass
+      push:
+        - match: '(?<=\{)'
+          pop: true
+        - match: '(?i)\s*(only|not|and)?\s*(all|aural|braille|embossed|handheld|print|projection|screen|speech|tty|tv)?'
+          captures:
+            1: keyword.operator.logic.media.sass
+            2: support.constant.media.sass
+        - include: type-bracket
+
+  at-supports:
+    - match: '(@)(supports)(?=\s)'
+      scope: keyword.control.at-rule.sass
+      captures:
+        1: punctuation.definition.entity.sass
+        2: keyword.control.at-supports.sass
+      push:
+        - match: '(?<=\{)'
+          pop: true
+        - match: '(?<=\s)not(?=\s)'
+          scope: keyword.operator.logic.media.sass
+        - include: type-bracket
+
+  at-keyframes:
+    - match: '(@)({{vendor}}?keyframes)\s([\w-]+)\s(?=\{)'
+      scope: keyword.control.at-rule.sass
+      captures:
+        1: punctuation.definition.entity.sass
+        2: keyword.control.at-keyframes.sass
+        3: string.unquoted.at-keyframes.name.sass
+
+  at-page:
+    - match: '((@)(page))\s*((:)(first|left|right))?\s*(?=\{)'
+      captures:
+        1: keyword.control.at-rule.sass
+        2: punctuation.definition.keyword.sass
+        3: keyword.control.at-rule.page.sass
+        4: entity.other.attribute-name.at-rule.pseudo-class.sass
+        5: punctuation.definition.entity.sass
+
+  at-function:
+    - match: '((@)(function|mixin))\s([\w-]+)\('
+      captures:
+        1: keyword.control.at-rule.sass
+        2: punctuation.definition.entity.sass
+        3: keyword.control.at-mixin.sass
+        4: entity.name.type
       push:
         - match: '\)'
           pop: true
         - include: type-value
+
+
 
 
   # =======================
@@ -204,10 +256,10 @@ contexts:
     - match: '(?<=(?:\s|\(|^))([\w-]+)(\()'
       captures:
         1: support.function.sass
-        2: punctuation.definition.entity.css
+        2: punctuation.definition.entity.sass
       push:
         - match: '\)'
-          scope: punctuation.definition.entity.css
+          scope: punctuation.definition.entity.sass
           pop: true
         - include: type-value
 
@@ -239,7 +291,7 @@ contexts:
       scope: string.unquoted.sass
 
   type-bracket:
-    - match: '(?<=:\s)\('
+    - match: '(?<=\s)\('
       push:
         - match: '\)'
           pop: true
@@ -258,6 +310,7 @@ contexts:
         - include: type-function
         - include: type-property
         - include: type-selector
+        - include: type-defined
         - include: type-value
         - include: type-nested-parens
 
@@ -269,6 +322,7 @@ contexts:
     - match: '\$[\w-]+(?=:\s)'
       scope: variable.parameter.sass
       push:
+        - meta_scope: meta.parameter-value.sass
         - match: ';'
           pop: true
         - include: type-value
@@ -291,17 +345,17 @@ contexts:
   # id
   type-id:
     - match: '(#)([\w-]+)'
-      scope: entity.other.attribute-name.id.css
+      scope: entity.other.attribute-name.id.sass
       captures:
-        1: punctuation.definition.entity.css
+        1: punctuation.definition.entity.sass
         2: entity.name.type
 
   # 类
   type-class:
     - match: '(\.|%)([\w-]+)'
-      scope: entity.other.attribute-name.class.css
+      scope: entity.other.attribute-name.class.sass
       captures:
-        1: punctuation.definition.entity.css
+        1: punctuation.definition.entity.sass
         2: entity.name.type
 
   # 标签属性
@@ -310,7 +364,7 @@ contexts:
       captures:
         1: entity.other.attribute-name.tag.sass
         2: entity.name.tag.wildcard.sass
-        3: string.unquoted.css
+        3: string.unquoted.sass
 
   # 伪元素和伪类
   type-pseudo-class:
@@ -323,9 +377,10 @@ contexts:
 
   # 属性
   type-property:
-    - match: '\s{{vendor}}?{{props}}(?=:\s)'
+    - match: '\s{{vendor}}?{{props}}(?=:\s?)'
       scope: support.constant.property-name.sass
       push:
+        - meta_scope: meta.property-value.sass
         - match: ';'
           pop: true
         - include: type-value
