@@ -1,4 +1,5 @@
-import sublime, re
+import sublime, sublime_plugin, re
+
 
 # HTML Tag List
 tag_list = [
@@ -88,7 +89,7 @@ tag_list = [
     ("rt\tTag", "rt>$1</rt>"),
     ("ruby\tTag", "ruby>$1</ruby>"),
     ("samp\tTag", "samp>$1</samp>"),
-    ("script\tTag", "script type=\"text/javascript\" src=\"$1\" defer></script>"),
+    ("script\tTag", "script type=\"text/javascript\"${1: src=\"$2\" defer}></script>"),
     ("section\tTag", "section>$1</section>"),
     ("select\tTag", "select>$1</select>"),
     ("small\tTag", "small>$1</small>"),
@@ -451,3 +452,11 @@ def completions(self, view, prefix, locations):
         return attr_list[tag]
 
     return []
+
+
+class Completions(sublime_plugin.EventListener):
+
+    def on_query_completions(self, view, prefix, locations):
+
+        if view.match_selector(locations[0], "text.html"):
+            return completions(self, view, prefix, locations)
