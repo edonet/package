@@ -876,10 +876,32 @@ value_for_name = {
 
 # CSS Defualt Value
 default_value = [
+
+    # sass function
+    ("nth\tFunction", "nth($1)"),
+    ("length\tFunction", "length($1)"),
+    ("join\tFunction", "join($1)"),
+    ("append\tFunction", "append($1)"),
+    ("zip\tFunction", "zip($1)"),
+    ("index\tFunction", "index($1)"),
+    ("unquote\tFunction", "unquote($1)"),
+    ("quote\tFunction", "quote($1)"),
+    ("To-upper-case\tFunction", "To-upper-case($1)"),
+    ("To-lower-case\tFunction", "To-lower-case($1)"),
+    ("percentage\tFunction", "percentage($1)"),
+    ("round\tFunction", "round($1)"),
+    ("ceil\tFunction", "ceil($1)"),
+    ("floor\tFunction", "floor($1)"),
+    ("abs\tFunction", "abs($1)"),
+    ("min\tFunction", "min($1)"),
+    ("max\tFunction", "max($1)"),
+
+    # css defualt value
     ("inherit\tValue", 'inherit'),
     ("initial\tValue", 'initial'),
     ("!important\tValue", '!important'),
-    ("!default\tValue", '!default')
+    ("!default\tValue", '!default'),
+    ("!global\tValue", '!global')
 ]
 
 # CSS Pseude Class
@@ -928,18 +950,24 @@ extends_style = [
     ("page\trule", "page ${1::left }{$2}"),
     ("supports\trule", "supports ${1:not }($2) {$3}"),
     ("viewport\trule", "viewport {\n\twidth: device-width;\n\tinitial-scale: 1.0;\n\tmin-scale: 1.0;\n\tmax-scale: 1.0;\n\tuser-zoom: 0;\n}"),
-    ("at-root\trule", "at-root"),
-    ("debug\trule", "debug"),
-    ("error\trule", "error"),
-    ("extend\trule", "extend"),
-    ("for\trule", "for"),
-    ("each\trule", "each"),
-    ("return\trule", "return"),
-    ("warn\trule", "warn"),
-    ("while\trule", "while"),
-    ("if\trule", "if"),
-    ("else\trule", "else"),
-    ("content\trule", "content")
+
+    ("at-root\tSyntax", "at-root"),
+    ("debug\tSyntax", "debug $0;"),
+    ("error\tSyntax", "error $0;"),
+    ("for:to\tSyntax", "for ${1:var} from ${2:start} to ${3:end} {$4}"),
+    ("for:through\tSyntax", "for ${1:var} from ${2:start} through ${3:end} {$4}"),
+    ("each\tSyntax", "each ${1:var} in ${2:list} {$3}"),
+    ("return\tSyntax", "return ${0:value};"),
+    ("warn\tSyntax", "warn $0;"),
+    ("while\tSyntax", "while ${1:condition} {$2}"),
+    ("if\tSyntax", "if ${1:condition} {$2}"),
+    ("else\tSyntax", "else {$1}"),
+    ("else if\tSyntax", "else if ${1:condition} {$2}"),
+    ("content\tSyntax", "content;"),
+    ("mixin\tSyntax", "mixin ${1:name}(${2:args}) {$3}"),
+    ("function\tSyntax", "function ${1:name}(${2:args}) {$3}"),
+    ("include\tSyntax", "include ${0:selector};"),
+    ("extend\tSyntax", "extend ${0:selector};")
 ]
 
 # CSS Keyframes Style
