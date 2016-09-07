@@ -3,187 +3,131 @@
     "completions": [
         {
             "trigger": "Buffer\tnode",
-            "contents": "Buffer(${1:arg});$0"
+            "contents": "Buffer(${1:arg})"
         },
         {
             "trigger": "clearImmediate\tnode",
-            "contents": "clearImmediate(${1:immediate});$0"
+            "contents": "clearImmediate(${1:immediate})"
         },
         {
             "trigger": "setImmediate\tnode",
-            "contents": "setImmediate(${1:callback}, ${2:arg1}, ${3:arg2}, ${4:arg3});$0"
+            "contents": "setImmediate(${1:callback}, ${2:arg1}, ${3:arg2}, ${4:arg3})"
         },
         {
             "trigger": "process\tnode",
             "contents": "process"
         },
         {
-            "trigger": "_startProfilerIdleNotifier\tprocess",
-            "contents": "_startProfilerIdleNotifier();$0"
-        },
-        {
-            "trigger": "_stopProfilerIdleNotifier\tprocess",
-            "contents": "_stopProfilerIdleNotifier();$0"
-        },
-        {
-            "trigger": "_getActiveRequests\tprocess",
-            "contents": "_getActiveRequests();$0"
-        },
-        {
-            "trigger": "_getActiveHandles\tprocess",
-            "contents": "_getActiveHandles();$0"
-        },
-        {
             "trigger": "reallyExit\tprocess",
-            "contents": "reallyExit();$0"
+            "contents": "reallyExit()"
         },
         {
             "trigger": "abort\tprocess",
-            "contents": "abort();$0"
+            "contents": "abort()"
         },
         {
             "trigger": "chdir\tprocess",
-            "contents": "chdir();$0"
+            "contents": "chdir()"
         },
         {
             "trigger": "cwd\tprocess",
-            "contents": "cwd();$0"
+            "contents": "cwd()"
         },
         {
             "trigger": "umask\tprocess",
-            "contents": "umask();$0"
-        },
-        {
-            "trigger": "_kill\tprocess",
-            "contents": "_kill();$0"
-        },
-        {
-            "trigger": "_debugProcess\tprocess",
-            "contents": "_debugProcess();$0"
-        },
-        {
-            "trigger": "_debugPause\tprocess",
-            "contents": "_debugPause();$0"
-        },
-        {
-            "trigger": "_debugEnd\tprocess",
-            "contents": "_debugEnd();$0"
+            "contents": "umask()"
         },
         {
             "trigger": "hrtime\tprocess",
-            "contents": "hrtime();$0"
+            "contents": "hrtime()"
         },
         {
             "trigger": "dlopen\tprocess",
-            "contents": "dlopen();$0"
+            "contents": "dlopen()"
         },
         {
             "trigger": "uptime\tprocess",
-            "contents": "uptime();$0"
+            "contents": "uptime()"
         },
         {
             "trigger": "memoryUsage\tprocess",
-            "contents": "memoryUsage();$0"
+            "contents": "memoryUsage()"
         },
         {
             "trigger": "binding\tprocess",
-            "contents": "binding();$0"
-        },
-        {
-            "trigger": "_linkedBinding\tprocess",
-            "contents": "_linkedBinding();$0"
-        },
-        {
-            "trigger": "_setupDomainUse\tprocess",
-            "contents": "_setupDomainUse();$0"
-        },
-        {
-            "trigger": "_rawDebug\tprocess",
-            "contents": "_rawDebug();$0"
+            "contents": "binding()"
         },
         {
             "trigger": "EventEmitter\tprocess",
-            "contents": "EventEmitter();$0"
-        },
-        {
-            "trigger": "_fatalException\tprocess",
-            "contents": "_fatalException(${1:er});$0"
+            "contents": "EventEmitter()"
         },
         {
             "trigger": "assert\tprocess",
-            "contents": "assert(${1:x}, ${2:msg});$0"
+            "contents": "assert(${1:x}, ${2:msg})"
         },
         {
             "trigger": "nextTick\tprocess",
-            "contents": "nextTick(${1:callback});$0"
-        },
-        {
-            "trigger": "_tickCallback\tprocess",
-            "contents": "_tickCallback();$0"
-        },
-        {
-            "trigger": "_tickDomainCallback\tprocess",
-            "contents": "_tickDomainCallback();$0"
+            "contents": "nextTick(${1:callback})"
         },
         {
             "trigger": "openStdin\tprocess",
-            "contents": "openStdin();$0"
+            "contents": "openStdin()"
         },
         {
             "trigger": "exit\tprocess",
-            "contents": "exit(${1:code});$0"
+            "contents": "exit(${1:code})"
         },
         {
             "trigger": "kill\tprocess",
-            "contents": "kill(${1:pid}, ${2:sig});$0"
+            "contents": "kill(${1:pid}, ${2:sig})"
         },
         {
             "trigger": "setMaxListeners\tprocess",
-            "contents": "setMaxListeners(${1:n});$0"
+            "contents": "setMaxListeners(${1:n})"
         },
         {
             "trigger": "getMaxListeners\tprocess",
-            "contents": "getMaxListeners();$0"
+            "contents": "getMaxListeners()"
         },
         {
             "trigger": "emit\tprocess",
-            "contents": "emit(${1:type});$0"
+            "contents": "emit(${1:type})"
         },
         {
             "trigger": "addListener\tprocess",
-            "contents": "addListener(${1:type}, ${2:listener});$0"
+            "contents": "addListener(${1:type}, ${2:listener})"
         },
         {
             "trigger": "on\tprocess",
-            "contents": "on(${1:type}, ${2:listener});$0"
+            "contents": "on(${1:type}, ${2:listener})"
         },
         {
             "trigger": "once\tprocess",
-            "contents": "once(${1:type}, ${2:listener});$0"
+            "contents": "once(${1:type}, ${2:listener})"
         },
         {
             "trigger": "removeListener\tprocess",
-            "contents": "removeListener(${1:type}, ${2:listener});$0"
+            "contents": "removeListener(${1:type}, ${2:listener})"
         },
         {
             "trigger": "removeAllListeners\tprocess",
-            "contents": "removeAllListeners(${1:type});$0"
+            "contents": "removeAllListeners(${1:type})"
         },
         {
             "trigger": "listeners\tprocess",
-            "contents": "listeners(${1:type});$0"
+            "contents": "listeners(${1:type})"
         },
         {
             "trigger": "listenerCount\tprocess",
-            "contents": "listenerCount(${1:type});$0"
+            "contents": "listenerCount(${1:type})"
         },
         {
             "trigger": "resolve\trequire",
-            "contents": "resolve(${1:request});$0"
+            "contents": "resolve(${1:request})"
         },
         {
             "trigger": "registerExtension\trequire",
-            "contents": "registerExtension();$0"
+            "contents": "registerExtension()"
         },
         {
             "trigger": "assert\tnode",
@@ -191,67 +135,67 @@
         },
         {
             "trigger": "AssertionError\tassert",
-            "contents": "AssertionError(${1:options});$0"
+            "contents": "AssertionError(${1:options})"
         },
         {
             "trigger": "fail\tassert",
-            "contents": "fail(${1:actual}, ${2:expected}, ${3:message}, ${4:operator}, ${5:stackStartFunction});$0"
+            "contents": "fail(${1:actual}, ${2:expected}, ${3:message}, ${4:operator}, ${5:stackStartFunction})"
         },
         {
             "trigger": "ok\tassert",
-            "contents": "ok(${1:value}, ${2:message});$0"
+            "contents": "ok(${1:value}, ${2:message})"
         },
         {
             "trigger": "equal\tassert",
-            "contents": "equal(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "equal(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "notEqual\tassert",
-            "contents": "notEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "notEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "deepEqual\tassert",
-            "contents": "deepEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "deepEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "deepStrictEqual\tassert",
-            "contents": "deepStrictEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "deepStrictEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "notDeepEqual\tassert",
-            "contents": "notDeepEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "notDeepEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "notDeepStrictEqual\tassert",
-            "contents": "notDeepStrictEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "notDeepStrictEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "strictEqual\tassert",
-            "contents": "strictEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "strictEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "notStrictEqual\tassert",
-            "contents": "notStrictEqual(${1:actual}, ${2:expected}, ${3:message});$0"
+            "contents": "notStrictEqual(${1:actual}, ${2:expected}, ${3:message})"
         },
         {
             "trigger": "throws\tassert",
-            "contents": "throws(${1:block}, ${2:/*optional*/error}, ${3:/*optional*/message});$0"
+            "contents": "throws(${1:block}, ${2:/*optional*/error}, ${3:/*optional*/message})"
         },
         {
             "trigger": "doesNotThrow\tassert",
-            "contents": "doesNotThrow(${1:block}, ${2:/*optional*/message});$0"
+            "contents": "doesNotThrow(${1:block}, ${2:/*optional*/message})"
         },
         {
             "trigger": "ifError\tassert",
-            "contents": "ifError(${1:err});$0"
+            "contents": "ifError(${1:err})"
         },
         {
             "trigger": "Buffer\tbuffer",
-            "contents": "Buffer(${1:arg});$0"
+            "contents": "Buffer(${1:arg})"
         },
         {
             "trigger": "SlowBuffer\tbuffer",
-            "contents": "SlowBuffer(${1:length});$0"
+            "contents": "SlowBuffer(${1:length})"
         },
         {
             "trigger": "child_process\tnode",
@@ -259,39 +203,35 @@
         },
         {
             "trigger": "ChildProcess\tchild_process",
-            "contents": "ChildProcess();$0"
+            "contents": "ChildProcess()"
         },
         {
             "trigger": "fork\tchild_process",
-            "contents": "fork(${1:modulePath}, ${2:/*}, ${3:args}, ${4:options*/});$0"
-        },
-        {
-            "trigger": "_forkChild\tchild_process",
-            "contents": "_forkChild(${1:fd});$0"
+            "contents": "fork(${1:modulePath}, ${2:/*}, ${3:args}, ${4:options*/})"
         },
         {
             "trigger": "exec\tchild_process",
-            "contents": "exec(${1:command}, ${2:/*}, ${3:options}, ${4:callback*/});$0"
+            "contents": "exec(${1:command}, ${2:/*}, ${3:options}, ${4:callback*/})"
         },
         {
             "trigger": "execFile\tchild_process",
-            "contents": "execFile(${1:file}, ${2:/*}, ${3:args}, ${4:options}, ${5:callback*/});$0"
+            "contents": "execFile(${1:file}, ${2:/*}, ${3:args}, ${4:options}, ${5:callback*/})"
         },
         {
             "trigger": "spawn\tchild_process",
-            "contents": "spawn(${1:/*file}, ${2:args}, ${3:options*/});$0"
+            "contents": "spawn(${1:/*file}, ${2:args}, ${3:options*/})"
         },
         {
             "trigger": "spawnSync\tchild_process",
-            "contents": "spawnSync(${1:/*file}, ${2:args}, ${3:options*/});$0"
+            "contents": "spawnSync(${1:/*file}, ${2:args}, ${3:options*/})"
         },
         {
             "trigger": "execFileSync\tchild_process",
-            "contents": "execFileSync(${1:/*command}, ${2:args}, ${3:options*/});$0"
+            "contents": "execFileSync(${1:/*command}, ${2:args}, ${3:options*/})"
         },
         {
             "trigger": "execSync\tchild_process",
-            "contents": "execSync(${1:/*command}, ${2:options*/});$0"
+            "contents": "execSync(${1:/*command}, ${2:options*/})"
         },
         {
             "trigger": "cluster\tnode",
@@ -299,223 +239,219 @@
         },
         {
             "trigger": "Worker\tcluster",
-            "contents": "Worker(${1:options});$0"
+            "contents": "Worker(${1:options})"
         },
         {
             "trigger": "setupMaster\tcluster",
-            "contents": "setupMaster(${1:options});$0"
+            "contents": "setupMaster(${1:options})"
         },
         {
             "trigger": "fork\tcluster",
-            "contents": "fork(${1:env});$0"
+            "contents": "fork(${1:env})"
         },
         {
             "trigger": "disconnect\tcluster",
-            "contents": "disconnect(${1:cb});$0"
+            "contents": "disconnect(${1:cb})"
         },
         {
             "trigger": "setMaxListeners\tcluster",
-            "contents": "setMaxListeners(${1:n});$0"
+            "contents": "setMaxListeners(${1:n})"
         },
         {
             "trigger": "getMaxListeners\tcluster",
-            "contents": "getMaxListeners();$0"
+            "contents": "getMaxListeners()"
         },
         {
             "trigger": "emit\tcluster",
-            "contents": "emit(${1:type});$0"
+            "contents": "emit(${1:type})"
         },
         {
             "trigger": "addListener\tcluster",
-            "contents": "addListener(${1:type}, ${2:listener});$0"
+            "contents": "addListener(${1:type}, ${2:listener})"
         },
         {
             "trigger": "on\tcluster",
-            "contents": "on(${1:type}, ${2:listener});$0"
+            "contents": "on(${1:type}, ${2:listener})"
         },
         {
             "trigger": "once\tcluster",
-            "contents": "once(${1:type}, ${2:listener});$0"
+            "contents": "once(${1:type}, ${2:listener})"
         },
         {
             "trigger": "removeListener\tcluster",
-            "contents": "removeListener(${1:type}, ${2:listener});$0"
+            "contents": "removeListener(${1:type}, ${2:listener})"
         },
         {
             "trigger": "removeAllListeners\tcluster",
-            "contents": "removeAllListeners(${1:type});$0"
+            "contents": "removeAllListeners(${1:type})"
         },
         {
             "trigger": "listeners\tcluster",
-            "contents": "listeners(${1:type});$0"
+            "contents": "listeners(${1:type})"
         },
         {
             "trigger": "listenerCount\tcluster",
-            "contents": "listenerCount(${1:type});$0"
+            "contents": "listenerCount(${1:type})"
         },
         {
             "trigger": "crypto\tnode",
             "contents": "crypto"
         },
         {
-            "trigger": "_toBuf\tcrypto",
-            "contents": "_toBuf(${1:str}, ${2:encoding});$0"
-        },
-        {
             "trigger": "Hash\tcrypto",
-            "contents": "Hash(${1:algorithm}, ${2:options});$0"
+            "contents": "Hash(${1:algorithm}, ${2:options})"
         },
         {
             "trigger": "createHash\tcrypto",
-            "contents": "createHash(${1:algorithm}, ${2:options});$0"
+            "contents": "createHash(${1:algorithm}, ${2:options})"
         },
         {
             "trigger": "Hmac\tcrypto",
-            "contents": "Hmac(${1:hmac}, ${2:key}, ${3:options});$0"
+            "contents": "Hmac(${1:hmac}, ${2:key}, ${3:options})"
         },
         {
             "trigger": "createHmac\tcrypto",
-            "contents": "createHmac(${1:hmac}, ${2:key}, ${3:options});$0"
+            "contents": "createHmac(${1:hmac}, ${2:key}, ${3:options})"
         },
         {
             "trigger": "Cipher\tcrypto",
-            "contents": "Cipher(${1:cipher}, ${2:password}, ${3:options});$0"
+            "contents": "Cipher(${1:cipher}, ${2:password}, ${3:options})"
         },
         {
             "trigger": "createCipher\tcrypto",
-            "contents": "createCipher(${1:cipher}, ${2:password}, ${3:options});$0"
+            "contents": "createCipher(${1:cipher}, ${2:password}, ${3:options})"
         },
         {
             "trigger": "Cipheriv\tcrypto",
-            "contents": "Cipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});$0"
+            "contents": "Cipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
         },
         {
             "trigger": "createCipheriv\tcrypto",
-            "contents": "createCipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});$0"
+            "contents": "createCipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
         },
         {
             "trigger": "Decipher\tcrypto",
-            "contents": "Decipher(${1:cipher}, ${2:password}, ${3:options});$0"
+            "contents": "Decipher(${1:cipher}, ${2:password}, ${3:options})"
         },
         {
             "trigger": "createDecipher\tcrypto",
-            "contents": "createDecipher(${1:cipher}, ${2:password}, ${3:options});$0"
+            "contents": "createDecipher(${1:cipher}, ${2:password}, ${3:options})"
         },
         {
             "trigger": "Decipheriv\tcrypto",
-            "contents": "Decipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});$0"
+            "contents": "Decipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
         },
         {
             "trigger": "createDecipheriv\tcrypto",
-            "contents": "createDecipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options});$0"
+            "contents": "createDecipheriv(${1:cipher}, ${2:key}, ${3:iv}, ${4:options})"
         },
         {
             "trigger": "Sign\tcrypto",
-            "contents": "Sign(${1:algorithm}, ${2:options});$0"
+            "contents": "Sign(${1:algorithm}, ${2:options})"
         },
         {
             "trigger": "createSign\tcrypto",
-            "contents": "createSign(${1:algorithm}, ${2:options});$0"
+            "contents": "createSign(${1:algorithm}, ${2:options})"
         },
         {
             "trigger": "Verify\tcrypto",
-            "contents": "Verify(${1:algorithm}, ${2:options});$0"
+            "contents": "Verify(${1:algorithm}, ${2:options})"
         },
         {
             "trigger": "createVerify\tcrypto",
-            "contents": "createVerify(${1:algorithm}, ${2:options});$0"
+            "contents": "createVerify(${1:algorithm}, ${2:options})"
         },
         {
             "trigger": "publicEncrypt\tcrypto",
-            "contents": "publicEncrypt(${1:options}, ${2:buffer});$0"
+            "contents": "publicEncrypt(${1:options}, ${2:buffer})"
         },
         {
             "trigger": "publicDecrypt\tcrypto",
-            "contents": "publicDecrypt(${1:options}, ${2:buffer});$0"
+            "contents": "publicDecrypt(${1:options}, ${2:buffer})"
         },
         {
             "trigger": "privateEncrypt\tcrypto",
-            "contents": "privateEncrypt(${1:options}, ${2:buffer});$0"
+            "contents": "privateEncrypt(${1:options}, ${2:buffer})"
         },
         {
             "trigger": "privateDecrypt\tcrypto",
-            "contents": "privateDecrypt(${1:options}, ${2:buffer});$0"
+            "contents": "privateDecrypt(${1:options}, ${2:buffer})"
         },
         {
             "trigger": "DiffieHellman\tcrypto",
-            "contents": "DiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding});$0"
+            "contents": "DiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding})"
         },
         {
             "trigger": "createDiffieHellman\tcrypto",
-            "contents": "createDiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding});$0"
+            "contents": "createDiffieHellman(${1:sizeOrKey}, ${2:keyEncoding}, ${3:generator}, ${4:genEncoding})"
         },
         {
             "trigger": "getDiffieHellman\tcrypto",
-            "contents": "getDiffieHellman(${1:name});$0"
+            "contents": "getDiffieHellman(${1:name})"
         },
         {
             "trigger": "createDiffieHellmanGroup\tcrypto",
-            "contents": "createDiffieHellmanGroup(${1:name});$0"
+            "contents": "createDiffieHellmanGroup(${1:name})"
         },
         {
             "trigger": "DiffieHellmanGroup\tcrypto",
-            "contents": "DiffieHellmanGroup(${1:name});$0"
+            "contents": "DiffieHellmanGroup(${1:name})"
         },
         {
             "trigger": "createECDH\tcrypto",
-            "contents": "createECDH(${1:curve});$0"
+            "contents": "createECDH(${1:curve})"
         },
         {
             "trigger": "pbkdf2\tcrypto",
-            "contents": "pbkdf2(${1:password}, ${2:\n}, ${3:salt}, ${4:\n}, ${5:iterations}, ${6:\n}, ${7:keylen}, ${8:\n}, ${9:digest}, ${10:\n}, ${11:callback});$0"
+            "contents": "pbkdf2(${1:password}, ${2:\n}, ${3:salt}, ${4:\n}, ${5:iterations}, ${6:\n}, ${7:keylen}, ${8:\n}, ${9:digest}, ${10:\n}, ${11:callback})"
         },
         {
             "trigger": "pbkdf2Sync\tcrypto",
-            "contents": "pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest});$0"
+            "contents": "pbkdf2Sync(${1:password}, ${2:salt}, ${3:iterations}, ${4:keylen}, ${5:digest})"
         },
         {
             "trigger": "Certificate\tcrypto",
-            "contents": "Certificate();$0"
+            "contents": "Certificate()"
         },
         {
             "trigger": "setEngine\tcrypto",
-            "contents": "setEngine(${1:id}, ${2:flags});$0"
+            "contents": "setEngine(${1:id}, ${2:flags})"
         },
         {
             "trigger": "pseudoRandomBytes\tcrypto",
-            "contents": "pseudoRandomBytes();$0"
+            "contents": "pseudoRandomBytes()"
         },
         {
             "trigger": "randomBytes\tcrypto",
-            "contents": "randomBytes();$0"
+            "contents": "randomBytes()"
         },
         {
             "trigger": "prng\tcrypto",
-            "contents": "prng();$0"
+            "contents": "prng()"
         },
         {
             "trigger": "rng\tcrypto",
-            "contents": "rng();$0"
+            "contents": "rng()"
         },
         {
             "trigger": "getCiphers\tcrypto",
-            "contents": "getCiphers();$0"
+            "contents": "getCiphers()"
         },
         {
             "trigger": "getHashes\tcrypto",
-            "contents": "getHashes();$0"
+            "contents": "getHashes()"
         },
         {
             "trigger": "getCurves\tcrypto",
-            "contents": "getCurves();$0"
+            "contents": "getCurves()"
         },
         {
             "trigger": "createCredentials\tcrypto",
-            "contents": "createCredentials(${1:options}, ${2:context});$0"
+            "contents": "createCredentials(${1:options}, ${2:context})"
         },
         {
             "trigger": "Credentials\tcrypto",
-            "contents": "Credentials(${1:secureProtocol}, ${2:flags}, ${3:context});$0"
+            "contents": "Credentials(${1:secureProtocol}, ${2:flags}, ${3:context})"
         },
         {
             "trigger": "dns\tnode",
@@ -523,63 +459,63 @@
         },
         {
             "trigger": "lookup\tdns",
-            "contents": "lookup(${1:hostname}, ${2:options}, ${3:callback});$0"
+            "contents": "lookup(${1:hostname}, ${2:options}, ${3:callback})"
         },
         {
             "trigger": "lookupService\tdns",
-            "contents": "lookupService(${1:host}, ${2:port}, ${3:callback});$0"
+            "contents": "lookupService(${1:host}, ${2:port}, ${3:callback})"
         },
         {
             "trigger": "resolve4\tdns",
-            "contents": "resolve4(${1:name}, ${2:callback});$0"
+            "contents": "resolve4(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolve6\tdns",
-            "contents": "resolve6(${1:name}, ${2:callback});$0"
+            "contents": "resolve6(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveCname\tdns",
-            "contents": "resolveCname(${1:name}, ${2:callback});$0"
+            "contents": "resolveCname(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveMx\tdns",
-            "contents": "resolveMx(${1:name}, ${2:callback});$0"
+            "contents": "resolveMx(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveNs\tdns",
-            "contents": "resolveNs(${1:name}, ${2:callback});$0"
+            "contents": "resolveNs(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveTxt\tdns",
-            "contents": "resolveTxt(${1:name}, ${2:callback});$0"
+            "contents": "resolveTxt(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveSrv\tdns",
-            "contents": "resolveSrv(${1:name}, ${2:callback});$0"
+            "contents": "resolveSrv(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveNaptr\tdns",
-            "contents": "resolveNaptr(${1:name}, ${2:callback});$0"
+            "contents": "resolveNaptr(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolveSoa\tdns",
-            "contents": "resolveSoa(${1:name}, ${2:callback});$0"
+            "contents": "resolveSoa(${1:name}, ${2:callback})"
         },
         {
             "trigger": "reverse\tdns",
-            "contents": "reverse(${1:name}, ${2:callback});$0"
+            "contents": "reverse(${1:name}, ${2:callback})"
         },
         {
             "trigger": "resolve\tdns",
-            "contents": "resolve(${1:hostname}, ${2:type_}, ${3:callback_});$0"
+            "contents": "resolve(${1:hostname}, ${2:type_}, ${3:callback_})"
         },
         {
             "trigger": "getServers\tdns",
-            "contents": "getServers();$0"
+            "contents": "getServers()"
         },
         {
             "trigger": "setServers\tdns",
-            "contents": "setServers(${1:servers});$0"
+            "contents": "setServers(${1:servers})"
         },
         {
             "trigger": "events\tnode",
@@ -587,11 +523,11 @@
         },
         {
             "trigger": "EventEmitter\tevents",
-            "contents": "EventEmitter();$0"
+            "contents": "EventEmitter()"
         },
         {
             "trigger": "listenerCount\tevents",
-            "contents": "listenerCount(${1:emitter}, ${2:type});$0"
+            "contents": "listenerCount(${1:emitter}, ${2:type})"
         },
         {
             "trigger": "fs\tnode",
@@ -603,295 +539,319 @@
         },
         {
             "trigger": "access\tfs",
-            "contents": "access(${1:path}, ${2:mode}, ${3:callback});$0"
+            "contents": "access(${1:path}, ${2:mode}, ${3:callback})"
         },
         {
             "trigger": "accessSync\tfs",
-            "contents": "accessSync(${1:path}, ${2:mode});$0"
+            "contents": "accessSync(${1:path}, ${2:mode})"
         },
         {
             "trigger": "exists\tfs",
-            "contents": "exists(${1:path}, ${2:callback});$0"
+            "contents": "exists(${1:path}, ${2:callback})"
         },
         {
             "trigger": "existsSync\tfs",
-            "contents": "existsSync(${1:path});$0"
+            "contents": "existsSync(${1:path})"
         },
         {
             "trigger": "readFile\tfs",
-            "contents": "readFile(${1:path}, ${2:options}, ${3:callback_});$0"
+            "contents": "readFile(${1:path}, ${2:options}, ${3:callback_})"
         },
         {
             "trigger": "readFileSync\tfs",
-            "contents": "readFileSync(${1:path}, ${2:options});$0"
+            "contents": "readFileSync(${1:path}, ${2:options})"
         },
         {
             "trigger": "close\tfs",
-            "contents": "close(${1:fd}, ${2:callback});$0"
+            "contents": "close(${1:fd}, ${2:callback})"
         },
         {
             "trigger": "closeSync\tfs",
-            "contents": "closeSync(${1:fd});$0"
+            "contents": "closeSync(${1:fd})"
         },
         {
             "trigger": "open\tfs",
-            "contents": "open(${1:path}, ${2:flags}, ${3:mode}, ${4:callback_});$0"
+            "contents": "open(${1:path}, ${2:flags}, ${3:mode}, ${4:callback_})"
         },
         {
             "trigger": "openSync\tfs",
-            "contents": "openSync(${1:path}, ${2:flags}, ${3:mode});$0"
+            "contents": "openSync(${1:path}, ${2:flags}, ${3:mode})"
         },
         {
             "trigger": "read\tfs",
-            "contents": "read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:callback});$0"
+            "contents": "read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:callback})"
         },
         {
             "trigger": "readSync\tfs",
-            "contents": "readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
+            "contents": "readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position})"
         },
         {
             "trigger": "write\tfs",
-            "contents": "write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:callback});$0"
+            "contents": "write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, ${6:callback})"
         },
         {
             "trigger": "writeSync\tfs",
-            "contents": "writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position});$0"
+            "contents": "writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position})"
         },
         {
             "trigger": "rename\tfs",
-            "contents": "rename(${1:oldPath}, ${2:newPath}, ${3:callback});$0"
+            "contents": "rename(${1:oldPath}, ${2:newPath}, ${3:callback})"
         },
         {
             "trigger": "renameSync\tfs",
-            "contents": "renameSync(${1:oldPath}, ${2:newPath});$0"
+            "contents": "renameSync(${1:oldPath}, ${2:newPath})"
         },
         {
             "trigger": "truncate\tfs",
-            "contents": "truncate(${1:path}, ${2:len}, ${3:callback});$0"
+            "contents": "truncate(${1:path}, ${2:len}, ${3:callback})"
         },
         {
             "trigger": "truncateSync\tfs",
-            "contents": "truncateSync(${1:path}, ${2:len});$0"
+            "contents": "truncateSync(${1:path}, ${2:len})"
         },
         {
             "trigger": "ftruncate\tfs",
-            "contents": "ftruncate(${1:fd}, ${2:len}, ${3:callback});$0"
+            "contents": "ftruncate(${1:fd}, ${2:len}, ${3:callback})"
         },
         {
             "trigger": "ftruncateSync\tfs",
-            "contents": "ftruncateSync(${1:fd}, ${2:len});$0"
+            "contents": "ftruncateSync(${1:fd}, ${2:len})"
         },
         {
             "trigger": "rmdir\tfs",
-            "contents": "rmdir(${1:path}, ${2:callback});$0"
+            "contents": "rmdir(${1:path}, ${2:callback})"
         },
         {
             "trigger": "rmdirSync\tfs",
-            "contents": "rmdirSync(${1:path});$0"
+            "contents": "rmdirSync(${1:path})"
         },
         {
             "trigger": "fdatasync\tfs",
-            "contents": "fdatasync(${1:fd}, ${2:callback});$0"
+            "contents": "fdatasync(${1:fd}, ${2:callback})"
         },
         {
             "trigger": "fdatasyncSync\tfs",
-            "contents": "fdatasyncSync(${1:fd});$0"
+            "contents": "fdatasyncSync(${1:fd})"
         },
         {
             "trigger": "fsync\tfs",
-            "contents": "fsync(${1:fd}, ${2:callback});$0"
+            "contents": "fsync(${1:fd}, ${2:callback})"
         },
         {
             "trigger": "fsyncSync\tfs",
-            "contents": "fsyncSync(${1:fd});$0"
+            "contents": "fsyncSync(${1:fd})"
         },
         {
             "trigger": "mkdir\tfs",
-            "contents": "mkdir(${1:path}, ${2:mode}, ${3:callback});$0"
+            "contents": "mkdir(${1:path}, ${2:mode}, ${3:callback})"
         },
         {
             "trigger": "mkdirSync\tfs",
-            "contents": "mkdirSync(${1:path}, ${2:mode});$0"
+            "contents": "mkdirSync(${1:path}, ${2:mode})"
         },
         {
             "trigger": "readdir\tfs",
-            "contents": "readdir(${1:path}, ${2:callback});$0"
+            "contents": "readdir(${1:path}, ${2:callback})"
         },
         {
             "trigger": "readdirSync\tfs",
-            "contents": "readdirSync(${1:path});$0"
+            "contents": "readdirSync(${1:path})"
         },
         {
             "trigger": "fstat\tfs",
-            "contents": "fstat(${1:fd}, ${2:callback});$0"
+            "contents": "fstat(${1:fd}, ${2:callback})"
         },
         {
             "trigger": "lstat\tfs",
-            "contents": "lstat(${1:path}, ${2:callback});$0"
+            "contents": "lstat(${1:path}, ${2:callback})"
         },
         {
             "trigger": "stat\tfs",
-            "contents": "stat(${1:path}, ${2:callback});$0"
+            "contents": "stat(${1:path}, ${2:callback})"
         },
         {
             "trigger": "fstatSync\tfs",
-            "contents": "fstatSync(${1:fd});$0"
+            "contents": "fstatSync(${1:fd})"
         },
         {
             "trigger": "lstatSync\tfs",
-            "contents": "lstatSync(${1:path});$0"
+            "contents": "lstatSync(${1:path})"
         },
         {
             "trigger": "statSync\tfs",
-            "contents": "statSync(${1:path});$0"
+            "contents": "statSync(${1:path})"
         },
         {
             "trigger": "readlink\tfs",
-            "contents": "readlink(${1:path}, ${2:callback});$0"
+            "contents": "readlink(${1:path}, ${2:callback})"
         },
         {
             "trigger": "readlinkSync\tfs",
-            "contents": "readlinkSync(${1:path});$0"
+            "contents": "readlinkSync(${1:path})"
         },
         {
             "trigger": "symlink\tfs",
-            "contents": "symlink(${1:destination}, ${2:path}, ${3:type_}, ${4:callback_});$0"
+            "contents": "symlink(${1:destination}, ${2:path}, ${3:callback})"
         },
         {
             "trigger": "symlinkSync\tfs",
-            "contents": "symlinkSync(${1:destination}, ${2:path}, ${3:type});$0"
+            "contents": "symlinkSync(${1:destination}, ${2:path}, ${3:type})"
         },
         {
             "trigger": "link\tfs",
-            "contents": "link(${1:srcpath}, ${2:dstpath}, ${3:callback});$0"
+            "contents": "link(${1:srcpath}, ${2:dstpath}, ${3:callback})"
         },
         {
             "trigger": "linkSync\tfs",
-            "contents": "linkSync(${1:srcpath}, ${2:dstpath});$0"
+            "contents": "linkSync(${1:srcpath}, ${2:dstpath})"
         },
         {
             "trigger": "unlink\tfs",
-            "contents": "unlink(${1:path}, ${2:callback});$0"
+            "contents": "unlink(${1:path}, ${2:callback})"
         },
         {
             "trigger": "unlinkSync\tfs",
-            "contents": "unlinkSync(${1:path});$0"
+            "contents": "unlinkSync(${1:path})"
         },
         {
             "trigger": "fchmod\tfs",
-            "contents": "fchmod(${1:fd}, ${2:mode}, ${3:callback});$0"
+            "contents": "fchmod(${1:fd}, ${2:mode}, ${3:callback})"
         },
         {
             "trigger": "fchmodSync\tfs",
-            "contents": "fchmodSync(${1:fd}, ${2:mode});$0"
+            "contents": "fchmodSync(${1:fd}, ${2:mode})"
         },
         {
             "trigger": "chmod\tfs",
-            "contents": "chmod(${1:path}, ${2:mode}, ${3:callback});$0"
+            "contents": "chmod(${1:path}, ${2:mode}, ${3:callback})"
         },
         {
             "trigger": "chmodSync\tfs",
-            "contents": "chmodSync(${1:path}, ${2:mode});$0"
+            "contents": "chmodSync(${1:path}, ${2:mode})"
         },
         {
             "trigger": "fchown\tfs",
-            "contents": "fchown(${1:fd}, ${2:uid}, ${3:gid}, ${4:callback});$0"
+            "contents": "fchown(${1:fd}, ${2:uid}, ${3:gid}, ${4:callback})"
         },
         {
             "trigger": "fchownSync\tfs",
-            "contents": "fchownSync(${1:fd}, ${2:uid}, ${3:gid});$0"
+            "contents": "fchownSync(${1:fd}, ${2:uid}, ${3:gid})"
         },
         {
             "trigger": "chown\tfs",
-            "contents": "chown(${1:path}, ${2:uid}, ${3:gid}, ${4:callback});$0"
+            "contents": "chown(${1:path}, ${2:uid}, ${3:gid}, ${4:callback})"
         },
         {
             "trigger": "chownSync\tfs",
-            "contents": "chownSync(${1:path}, ${2:uid}, ${3:gid});$0"
-        },
-        {
-            "trigger": "_toUnixTimestamp\tfs",
-            "contents": "_toUnixTimestamp(${1:time});$0"
+            "contents": "chownSync(${1:path}, ${2:uid}, ${3:gid})"
         },
         {
             "trigger": "utimes\tfs",
-            "contents": "utimes(${1:path}, ${2:atime}, ${3:mtime}, ${4:callback});$0"
+            "contents": "utimes(${1:path}, ${2:atime}, ${3:mtime}, ${4:callback})"
         },
         {
             "trigger": "utimesSync\tfs",
-            "contents": "utimesSync(${1:path}, ${2:atime}, ${3:mtime});$0"
+            "contents": "utimesSync(${1:path}, ${2:atime}, ${3:mtime})"
         },
         {
             "trigger": "futimes\tfs",
-            "contents": "futimes(${1:fd}, ${2:atime}, ${3:mtime}, ${4:callback});$0"
+            "contents": "futimes(${1:fd}, ${2:atime}, ${3:mtime}, ${4:callback})"
         },
         {
             "trigger": "futimesSync\tfs",
-            "contents": "futimesSync(${1:fd}, ${2:atime}, ${3:mtime});$0"
+            "contents": "futimesSync(${1:fd}, ${2:atime}, ${3:mtime})"
         },
         {
             "trigger": "writeFile\tfs",
-            "contents": "writeFile(${1:path}, ${2:data}, ${3:options}, ${4:callback_});$0"
+            "contents": "writeFile(${1:path}, ${2:data}, ${3:options}, ${4:callback_})"
         },
         {
             "trigger": "writeFileSync\tfs",
-            "contents": "writeFileSync(${1:path}, ${2:data}, ${3:options});$0"
+            "contents": "writeFileSync(${1:path}, ${2:data}, ${3:options})"
         },
         {
             "trigger": "appendFile\tfs",
-            "contents": "appendFile(${1:path}, ${2:data}, ${3:options}, ${4:callback_});$0"
+            "contents": "appendFile(${1:path}, ${2:data}, ${3:options}, ${4:callback_})"
         },
         {
             "trigger": "appendFileSync\tfs",
-            "contents": "appendFileSync(${1:path}, ${2:data}, ${3:options});$0"
+            "contents": "appendFileSync(${1:path}, ${2:data}, ${3:options})"
         },
         {
             "trigger": "watch\tfs",
-            "contents": "watch(${1:filename});$0"
+            "contents": "watch(${1:filename})"
         },
         {
             "trigger": "watchFile\tfs",
-            "contents": "watchFile(${1:filename}, ${2:options}, ${3:listener});$0"
+            "contents": "watchFile(${1:filename}, ${2:options}, ${3:listener})"
         },
         {
             "trigger": "unwatchFile\tfs",
-            "contents": "unwatchFile(${1:filename}, ${2:listener});$0"
+            "contents": "unwatchFile(${1:filename}, ${2:listener})"
         },
         {
             "trigger": "realpathSync\tfs",
-            "contents": "realpathSync(${1:p}, ${2:cache});$0"
+            "contents": "realpathSync(${1:p}, ${2:cache})"
         },
         {
             "trigger": "realpath\tfs",
-            "contents": "realpath(${1:p}, ${2:cache}, ${3:cb});$0"
+            "contents": "realpath(${1:p}, ${2:cache}, ${3:cb})"
         },
         {
             "trigger": "createReadStream\tfs",
-            "contents": "createReadStream(${1:path}, ${2:options});$0"
+            "contents": "createReadStream(${1:path}, ${2:options})"
         },
         {
             "trigger": "ReadStream\tfs",
-            "contents": "ReadStream(${1:path}, ${2:options});$0"
+            "contents": "ReadStream(${1:path}, ${2:options})"
         },
         {
             "trigger": "FileReadStream\tfs",
-            "contents": "FileReadStream(${1:path}, ${2:options});$0"
+            "contents": "FileReadStream(${1:path}, ${2:options})"
         },
         {
             "trigger": "createWriteStream\tfs",
-            "contents": "createWriteStream(${1:path}, ${2:options});$0"
+            "contents": "createWriteStream(${1:path}, ${2:options})"
         },
         {
             "trigger": "WriteStream\tfs",
-            "contents": "WriteStream(${1:path}, ${2:options});$0"
+            "contents": "WriteStream(${1:path}, ${2:options})"
         },
         {
             "trigger": "FileWriteStream\tfs",
-            "contents": "FileWriteStream(${1:path}, ${2:options});$0"
+            "contents": "FileWriteStream(${1:path}, ${2:options})"
         },
         {
             "trigger": "constants\tfs",
-            "contents": "constants$0"
+            "contents": "constants"
+        },
+        {
+            "trigger": "isFile\tStats",
+            "contents": "isFile()"
+        },
+        {
+            "trigger": "isDirectory\tStats",
+            "contents": "isDirectory()"
+        },
+        {
+            "trigger": "isBlockDevice\tStats",
+            "contents": "isBlockDevice()"
+        },
+        {
+            "trigger": "isCharacterDevice\tStats",
+            "contents": "isCharacterDevice()"
+        },
+        {
+            "trigger": "isSymbolicLink\tStats",
+            "contents": "isSymbolicLink()"
+        },
+        {
+            "trigger": "isFIFO\tStats",
+            "contents": "isFIFO()"
+        },
+        {
+            "trigger": "isSocket\tStats",
+            "contents": "isSocket()"
         },
         {
             "trigger": "http\tnode",
@@ -899,119 +859,59 @@
         },
         {
             "trigger": "IncomingMessage\thttp",
-            "contents": "IncomingMessage(${1:socket});$0"
+            "contents": "IncomingMessage(${1:socket})"
         },
         {
             "trigger": "OutgoingMessage\thttp",
-            "contents": "OutgoingMessage();$0"
+            "contents": "OutgoingMessage()"
         },
         {
             "trigger": "ServerResponse\thttp",
-            "contents": "ServerResponse(${1:req});$0"
+            "contents": "ServerResponse(${1:req})"
         },
         {
             "trigger": "Agent\thttp",
-            "contents": "Agent(${1:options});$0"
+            "contents": "Agent(${1:options})"
         },
         {
             "trigger": "ClientRequest\thttp",
-            "contents": "ClientRequest(${1:options}, ${2:cb});$0"
+            "contents": "ClientRequest(${1:options}, ${2:cb})"
         },
         {
             "trigger": "request\thttp",
-            "contents": "request(${1:options}, ${2:cb});$0"
+            "contents": "request(${1:options}, ${2:cb})"
         },
         {
             "trigger": "get\thttp",
-            "contents": "get(${1:options}, ${2:cb});$0"
-        },
-        {
-            "trigger": "_connectionListener\thttp",
-            "contents": "_connectionListener(${1:socket});$0"
+            "contents": "get(${1:options}, ${2:cb})"
         },
         {
             "trigger": "Server\thttp",
-            "contents": "Server(${1:requestListener});$0"
+            "contents": "Server(${1:requestListener})"
         },
         {
             "trigger": "createServer\thttp",
-            "contents": "createServer(${1:requestListener});$0"
+            "contents": "createServer(${1:requestListener})"
         },
         {
             "trigger": "Client\thttp",
-            "contents": "Client();$0"
+            "contents": "Client()"
         },
         {
             "trigger": "createClient\thttp",
-            "contents": "createClient();$0"
-        },
-        {
-            "trigger": "Server\thttps",
-            "contents": "Server(${1:opts}, ${2:requestListener});$0"
-        },
-        {
-            "trigger": "createServer\thttps",
-            "contents": "createServer(${1:opts}, ${2:requestListener});$0"
-        },
-        {
-            "trigger": "Agent\thttps",
-            "contents": "Agent(${1:options});$0"
-        },
-        {
-            "trigger": "request\thttps",
-            "contents": "request(${1:options}, ${2:cb});$0"
-        },
-        {
-            "trigger": "get\thttps",
-            "contents": "get(${1:options}, ${2:cb});$0"
+            "contents": "createClient()"
         },
         {
             "trigger": "wrap\tmodule",
-            "contents": "wrap(${1:script});$0"
-        },
-        {
-            "trigger": "_debug\tmodule",
-            "contents": "_debug();$0"
-        },
-        {
-            "trigger": "_findPath\tmodule",
-            "contents": "_findPath(${1:request}, ${2:paths});$0"
-        },
-        {
-            "trigger": "_nodeModulePaths\tmodule",
-            "contents": "_nodeModulePaths(${1:from});$0"
-        },
-        {
-            "trigger": "_resolveLookupPaths\tmodule",
-            "contents": "_resolveLookupPaths(${1:request}, ${2:parent});$0"
-        },
-        {
-            "trigger": "_load\tmodule",
-            "contents": "_load(${1:request}, ${2:parent}, ${3:isMain});$0"
-        },
-        {
-            "trigger": "_resolveFilename\tmodule",
-            "contents": "_resolveFilename(${1:request}, ${2:parent});$0"
+            "contents": "wrap(${1:script})"
         },
         {
             "trigger": "runMain\tmodule",
-            "contents": "runMain();$0"
-        },
-        {
-            "trigger": "_initPaths\tmodule",
-            "contents": "_initPaths();$0"
+            "contents": "runMain()"
         },
         {
             "trigger": "requireRepl\tmodule",
-            "contents": "requireRepl();$0"
-        },
-        {
-            "trigger": "_preloadModules\tmodule",
-            "contents": "_preloadModules(${1:requests});$0"
-        },
-        {
-            "trigger": "Module\tmodule",
-            "contents": "Module(${1:id}, ${2:parent});$0"
+            "contents": "requireRepl()"
         },
         {
             "trigger": "net\tnode",
@@ -1019,51 +919,39 @@
         },
         {
             "trigger": "createServer\tnet",
-            "contents": "createServer(${1:options}, ${2:connectionListener});$0"
+            "contents": "createServer(${1:options}, ${2:connectionListener})"
         },
         {
             "trigger": "createConnection\tnet",
-            "contents": "createConnection();$0"
+            "contents": "createConnection()"
         },
         {
             "trigger": "connect\tnet",
-            "contents": "connect();$0"
-        },
-        {
-            "trigger": "_normalizeConnectArgs\tnet",
-            "contents": "_normalizeConnectArgs(${1:args});$0"
+            "contents": "connect()"
         },
         {
             "trigger": "Socket\tnet",
-            "contents": "Socket(${1:options});$0"
+            "contents": "Socket(${1:options})"
         },
         {
             "trigger": "Stream\tnet",
-            "contents": "Stream(${1:options});$0"
+            "contents": "Stream(${1:options})"
         },
         {
             "trigger": "Server\tnet",
-            "contents": "Server(${1:options}, ${2:connectionListener});$0"
-        },
-        {
-            "trigger": "_createServerHandle\tnet",
-            "contents": "_createServerHandle(${1:address}, ${2:port}, ${3:addressType}, ${4:fd});$0"
+            "contents": "Server(${1:options}, ${2:connectionListener})"
         },
         {
             "trigger": "isIP\tnet",
-            "contents": "isIP();$0"
+            "contents": "isIP()"
         },
         {
             "trigger": "isIPv4\tnet",
-            "contents": "isIPv4(${1:input});$0"
+            "contents": "isIPv4(${1:input})"
         },
         {
             "trigger": "isIPv6\tnet",
-            "contents": "isIPv6(${1:input});$0"
-        },
-        {
-            "trigger": "_setSimultaneousAccepts\tnet",
-            "contents": "_setSimultaneousAccepts(${1:handle});$0"
+            "contents": "isIPv6(${1:input})"
         },
         {
             "trigger": "os\tnode",
@@ -1071,71 +959,71 @@
         },
         {
             "trigger": "hostname\tos",
-            "contents": "hostname();$0"
+            "contents": "hostname()"
         },
         {
             "trigger": "loadavg\tos",
-            "contents": "loadavg();$0"
+            "contents": "loadavg()"
         },
         {
             "trigger": "uptime\tos",
-            "contents": "uptime();$0"
+            "contents": "uptime()"
         },
         {
             "trigger": "freemem\tos",
-            "contents": "freemem();$0"
+            "contents": "freemem()"
         },
         {
             "trigger": "totalmem\tos",
-            "contents": "totalmem();$0"
+            "contents": "totalmem()"
         },
         {
             "trigger": "cpus\tos",
-            "contents": "cpus();$0"
+            "contents": "cpus()"
         },
         {
             "trigger": "type\tos",
-            "contents": "type();$0"
+            "contents": "type()"
         },
         {
             "trigger": "release\tos",
-            "contents": "release();$0"
+            "contents": "release()"
         },
         {
             "trigger": "networkInterfaces\tos",
-            "contents": "networkInterfaces();$0"
+            "contents": "networkInterfaces()"
         },
         {
             "trigger": "homedir\tos",
-            "contents": "homedir();$0"
+            "contents": "homedir()"
         },
         {
             "trigger": "arch\tos",
-            "contents": "arch();$0"
+            "contents": "arch()"
         },
         {
             "trigger": "platform\tos",
-            "contents": "platform();$0"
+            "contents": "platform()"
         },
         {
             "trigger": "tmpdir\tos",
-            "contents": "tmpdir();$0"
+            "contents": "tmpdir()"
         },
         {
             "trigger": "tmpDir\tos",
-            "contents": "tmpDir();$0"
+            "contents": "tmpDir()"
         },
         {
             "trigger": "getNetworkInterfaces\tos",
-            "contents": "getNetworkInterfaces();$0"
+            "contents": "getNetworkInterfaces()"
         },
         {
             "trigger": "endianness\tos",
-            "contents": "endianness();$0"
+            "contents": "endianness()"
         },
         {
             "trigger": "resolve\tpath",
-            "contents": "resolve();$0"
+            "contents": "resolve()"
         },
         {
             "trigger": "path\tnode",
@@ -1143,43 +1031,39 @@
         },
         {
             "trigger": "normalize\tpath",
-            "contents": "normalize(${1:path});$0"
+            "contents": "normalize(${1:path})"
         },
         {
             "trigger": "isAbsolute\tpath",
-            "contents": "isAbsolute(${1:path});$0"
+            "contents": "isAbsolute(${1:path})"
         },
         {
             "trigger": "join\tpath",
-            "contents": "join();$0"
+            "contents": "join()"
         },
         {
             "trigger": "relative\tpath",
-            "contents": "relative(${1:from}, ${2:to});$0"
-        },
-        {
-            "trigger": "_makeLong\tpath",
-            "contents": "_makeLong(${1:path});$0"
+            "contents": "relative(${1:from}, ${2:to})"
         },
         {
             "trigger": "dirname\tpath",
-            "contents": "dirname(${1:path});$0"
+            "contents": "dirname(${1:path})"
         },
         {
             "trigger": "basename\tpath",
-            "contents": "basename(${1:path}, ${2:ext});$0"
+            "contents": "basename(${1:path}, ${2:ext})"
         },
         {
             "trigger": "extname\tpath",
-            "contents": "extname(${1:path});$0"
+            "contents": "extname(${1:path})"
         },
         {
             "trigger": "format\tpath",
-            "contents": "format(${1:pathObject});$0"
+            "contents": "format(${1:pathObject})"
         },
         {
             "trigger": "parse\tpath",
-            "contents": "parse(${1:pathString});$0"
+            "contents": "parse(${1:pathString})"
         },
         {
             "trigger": "punycode\tnode",
@@ -1187,47 +1071,47 @@
         },
         {
             "trigger": "decode\tpunycode",
-            "contents": "decode(${1:input});$0"
+            "contents": "decode(${1:input})"
         },
         {
             "trigger": "encode\tpunycode",
-            "contents": "encode(${1:input});$0"
+            "contents": "encode(${1:input})"
         },
         {
             "trigger": "toASCII\tpunycode",
-            "contents": "toASCII(${1:input});$0"
+            "contents": "toASCII(${1:input})"
         },
         {
             "trigger": "toUnicode\tpunycode",
-            "contents": "toUnicode(${1:input});$0"
+            "contents": "toUnicode(${1:input})"
         },
         {
             "trigger": "unescapeBuffer\tquerystring",
-            "contents": "unescapeBuffer(${1:s}, ${2:decodeSpaces});$0"
+            "contents": "unescapeBuffer(${1:s}, ${2:decodeSpaces})"
         },
         {
             "trigger": "unescape\tquerystring",
-            "contents": "unescape(${1:s}, ${2:decodeSpaces});$0"
+            "contents": "unescape(${1:s}, ${2:decodeSpaces})"
         },
         {
             "trigger": "escape\tquerystring",
-            "contents": "escape(${1:str});$0"
+            "contents": "escape(${1:str})"
         },
         {
             "trigger": "encode\tquerystring",
-            "contents": "encode(${1:obj}, ${2:sep}, ${3:eq}, ${4:options});$0"
+            "contents": "encode(${1:obj}, ${2:sep}, ${3:eq}, ${4:options})"
         },
         {
             "trigger": "stringify\tquerystring",
-            "contents": "stringify(${1:obj}, ${2:sep}, ${3:eq}, ${4:options});$0"
+            "contents": "stringify(${1:obj}, ${2:sep}, ${3:eq}, ${4:options})"
         },
         {
             "trigger": "decode\tquerystring",
-            "contents": "decode(${1:qs}, ${2:sep}, ${3:eq}, ${4:options});$0"
+            "contents": "decode(${1:qs}, ${2:sep}, ${3:eq}, ${4:options})"
         },
         {
             "trigger": "parse\tquerystring",
-            "contents": "parse(${1:qs}, ${2:sep}, ${3:eq}, ${4:options});$0"
+            "contents": "parse(${1:qs}, ${2:sep}, ${3:eq}, ${4:options})"
         },
         {
             "trigger": "readline\tnode",
@@ -1235,47 +1119,47 @@
         },
         {
             "trigger": "createInterface\treadline",
-            "contents": "createInterface(${1:input}, ${2:output}, ${3:completer}, ${4:terminal});$0"
+            "contents": "createInterface(${1:input}, ${2:output}, ${3:completer}, ${4:terminal})"
         },
         {
             "trigger": "Interface\treadline",
-            "contents": "Interface(${1:input}, ${2:output}, ${3:completer}, ${4:terminal});$0"
+            "contents": "Interface(${1:input}, ${2:output}, ${3:completer}, ${4:terminal})"
         },
         {
             "trigger": "emitKeypressEvents\treadline",
-            "contents": "emitKeypressEvents(${1:stream});$0"
+            "contents": "emitKeypressEvents(${1:stream})"
         },
         {
             "trigger": "cursorTo\treadline",
-            "contents": "cursorTo(${1:stream}, ${2:x}, ${3:y});$0"
+            "contents": "cursorTo(${1:stream}, ${2:x}, ${3:y})"
         },
         {
             "trigger": "moveCursor\treadline",
-            "contents": "moveCursor(${1:stream}, ${2:dx}, ${3:dy});$0"
+            "contents": "moveCursor(${1:stream}, ${2:dx}, ${3:dy})"
         },
         {
             "trigger": "clearLine\treadline",
-            "contents": "clearLine(${1:stream}, ${2:dir});$0"
+            "contents": "clearLine(${1:stream}, ${2:dir})"
         },
         {
             "trigger": "clearScreenDown\treadline",
-            "contents": "clearScreenDown(${1:stream});$0"
+            "contents": "clearScreenDown(${1:stream})"
         },
         {
             "trigger": "getStringWidth\treadline",
-            "contents": "getStringWidth(${1:str});$0"
+            "contents": "getStringWidth(${1:str})"
         },
         {
             "trigger": "isFullWidthCodePoint\treadline",
-            "contents": "isFullWidthCodePoint(${1:code});$0"
+            "contents": "isFullWidthCodePoint(${1:code})"
         },
         {
             "trigger": "codePointAt\treadline",
-            "contents": "codePointAt();$0"
+            "contents": "codePointAt()"
         },
         {
             "trigger": "stripVTControlCharacters\treadline",
-            "contents": "stripVTControlCharacters(${1:str});$0"
+            "contents": "stripVTControlCharacters(${1:str})"
         },
         {
             "trigger": "repl\tnode",
@@ -1283,7 +1167,7 @@
         },
         {
             "trigger": "writer\trepl",
-            "contents": "writer(${1:obj}, ${2:opts});$0"
+            "contents": "writer(${1:obj}, ${2:opts})"
         },
         {
             "trigger": "REPLServer\trepl",
@@ -1299,51 +1183,47 @@
         },
         {
             "trigger": "super_\tstream",
-            "contents": "super_();$0"
+            "contents": "super_()"
         },
         {
             "trigger": "Readable\tstream",
-            "contents": "Readable(${1:options});$0"
+            "contents": "Readable(${1:options})"
         },
         {
             "trigger": "Writable\tstream",
-            "contents": "Writable(${1:options});$0"
+            "contents": "Writable(${1:options})"
         },
         {
             "trigger": "Duplex\tstream",
-            "contents": "Duplex(${1:options});$0"
+            "contents": "Duplex(${1:options})"
         },
         {
             "trigger": "Transform\tstream",
-            "contents": "Transform(${1:options});$0"
+            "contents": "Transform(${1:options})"
         },
         {
             "trigger": "PassThrough\tstream",
-            "contents": "PassThrough(${1:options});$0"
+            "contents": "PassThrough(${1:options})"
         },
         {
             "trigger": "Stream\tstream",
-            "contents": "Stream();$0"
+            "contents": "Stream()"
         },
         {
             "trigger": "StringDecoder\tnode",
-            "contents": "StringDecoder(${1:encoding});$0"
+            "contents": "StringDecoder(${1:encoding})"
         },
         {
             "trigger": "active\ttimers",
-            "contents": "active(${1:item});$0"
+            "contents": "active(${1:item})"
         },
         {
             "trigger": "unenroll\ttimers",
-            "contents": "unenroll(${1:item});$0"
+            "contents": "unenroll(${1:item})"
         },
         {
             "trigger": "enroll\ttimers",
-            "contents": "enroll(${1:item}, ${2:msecs});$0"
-        },
-        {
-            "trigger": "_unrefActive\ttimers",
-            "contents": "_unrefActive(${1:item});$0"
+            "contents": "enroll(${1:item}, ${2:msecs})"
         },
         {
             "trigger": "tls\tnode",
@@ -1351,43 +1231,43 @@
         },
         {
             "trigger": "getCiphers\ttls",
-            "contents": "getCiphers();$0"
+            "contents": "getCiphers()"
         },
         {
             "trigger": "convertNPNProtocols\ttls",
-            "contents": "convertNPNProtocols(${1:NPNProtocols}, ${2:out});$0"
+            "contents": "convertNPNProtocols(${1:NPNProtocols}, ${2:out})"
         },
         {
             "trigger": "checkServerIdentity\ttls",
-            "contents": "checkServerIdentity(${1:host}, ${2:cert});$0"
+            "contents": "checkServerIdentity(${1:host}, ${2:cert})"
         },
         {
             "trigger": "parseCertString\ttls",
-            "contents": "parseCertString(${1:s});$0"
+            "contents": "parseCertString(${1:s})"
         },
         {
             "trigger": "createSecureContext\ttls",
-            "contents": "createSecureContext(${1:options}, ${2:context});$0"
+            "contents": "createSecureContext(${1:options}, ${2:context})"
         },
         {
             "trigger": "SecureContext\ttls",
-            "contents": "SecureContext(${1:secureProtocol}, ${2:flags}, ${3:context});$0"
+            "contents": "SecureContext(${1:secureProtocol}, ${2:flags}, ${3:context})"
         },
         {
             "trigger": "TLSSocket\ttls",
-            "contents": "TLSSocket(${1:socket}, ${2:options});$0"
+            "contents": "TLSSocket(${1:socket}, ${2:options})"
         },
         {
             "trigger": "Server\ttls",
-            "contents": "Server(${1:/*}, ${2:[options]}, ${3:listener}, ${4:*/});$0"
+            "contents": "Server(${1:/*}, ${2:[options]}, ${3:listener}, ${4:*/})"
         },
         {
             "trigger": "createServer\ttls",
-            "contents": "createServer(${1:options}, ${2:listener});$0"
+            "contents": "createServer(${1:options}, ${2:listener})"
         },
         {
             "trigger": "connect\ttls",
-            "contents": "connect(${1:/*}, ${2:[port}, ${3:host]}, ${4:options}, ${5:cb}, ${6:*/});$0"
+            "contents": "connect(${1:/*}, ${2:[port}, ${3:host]}, ${4:options}, ${5:cb}, ${6:*/})"
         },
         {
             "trigger": "createSecurePair\ttls",
@@ -1398,16 +1278,12 @@
             "contents": "dgram"
         },
         {
-            "trigger": "_createSocketHandle\tdgram",
-            "contents": "_createSocketHandle(${1:address}, ${2:port}, ${3:addressType}, ${4:fd}, ${5:flags});$0"
-        },
-        {
             "trigger": "Socket\tdgram",
-            "contents": "Socket(${1:type}, ${2:listener});$0"
+            "contents": "Socket(${1:type}, ${2:listener})"
         },
         {
             "trigger": "createSocket\tdgram",
-            "contents": "createSocket(${1:type}, ${2:listener});$0"
+            "contents": "createSocket(${1:type}, ${2:listener})"
         },
         {
             "trigger": "url\tnode",
@@ -1415,23 +1291,23 @@
         },
         {
             "trigger": "parse\turl",
-            "contents": "parse(${1:url}, ${2:parseQueryString}, ${3:slashesDenoteHost});$0"
+            "contents": "parse(${1:url}, ${2:parseQueryString}, ${3:slashesDenoteHost})"
         },
         {
             "trigger": "resolve\turl",
-            "contents": "resolve(${1:source}, ${2:relative});$0"
+            "contents": "resolve(${1:source}, ${2:relative})"
         },
         {
             "trigger": "resolveObject\turl",
-            "contents": "resolveObject(${1:source}, ${2:relative});$0"
+            "contents": "resolveObject(${1:source}, ${2:relative})"
         },
         {
             "trigger": "format\turl",
-            "contents": "format(${1:obj});$0"
+            "contents": "format(${1:obj})"
         },
         {
             "trigger": "Url\turl",
-            "contents": "Url();$0"
+            "contents": "Url()"
         },
         {
             "trigger": "util\tnode",
@@ -1439,135 +1315,123 @@
         },
         {
             "trigger": "format\tutil",
-            "contents": "format(${1:f});$0"
+            "contents": "format(${1:f})"
         },
         {
             "trigger": "deprecate\tutil",
-            "contents": "deprecate(${1:fn}, ${2:msg});$0"
+            "contents": "deprecate(${1:fn}, ${2:msg})"
         },
         {
             "trigger": "debuglog\tutil",
-            "contents": "debuglog(${1:set});$0"
+            "contents": "debuglog(${1:set})"
         },
         {
             "trigger": "inspect\tutil",
-            "contents": "inspect(${1:obj}, ${2:opts});$0"
+            "contents": "inspect(${1:obj}, ${2:opts})"
         },
         {
             "trigger": "isArray\tutil",
-            "contents": "isArray();$0"
+            "contents": "isArray()"
         },
         {
             "trigger": "isBoolean\tutil",
-            "contents": "isBoolean(${1:arg});$0"
+            "contents": "isBoolean(${1:arg})"
         },
         {
             "trigger": "isNull\tutil",
-            "contents": "isNull(${1:arg});$0"
+            "contents": "isNull(${1:arg})"
         },
         {
             "trigger": "isNullOrUndefined\tutil",
-            "contents": "isNullOrUndefined(${1:arg});$0"
+            "contents": "isNullOrUndefined(${1:arg})"
         },
         {
             "trigger": "isNumber\tutil",
-            "contents": "isNumber(${1:arg});$0"
+            "contents": "isNumber(${1:arg})"
         },
         {
             "trigger": "isString\tutil",
-            "contents": "isString(${1:arg});$0"
+            "contents": "isString(${1:arg})"
         },
         {
             "trigger": "isSymbol\tutil",
-            "contents": "isSymbol(${1:arg});$0"
+            "contents": "isSymbol(${1:arg})"
         },
         {
             "trigger": "isUndefined\tutil",
-            "contents": "isUndefined(${1:arg});$0"
+            "contents": "isUndefined(${1:arg})"
         },
         {
             "trigger": "isRegExp\tutil",
-            "contents": "isRegExp(${1:re});$0"
+            "contents": "isRegExp(${1:re})"
         },
         {
             "trigger": "isObject\tutil",
-            "contents": "isObject(${1:arg});$0"
+            "contents": "isObject(${1:arg})"
         },
         {
             "trigger": "isDate\tutil",
-            "contents": "isDate(${1:d});$0"
+            "contents": "isDate(${1:d})"
         },
         {
             "trigger": "isError\tutil",
-            "contents": "isError(${1:e});$0"
+            "contents": "isError(${1:e})"
         },
         {
             "trigger": "isFunction\tutil",
-            "contents": "isFunction(${1:arg});$0"
+            "contents": "isFunction(${1:arg})"
         },
         {
             "trigger": "isPrimitive\tutil",
-            "contents": "isPrimitive(${1:arg});$0"
+            "contents": "isPrimitive(${1:arg})"
         },
         {
             "trigger": "isBuffer\tutil",
-            "contents": "isBuffer(${1:b});$0"
+            "contents": "isBuffer(${1:b})"
         },
         {
             "trigger": "log\tutil",
-            "contents": "log();$0"
+            "contents": "log()"
         },
         {
             "trigger": "inherits\tutil",
-            "contents": "inherits(${1:ctor}, ${2:superCtor});$0"
-        },
-        {
-            "trigger": "_extend\tutil",
-            "contents": "_extend(${1:origin}, ${2:add});$0"
+            "contents": "inherits(${1:ctor}, ${2:superCtor})"
         },
         {
             "trigger": "p\tutil",
-            "contents": "p();$0"
+            "contents": "p()"
         },
         {
             "trigger": "exec\tutil",
-            "contents": "exec();$0"
+            "contents": "exec()"
         },
         {
             "trigger": "print\tutil",
-            "contents": "print();$0"
+            "contents": "print()"
         },
         {
             "trigger": "puts\tutil",
-            "contents": "puts();$0"
+            "contents": "puts()"
         },
         {
             "trigger": "debug\tutil",
-            "contents": "debug();$0"
+            "contents": "debug()"
         },
         {
             "trigger": "error\tutil",
-            "contents": "error();$0"
+            "contents": "error()"
         },
         {
             "trigger": "pump\tutil",
-            "contents": "pump();$0"
-        },
-        {
-            "trigger": "_errnoException\tutil",
-            "contents": "_errnoException(${1:err}, ${2:syscall}, ${3:original});$0"
-        },
-        {
-            "trigger": "_exceptionWithHostPort\tutil",
-            "contents": "_exceptionWithHostPort()"
+            "contents": "pump()"
         },
         {
             "trigger": "getHeapStatistics\tv8",
-            "contents": "getHeapStatistics();$0"
+            "contents": "getHeapStatistics()"
         },
         {
             "trigger": "setFlagsFromString\tv8",
-            "contents": "setFlagsFromString();$0"
+            "contents": "setFlagsFromString()"
         },
         {
             "trigger": "vm\tnode",
@@ -1575,35 +1439,35 @@
         },
         {
             "trigger": "Script\tvm",
-            "contents": "Script();$0"
+            "contents": "Script()"
         },
         {
             "trigger": "createScript\tvm",
-            "contents": "createScript(${1:code}, ${2:options});$0"
+            "contents": "createScript(${1:code}, ${2:options})"
         },
         {
             "trigger": "createContext\tvm",
-            "contents": "createContext(${1:sandbox});$0"
+            "contents": "createContext(${1:sandbox})"
         },
         {
             "trigger": "runInDebugContext\tvm",
-            "contents": "runInDebugContext(${1:code});$0"
+            "contents": "runInDebugContext(${1:code})"
         },
         {
             "trigger": "runInContext\tvm",
-            "contents": "runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:options});$0"
+            "contents": "runInContext(${1:code}, ${2:contextifiedSandbox}, ${3:options})"
         },
         {
             "trigger": "runInNewContext\tvm",
-            "contents": "runInNewContext(${1:code}, ${2:sandbox}, ${3:options});$0"
+            "contents": "runInNewContext(${1:code}, ${2:sandbox}, ${3:options})"
         },
         {
             "trigger": "runInThisContext\tvm",
-            "contents": "runInThisContext(${1:code}, ${2:options});$0"
+            "contents": "runInThisContext(${1:code}, ${2:options})"
         },
         {
             "trigger": "isContext\tvm",
-            "contents": "isContext();$0"
+            "contents": "isContext()"
         },
         {
             "trigger": "zlib\tnode",
@@ -1611,119 +1475,119 @@
         },
         {
             "trigger": "Zlib\tzlib",
-            "contents": "Zlib();$0"
+            "contents": "Zlib()"
         },
         {
             "trigger": "Deflate\tzlib",
-            "contents": "Deflate(${1:opts});$0"
+            "contents": "Deflate(${1:opts})"
         },
         {
             "trigger": "Inflate\tzlib",
-            "contents": "Inflate(${1:opts});$0"
+            "contents": "Inflate(${1:opts})"
         },
         {
             "trigger": "Gzip\tzlib",
-            "contents": "Gzip(${1:opts});$0"
+            "contents": "Gzip(${1:opts})"
         },
         {
             "trigger": "Gunzip\tzlib",
-            "contents": "Gunzip(${1:opts});$0"
+            "contents": "Gunzip(${1:opts})"
         },
         {
             "trigger": "DeflateRaw\tzlib",
-            "contents": "DeflateRaw(${1:opts});$0"
+            "contents": "DeflateRaw(${1:opts})"
         },
         {
             "trigger": "InflateRaw\tzlib",
-            "contents": "InflateRaw(${1:opts});$0"
+            "contents": "InflateRaw(${1:opts})"
         },
         {
             "trigger": "Unzip\tzlib",
-            "contents": "Unzip(${1:opts});$0"
+            "contents": "Unzip(${1:opts})"
         },
         {
             "trigger": "createDeflate\tzlib",
-            "contents": "createDeflate(${1:o});$0"
+            "contents": "createDeflate(${1:o})"
         },
         {
             "trigger": "createInflate\tzlib",
-            "contents": "createInflate(${1:o});$0"
+            "contents": "createInflate(${1:o})"
         },
         {
             "trigger": "createDeflateRaw\tzlib",
-            "contents": "createDeflateRaw(${1:o});$0"
+            "contents": "createDeflateRaw(${1:o})"
         },
         {
             "trigger": "createInflateRaw\tzlib",
-            "contents": "createInflateRaw(${1:o});$0"
+            "contents": "createInflateRaw(${1:o})"
         },
         {
             "trigger": "createGzip\tzlib",
-            "contents": "createGzip(${1:o});$0"
+            "contents": "createGzip(${1:o})"
         },
         {
             "trigger": "createGunzip\tzlib",
-            "contents": "createGunzip(${1:o});$0"
+            "contents": "createGunzip(${1:o})"
         },
         {
             "trigger": "createUnzip\tzlib",
-            "contents": "createUnzip(${1:o});$0"
+            "contents": "createUnzip(${1:o})"
         },
         {
             "trigger": "deflate\tzlib",
-            "contents": "deflate(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "deflate(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "deflateSync\tzlib",
-            "contents": "deflateSync(${1:buffer}, ${2:opts});$0"
+            "contents": "deflateSync(${1:buffer}, ${2:opts})"
         },
         {
             "trigger": "gzip\tzlib",
-            "contents": "gzip(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "gzip(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "gzipSync\tzlib",
-            "contents": "gzipSync(${1:buffer}, ${2:opts});$0"
+            "contents": "gzipSync(${1:buffer}, ${2:opts})"
         },
         {
             "trigger": "deflateRaw\tzlib",
-            "contents": "deflateRaw(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "deflateRaw(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "deflateRawSync\tzlib",
-            "contents": "deflateRawSync(${1:buffer}, ${2:opts});$0"
+            "contents": "deflateRawSync(${1:buffer}, ${2:opts})"
         },
         {
             "trigger": "unzip\tzlib",
-            "contents": "unzip(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "unzip(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "unzipSync\tzlib",
-            "contents": "unzipSync(${1:buffer}, ${2:opts});$0"
+            "contents": "unzipSync(${1:buffer}, ${2:opts})"
         },
         {
             "trigger": "inflate\tzlib",
-            "contents": "inflate(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "inflate(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "inflateSync\tzlib",
-            "contents": "inflateSync(${1:buffer}, ${2:opts});$0"
+            "contents": "inflateSync(${1:buffer}, ${2:opts})"
         },
         {
             "trigger": "gunzip\tzlib",
-            "contents": "gunzip(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "gunzip(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "gunzipSync\tzlib",
-            "contents": "gunzipSync(${1:buffer}, ${2:opts});$0"
+            "contents": "gunzipSync(${1:buffer}, ${2:opts})"
         },
         {
             "trigger": "inflateRaw\tzlib",
-            "contents": "inflateRaw(${1:buffer}, ${2:opts}, ${3:callback});$0"
+            "contents": "inflateRaw(${1:buffer}, ${2:opts}, ${3:callback})"
         },
         {
             "trigger": "inflateRawSync\tzlib",
-            "contents": "inflateRawSync(${1:buffer}, ${2:opts});$0"
+            "contents": "inflateRawSync(${1:buffer}, ${2:opts})"
         }
     ]
 }

@@ -14,6 +14,7 @@ hidden: true
 # =======================
 variables:
   display: 'block|flex|box|list-item|run-in|compact|marker|inline(-block|-table)?|table(-row-group|-header-group|-footer-group|-row|-column-group|-column|-cell|-captio)?'
+  flex: 'row(-reverse)?|column(-reverse)?|wrap(-reverse)?|stretch|flex-start|flex-end|space-between|space-around'
   size: 'border-box|padding-box|content-box|(min-|max-)?width|(min-|max-)height|device-width'
   position: 'static|absolute|relative|fixed|left|top|right|bottom|center|middle'
   align: 'start|end|baseline|stretch|reverse|horizontal|vertical|inline-axis|block-axis|justify|sub|super|text-top|text-bottom'
@@ -28,7 +29,6 @@ variables:
   animation: 'linear|ease-out|ease-in-out|ease-in|ease|infinite|alternate|paused|running|forwards|backwards|both'
   tansition: 'flat|preserve-3d'
   interface: 'icon|window|button|menu|field'
-  flex: 'row(-reverse)?|column(-reverse)?|wrap(-reverse)?|stretch|flex-start|flex-end|space-between|space-around'
   common: 'none|auto|hidden|inherit|normal|always|avoid|hide|show'
   value: '{{display}}|{{size}}|{{position}}|{{align}}|{{border}}|{{background}}|{{font}}|{{text}}|{{list}}|{{column}}|{{overflow}}|{{cursor}}|{{animation}}|{{tansition}}|{{interface}}|{{flex}}|{{common}}'
 
@@ -41,7 +41,7 @@ contexts:
   # 定义语法规则
   # =======================
   main:
-    - match: '\b{{value}}\b'
+    - match: '\b{{value}}(?=[\s\),;])'
       scope: support.constant.property-value.sass
     - match: '(?<=\s)(!default|!important|!global)\b'
       scope: keyword.control.property-value.sass
