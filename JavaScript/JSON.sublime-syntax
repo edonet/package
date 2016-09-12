@@ -119,10 +119,11 @@ contexts:
   # 对象属性
   # =======================
   type-props:
-    - match: '(".*?")(:)\s'
+    - match: '("(.*?)")(:)\s'
       captures:
         1: string.quoted.double.json
-        2: punctuation.separator.dictionary.key-value.json
+        2: meta.dictionary.key.json
+        3: punctuation.separator.dictionary.key-value.json
       push:
         - match: ',|(?=\})'
           scope: punctuation.separator.dictionary.pair.json
