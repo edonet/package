@@ -1,0 +1,137 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+
+# =======================
+# 定义语法信息
+# =======================
+name: JSON
+file_extensions:
+  - json
+  - sublime-settings
+  - sublime-menu
+  - sublime-keymap
+  - sublime-mousemap
+  - sublime-theme
+  - sublime-build
+  - sublime-project
+  - sublime-completions
+scope: source.json
+
+
+# =======================
+# 定义变量
+# =======================
+variables:
+
+  # 数字
+  integer: '(?:[-+]?\d+)'
+  number: '[-+]?(?:(?:\d*\.\d+(?:[eE]{{integer}})*)|{{integer}})'
+
+  # 边界
+  begin: '(?:\s|\[|,)'
+  end: '(?:\s|\]|,)'
+
+
+# =======================
+# 定义语法内容
+# =======================
+contexts:
+
+  # =======================
+  # 定义语法规则
+  # =======================
+  main:
+    - include: comment
+    - include: bracket
+
+
+  # =======================
+  # 定义基本语法
+  # =======================
+
+  # 注释
+  comment:
+    - include: comment-line
+    - include: comment-block
+
+  # 行注释
+  comment-line:
+    - match: //
+      push:
+        - meta_scope: comment.line.double-slash.json
+        - match: $\n?
+          pop: true
+
+  # 块注释
+  comment-block:
+    - match: /\*
+      push:
+        - meta_scope: comment.block.json
+        - match: \*/
+          pop: true
+
+
+  # =======================
+  # 基本数据类型
+  # =======================
+  quoted:
+    - match: '"'
+      push:
+        - meta_scope: string.quoted.double.json
+        - match: '"'
+          pop: true
+        - match: \\.
+          scope: constant.character.escaped.json
+
+  number:
+    - match: '(?<={{begin}}){{number}}(?={{end}})'
+      scope: constant.numeric.json
+    - match: '(?<={{begin}})\\e[0-9a-fA-F]+(?={{end}})'
+      scope: constant.numeric.json
+
+  boolean:
+    - match: '(?<={{begin}})(true|false|null)(?={{end}})'
+      scope: constant.language.json
+
+  array:
+    - match: '\['
+      scope: punctuation.definition.array.begin.json
+      push:
+        - match: '\]'
+          scope: punctuation.definition.array.end.json
+          pop: true
+        - include: comment
+        - include: type-value
+
+  bracket:
+    - match: '\{'
+      scope: punctuation.definition.object.begin.json
+      push:
+        - match: '\}'
+          scope: punctuation.definition.object.end.json
+          pop: true
+        - include: comment
+        - include: type-props
+
+
+  # =======================
+  # 对象属性
+  # =======================
+  type-props:
+    - match: '(".*?")(:)\s'
+      captures:
+        1: string.quoted.double.json
+        2: punctuation.separator.dictionary.key-value.json
+      push:
+        - match: ',|(?=\})'
+          scope: punctuation.separator.dictionary.pair.json
+          pop: true
+        - include: type-value
+
+  type-value:
+    - include: quoted
+    - include: number
+    - include: boolean
+    - include: array
+    - include: bracket
