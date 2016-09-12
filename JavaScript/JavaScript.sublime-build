@@ -1,12 +1,12 @@
 {
-    "cmd": ["node", "$file"],
+    "cmd": ["node", "--use-strict", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.js",
-    "shell":true,
+    "shell": true,
     "encoding": "utf-8",
 
     "windows": {
-        "cmd": ["taskkill /F /IM node.exe & node", "$file"]
+        "cmd": ["taskkill", "/F", "/IM", "node.exe", "&", "node", "$file"]
     },
 
     "linux": {
@@ -15,5 +15,24 @@
 
     "osx": {
         "cmd": ["killall node; node $file"]
-    }
+    },
+
+    "variants": [
+        {
+            "name": "Clean",
+            "shell": true,
+
+            "windows": {
+                "cmd": ["taskkill", "/F", "/IM", "node.exe"]
+            },
+
+            "linux": {
+                "cmd": ["killall node"]
+            },
+
+            "osx": {
+                "cmd": ["killall node"]
+            }
+        }
+    ]
 }
