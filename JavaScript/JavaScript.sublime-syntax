@@ -11,6 +11,7 @@ variables:
 
 contexts:
   main:
+    - include: comments
     - include: core
 
   prototype:

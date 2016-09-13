@@ -1,0 +1,93 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+
+# =======================
+# 定义语法信息
+# =======================
+name: Marked
+file_extensions:
+  - mdd
+scope: text.html.markdown
+
+
+# =======================
+# 定义变量
+# =======================
+variables:
+
+  # 分隔符
+  begin: '^(```|~~~)'
+  end: '^(```|~~~)\s*$'
+
+
+# =======================
+# 定义语法内容
+# =======================
+contexts:
+
+  # =======================
+  # 定义语法规则
+  # =======================
+  main:
+    - include: header
+    - include: type-language
+
+
+
+  # =======================
+  # 定义基本语法
+  # =======================
+  header:
+    - match: '^(#{1,6})[^#].*$'
+      scope: markup.heading.markdown
+      captures:
+        1: punctuation.definition.heading.markdown
+
+
+  # =======================
+  # 定义嵌入语言
+  # =======================
+  type-language:
+    - include: type-shell
+    - include: type-javascript
+    - include: type-json
+
+  type-shell:
+    - match: '{{begin}}(sh|shell|bash)?\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:source.shell
+
+  type-javascript:
+    - match: '{{begin}}(js|javascript|JavaScript)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:source.js
+
+  type-json:
+    - match: '{{begin}}(json)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:source.js
