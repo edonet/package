@@ -29,8 +29,8 @@ variables:
   number: '[-+]?(?:(?:\d*\.\d+(?:[eE]{{integer}})*)|{{integer}})'
 
   # 边界
-  begin: '(?:\s|\[|,)'
-  end: '(?:\s|\]|,)'
+  begin: '(?:,|\s|\[|\{)'
+  end: '(?:,|\s|\]|\})'
 
 
 # =======================
@@ -44,6 +44,8 @@ contexts:
   main:
     - include: comment
     - include: bracket
+    - match: '[^\s]'
+      scope: invalid.illegal.expected-dictionary-separator.json
 
 
   # =======================
@@ -113,6 +115,8 @@ contexts:
           pop: true
         - include: comment
         - include: type-props
+        - match: '[^\s\}]'
+          scope: invalid.illegal.expected-dictionary-separator.json
 
 
   # =======================
@@ -125,10 +129,12 @@ contexts:
         2: meta.dictionary.key.json
         3: punctuation.separator.dictionary.key-value.json
       push:
-        - match: ',|(?=\})'
+        - match: ',|(?=\s*\})'
           scope: punctuation.separator.dictionary.pair.json
           pop: true
         - include: type-value
+        - match: '[^\s,]'
+          scope: invalid.illegal.expected-dictionary-separator.json
 
   type-value:
     - include: quoted
