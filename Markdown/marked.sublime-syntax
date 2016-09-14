@@ -30,7 +30,10 @@ contexts:
   # 定义语法规则
   # =======================
   main:
+    - include: comment
+    - include: separator
     - include: header
+    - include: paragraph
     - include: type-language
 
 
@@ -38,20 +41,148 @@ contexts:
   # =======================
   # 定义基本语法
   # =======================
+  # 块注释
+  comment:
+    - match: '<!--'
+      push:
+        - meta_scope: comment.block.markdown
+        - match: '-->'
+          pop: true
+
+  separator:
+    - match: '^\s*(\*{3,})\s*$'
+      scope: meta.separator.markdown
+
   header:
-    - match: '^(#{1,6})[^#].*$'
+    - match: '^((#{1,6})[^#].*)$'
+      captures:
+        1: markup.heading.markdown
+        2: punctuation.definition.heading.markdown
+    - match: '^(\-{3,}|={3,})\s*$'
       scope: markup.heading.markdown
       captures:
         1: punctuation.definition.heading.markdown
+
+  paragraph:
+    - include: quote
+    - include: list
+    - include: bold
+    - include: italic
+    - include: link
+
+  quote:
+    - match: '^\s*(?x)(>+)'
+      captures:
+        1: punctuation.definition.markdown
+      push:
+        - meta_scope: markup.quote.markdown
+        - meta_content_scope: meta.paragraph.quote.markdown
+        - match: '[\r\n]+'
+          pop: true
+        - include: paragraph
+
+  list:
+    - match: '^\s*(?x)(\*+|\++|\-+)'
+      scope: markup.list.unnumbered.markdown
+      captures:
+        1: punctuation.definition.list_item.markdown
+      push:
+        - meta_content_scope: meta.paragraph.list.markdown
+        - match: '[\r\n]+'
+          pop: true
+        - include: paragraph
+
+    - match: '^\s*(?x)(\d+\.?)'
+      scope: markup.list.numbered.markdown
+      captures:
+        1: punctuation.definition.list_item.markdown
+      push:
+        - meta_content_scope: meta.paragraph.list.markdown
+        - match: '[\r\n]+'
+          pop: true
+        - include: paragraph
+
+  bold:
+    - match: '(?<!=^|\*|_)(\*\*|__)([^\*_]+)(\1)'
+      scope: markup.bold.markdown
+      captures:
+        1: punctuation.definition.bold.markdown
+        3: punctuation.definition.bold.markdown
+
+  italic:
+    - match: '(?<!=^|\*|_)(\*|_)([^\*_]+)(\1)'
+      scope: markup.italic.markdown
+      captures:
+        1: punctuation.definition.italic.markdown
+        3: punctuation.definition.italic.markdown
+
+  link:
+    - include: link-inline
+    - include: link-reference
+    - include: link-reference-def
+
+  link-inline:
+    - match: '(!)?\[(.*?)\]\('
+      captures:
+        1: punctuation.definition.link.markdown
+        2: string.other.link.title.markdown
+      push:
+        - meta_scope: meta.link.inline.markdown
+        - match: '\)'
+          pop: true
+        - include: link-description
+        - include: link-underline
+
+  link-reference:
+    - match: '(!)?\[(.*?)\]\[(.*?)\]'
+      scope: meta.link.reference.markdown
+      captures:
+        1: punctuation.definition.link.markdown
+        2: string.other.link.title.markdown
+        3: constant.other.reference.link.markdown
+
+  link-reference-def:
+    - match: '^\s*\[(.*?)\]:'
+      captures:
+        1: constant.other.reference.link.markdown
+      push:
+        - meta_scope: meta.link.reference.def.markdown
+        - match: '[\r\n]+'
+          pop: true
+        - include: link-description
+        - include: link-underline
+
+  link-underline:
+    - match: '[^\s\)]+'
+      scope: markup.underline.link.markdown
+
+  link-description:
+    - match: '".*?"'
+      scope: string.other.link.description.title.markdown
+
 
 
   # =======================
   # 定义嵌入语言
   # =======================
   type-language:
+    - include: type-code
     - include: type-shell
     - include: type-javascript
     - include: type-json
+    - include: type-css
+    - include: type-sass
+    - include: type-html
+    - include: type-xml
+    - include: type-php
+    - include: type-python
+
+  type-code:
+    - match: '(?<!=`)(`)([^`]+)(`)'
+      scope: markup.raw.inline.markdown
+      captures:
+        1: punctuation.definition.raw.markdown
+        3: punctuation.definition.raw.markdown
 
   type-shell:
     - match: '{{begin}}(sh|shell|bash)?\s*$'
@@ -60,6 +191,7 @@ contexts:
         2: variable.language.fenced.markdown
       push:
         - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.shell
         - match: '{{end}}'
           captures:
             1: punctuation.definition.fenced.markdown
@@ -73,6 +205,7 @@ contexts:
         2: variable.language.fenced.markdown
       push:
         - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.js
         - match: '{{end}}'
           captures:
             1: punctuation.definition.fenced.markdown
@@ -86,8 +219,107 @@ contexts:
         2: variable.language.fenced.markdown
       push:
         - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.json
         - match: '{{end}}'
           captures:
             1: punctuation.definition.fenced.markdown
           pop: true
-        - include: scope:source.js
+        - include: scope:source.json
+
+  type-css:
+    - match: '{{begin}}(css)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.css
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:source.css
+
+  type-sass:
+    - match: '{{begin}}(scss|sass)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.sass
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: Packages/Sass/Sass.sublime-syntax
+
+  type-html:
+    - match: '{{begin}}(html)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: text.html
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:text.html.basic
+
+  type-xml:
+    - match: '{{begin}}(xml)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: text.xml
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:text.xml
+
+  type-php:
+    - match: '{{begin}}(php)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.php
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:source.php
+
+  type-python:
+    - match: '{{begin}}(python)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: source.python
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:source.python
+
+  type-markdown:
+    - match: '{{begin}}(markdown|md)\s*$'
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.fenced.markdown
+        - meta_content_scope: text.html.markdown
+        - match: '{{end}}'
+          captures:
+            1: punctuation.definition.fenced.markdown
+          pop: true
+        - include: scope:text.html.markdown
