@@ -1,0 +1,1047 @@
+{
+    "scope": "source.js",
+
+    "completions":
+    [
+        // globals
+        {
+            "trigger": "angular\tangular",
+            "contents": "angular"
+        },
+        {
+            "trigger": "animate\t$animate",
+            "contents": "\\$animate"
+        },
+        {
+            "trigger": "animateProvider\t$animateProvider",
+            "contents": "\\$animateProvider"
+        },
+        {
+            "trigger": "cacheFactory\t$cacheFactory",
+            "contents": "\\$cacheFactory(${1:cacheId}${2:, ${3:options}})"
+        },
+        {
+            "trigger": "compile\t$compile",
+            "contents": "\\$compile(${1:element}, ${2:transclude}, ${3:maxPriority})"
+        },
+        {
+            "trigger": "compileProvider\t$compileProvider",
+            "contents": "\\$compileProvider"
+        },
+        {
+            "trigger": "controller\t$controller",
+            "contents": "\\$controller(${1:constructor}, ${2:locals})"
+        },
+        {
+            "trigger": "controllerProvider\t$controllerProvider",
+            "contents": "\\$controllerProvider"
+        },
+        {
+            "trigger": "exceptionHandler\t$exceptionHandler",
+            "contents": "\\$exceptionHandler(${1:exception}${2:, ${3:cause}})"
+        },
+        {
+            "trigger": "exceptionHandlerProvider\t$exceptionHandlerProvider",
+            "contents": "\\$exceptionHandlerProvider"
+        },
+        {
+            "trigger": "filter\t$filter",
+            "contents": "\\$filter(${1:name})"
+        },
+        {
+            "trigger": "filterProvider\t$filterProvider",
+            "contents": "\\$filterProvider"
+        },
+        {
+            "trigger": "http\t$http",
+            "contents": "\\$http"
+        },
+        {
+            "trigger": "httpBackend\t$httpBackend",
+            "contents": "\\$httpBackend"
+        },
+        {
+            "trigger": "injector\t$injector",
+            "contents": "\\$injector"
+        },
+        {
+            "trigger": "interpolate\t$interpolate",
+            "contents": "\\$interpolate(${1:text}${2:, ${3:mustHaveExpression}${4:, ${5:trustedContext}}})"
+        },
+        {
+            "trigger": "interpolateProvider\t$interpolateProvider",
+            "contents": "\\$interpolateProvider"
+        },
+        {
+            "trigger": "interval\t$interval",
+            "contents": "\\$interval"
+        },
+        {
+            "trigger": "locale\t$locale",
+            "contents": "\\$locale"
+        },
+        {
+            "trigger": "location\t$location",
+            "contents": "\\$location"
+        },
+        {
+            "trigger": "locationProvider\t$locationProvider",
+            "contents": "\\$locationProvider"
+        },
+        {
+            "trigger": "log\t$log",
+            "contents": "\\$log"
+        },
+        {
+            "trigger": "logProvider\t$logProvider",
+            "contents": "\\$logProvider"
+        },
+        {
+            "trigger": "parse\t$parse",
+            "contents": "\\$parse(${1:expression})"
+        },
+        {
+            "trigger": "parseProvider\t$parseProvider",
+            "contents": "\\$parseProvider"
+        },
+        {
+            "trigger": "provide\t$provide",
+            "contents": "\\$provide"
+        },
+        {
+            "trigger": "q\t$q",
+            "contents": "\\$q"
+        },
+        {
+            "trigger": "rootElement\t$rootElement",
+            "contents": "\\$rootElement"
+        },
+        {
+            "trigger": "rootScope\t$rootScope",
+            "contents": "\\$rootScope"
+        },
+        {
+            "trigger": "rootScopeProvider\t$rootScopeProvider",
+            "contents": "\\$rootScopeProvider"
+        },
+        {
+            "trigger": "sce\t$sce",
+            "contents": "\\$sce"
+        },
+        {
+            "trigger": "sceDelegate\t$sceDelegate",
+            "contents": "\\$sceDelegate"
+        },
+        {
+            "trigger": "sceDelegateProvider\t$sceDelegateProvider",
+            "contents": "\\$sceDelegateProvider"
+        },
+        {
+            "trigger": "sceProvider\t$sceProvider",
+            "contents": "\\$sceProvider"
+        },
+        {
+            "trigger": "scope\t$scope",
+            "contents": "\\$scope"
+        },
+        {
+            "trigger": "templateCache\t$templateCache",
+            "contents": "\\$templateCache"
+        },
+        {
+            "trigger": "timeout\t$timeout",
+            "contents": "\\$timeout"
+        },
+        {
+            "trigger": "window\t$window",
+            "contents": "\\$window"
+        },
+
+        {
+        	"trigger": "cookies\t$cookies",
+        	"contents": "\\$cookies"
+    	},
+        {
+			"trigger": "cookieStore\t$cookieStore",
+			"contents": "\\$cookieStore"
+		},
+
+        {
+			"trigger": "resource\t$resource",
+			"contents": "\\$resource(${1:url}${2:, ${3:paramDefaults}${4:, ${5:actions}}})"
+		},
+
+        {
+			"trigger": "route\t$route",
+			"contents": "\\$route"
+		},
+        {
+			"trigger": "routeParams\t$routeParams",
+			"contents": "\\$routeParams"
+		},
+        {
+			"trigger": "routeProvider\t$routeProvider",
+			"contents": "\\$routeProvider"
+		},
+
+        {
+			"trigger": "sanitize\t$sanitize",
+			"contents": "\\$sanitize(${1:html})"
+		},
+
+        {
+			"trigger": "swipe\t$swipe",
+			"contents": "\\$swipe"
+		},
+
+        {
+			"trigger": "http\t$globals",
+			"contents": "\\$http('${1:GET|POST|PUT|DELETE}', ${2:url}${3:, ${4:post}}, ${5:function(status, response){\n\t${6:// success}\n}}${7:, function(status, response){\n\t${8:// error}\n}});"
+		},
+        {
+			"trigger": "filter\t$globals",
+			"contents": "\\$filter('${1:currency|date|filter|json|limitTo|linky|lowercase|number|orderBy|uppercase}')(${2:array}${3:, ${4:expression}});"
+		},
+        {
+			"trigger": "interval\t$globals",
+			"contents": "\\$interval(${1:fn}${2:, ${3:delay}${4:, ${5:count}}${6:, ${7:invokeApply}}})"
+		},
+        {
+			"trigger": "timeout\t$globals",
+			"contents": "\\$timeout(${1:function()\\{\n\t$2\n\\}}, ${3:delay});"
+		},
+        {
+			"trigger": "directive\tmodule",
+			"contents": "directive('$1', [${3:'$4', }function($4){\n\t${5:// Runs during compile}\n\treturn {\n\t\t// name: '',\n\t\t// priority: 1,\n\t\t// terminal: true,\n\t\t// scope: {}, // {} = isolate, true = child, false/undefined = no change\n\t\t// controller: function(\\$scope, \\$element, \\$attrs, \\$transclude) {},\n\t\t// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements\n\t\t// restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment\n\t\t// template: '',\n\t\t// templateUrl: '',\n\t\t// replace: true,\n\t\t// transclude: true,\n\t\t// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),\n\t\tlink: function(\\$scope, iElm, iAttrs, controller) {\n\t\t\t$0\n\t\t}\n\t};\n}]);"
+		},
+        {
+			"trigger": "config\tmodule",
+			"contents": "config([${1:'$2',}function($2) {\n\t$3\n}])"
+		},
+        {
+			"trigger": "constant\tmodule",
+			"contents": "constant('${1:name}', ${2:value})"
+		},
+        {
+			"trigger": "controller\tmodule",
+			"contents": "controller('${1:name}', [${2:'$3', }function($3){\n\t$4\n}])"
+		},
+        {
+			"trigger": "factory\tmodule",
+			"contents": "factory('${1:name}', [${2:'$3', }function($3){\n\treturn function ${4:name}(){\n\t\t$5\n\t};\n}])"
+		},
+        {
+			"trigger": "run\tmodule",
+			"contents": "run('${1:name}', [${2:'$3', }function($3){\n\t$4\n}])"
+		},
+        {
+			"trigger": "service\tmodule",
+			"contents": "service('${1:name}', [${2:'$3', }function($3){\n\t$4\n}])"
+		},
+        {
+			"trigger": "value\tmodule",
+			"contents": "value('${1:name}', ${2:value})"
+		},
+
+
+        // angular
+        {
+			"trigger": "bind\tangular",
+			"contents": "bind(${1:self}, ${2:fn}, ${3:args})"
+		},
+        {
+			"trigger": "bootstrap\tangular",
+			"contents": "bootstrap(${1:element}${2:, ${3:modules}})"
+		},
+        {
+			"trigger": "copy\tangular",
+			"contents": "copy(${1:source}${2:, ${3:destination}})"
+		},
+        {
+			"trigger": "element\tangular",
+			"contents": "element(${1:element});"
+		},
+        {
+			"trigger": "equals\tangular",
+			"contents": "equals(${1:object1}, ${2:object2});"
+		},
+        {
+			"trigger": "extend\tangular",
+			"contents": "extend(${1:destinationObject}, ${2:sourceObject})"
+		},
+        {
+			"trigger": "forEach\tangular",
+			"contents": "forEach(${1:values}, function(${2:value}, ${3:key}){\n\t$0\n});"
+		},
+        {
+			"trigger": "fromJson\tangular",
+			"contents": "fromJson(${1:json})"
+		},
+        {
+			"trigger": "identity\tangular",
+			"contents": "identity()"
+		},
+        {
+			"trigger": "injector\tangular",
+			"contents": "injector(${1:modules})"
+		},
+        {
+			"trigger": "isArray\tangular",
+			"contents": "isArray(${1:value})"
+		},
+        {
+			"trigger": "isDate\tangular",
+			"contents": "isDate(${1:value})"
+		},
+        {
+			"trigger": "isDefined\tangular",
+			"contents": "isDefined(${1:value})"
+		},
+        {
+			"trigger": "isElement\tangular",
+			"contents": "isElement(${1:value})"
+		},
+        {
+			"trigger": "isFunction\tangular",
+			"contents": "isFunction(${1:value})"
+		},
+        {
+			"trigger": "isNumber\tangular",
+			"contents": "isNumber(${1:value})"
+		},
+        {
+			"trigger": "isObject\tangular",
+			"contents": "isObject(${1:value})"
+		},
+        {
+			"trigger": "isString\tangular",
+			"contents": "isString(${1:value})"
+		},
+        {
+			"trigger": "isUndefined\tangular",
+			"contents": "isUndefined(${1:value})"
+		},
+        {
+			"trigger": "lowercase\tangular",
+			"contents": "lowercase(${1:string});"
+		},
+        {
+			"trigger": "mock\tangular",
+			"contents": "mock"
+		},
+        {
+			"trigger": "module\tangular",
+			"contents": "module('$1', [$2])"
+		},
+        {
+			"trigger": "noop\tangular",
+			"contents": "noop"
+		},
+        {
+			"trigger": "toJson\tangular",
+			"contents": "toJson(${1})"
+		},
+        {
+			"trigger": "uppercase\tangular",
+			"contents": "uppercase(${1:string});"
+		},
+        {
+			"trigger": "version\tangular",
+			"contents": "version"
+		},
+
+
+        // $animate
+        {
+			"trigger": "addClass\t$animate",
+			"contents": "addClass(${1:element}, ${2:className}, ${3:done})"
+		},
+        {
+			"trigger": "enter\t$animate",
+			"contents": "enter(${1:element}, ${2:parent}, ${3:after}, ${4:done})"
+		},
+        {
+			"trigger": "leave\t$animate",
+			"contents": "leave(${1:element}, ${2:done})"
+		},
+        {
+			"trigger": "move\t$animate",
+			"contents": "move(${1:element}, ${2:parent}, ${3:after}, ${4:done})"
+		},
+        {
+			"trigger": "removeClass\t$animate",
+			"contents": "removeClass(${1:element}, ${2:className}, ${3:done})"
+		},
+
+
+        // $animateProvider
+        {
+			"trigger": "classNameFilter\t$animateProvider",
+			"contents": "classNameFilter(${1:expression})"
+		},
+        {
+			"trigger": "register\t$animateProvider",
+			"contents": "register(${1:name}, ${2:factory})"
+		},
+
+
+        // $compileProvider
+        {
+			"trigger": "aHrefSanitizationWhitelist\t$compileProvider",
+			"contents": "aHrefSanitizationWhitelist(${1:regexp})"
+		},
+        {
+			"trigger": "directive\t$compileProvider",
+			"contents": "directive(${1:name}${2:, ${3:directiveFactory}})"
+		},
+        {
+			"trigger": "imgSrcSanitizationWhitelist\t$compileProvider",
+			"contents": "imgSrcSanitizationWhitelist(${1:regexp})"
+		},
+
+
+        // $controllerProvider
+        {
+			"trigger": "register\t$controllerProvider",
+			"contents": "register(${1:name}${2:, ${3:constructor}})"
+		},
+
+
+        // $exceptionHandlerProvider
+        {
+			"trigger": "mode\t$exceptionHandlerProvider",
+			"contents": "mode(${1:mode})"
+		},
+
+
+        // $filterProvider
+        {
+			"trigger": "register\t$filterProvider",
+			"contents": "register(${1:name}, ${2:fn})"
+		},
+
+
+        // $http
+        {
+			"trigger": "delete\t$http",
+			"contents": "delete(${1:url}${2:, ${3:config}})"
+		},
+        {
+			"trigger": "get\t$http",
+			"contents": "get(${1:url}${2:, ${3:config}})"
+		},
+        {
+			"trigger": "head\t$http",
+			"contents": "head(${1:url}${2:, ${3:config}})"
+		},
+        {
+			"trigger": "jsonp\t$http",
+			"contents": "jsonp(${1:url}${2:, ${3:config}})"
+		},
+        {
+			"trigger": "post\t$http",
+			"contents": "post(${1:url}, ${2:data}${3:, ${4:config}})"
+		},
+        {
+			"trigger": "put\t$http",
+			"contents": "put(${1:url}, ${2:data}${3:, ${4:config}})"
+		},
+        {
+			"trigger": "defaults\t$http",
+			"contents": "defaults"
+		},
+        {
+			"trigger": "pendingRequests\t$http",
+			"contents": "pendingRequests"
+		},
+
+
+        // $httpBackend
+        {
+			"trigger": "expect\t$httpBackend",
+			"contents": "expect(${1:method}, ${2:url}${3:, ${4:data}${5:, ${6:headers}}})"
+		},
+        {
+			"trigger": "expectDELETE\t$httpBackend",
+			"contents": "expectDELETE(${1:url}${2:, ${3:headers}})"
+		},
+        {
+			"trigger": "expectGET\t$httpBackend",
+			"contents": "expectGET(${1:url}${2:, ${3:headers}})"
+		},
+        {
+			"trigger": "expectHEAD\t$httpBackend",
+			"contents": "expectHEAD(${1:url}${2:, ${3:headers}})"
+		},
+        {
+			"trigger": "expectJSONP\t$httpBackend",
+			"contents": "expectJSONP(url)"
+		},
+        {
+			"trigger": "expectPATCH\t$httpBackend",
+			"contents": "expectPATCH(${1:url}${2:, ${3:data}${4:, ${5:headers}}})"
+		},
+        {
+			"trigger": "expectPOST\t$httpBackend",
+			"contents": "expectPOST(${1:url}${2:, ${3:data}${4:, ${5:headers}}})"
+		},
+        {
+			"trigger": "expectPUT\t$httpBackend",
+			"contents": "expectPUT(${1:url}${2:, ${3:data}${4:, ${5:headers}}})"
+		},
+        {
+			"trigger": "flush\t$httpBackend",
+			"contents": "flush(${1:count})"
+		},
+        {
+			"trigger": "resetExpectations\t$httpBackend",
+			"contents": "resetExpectations()"
+		},
+        {
+			"trigger": "verifyNoOutstandingExpectation\t$httpBackend",
+			"contents": "verifyNoOutstandingExpectation()"
+		},
+        {
+			"trigger": "verifyNoOutstandingRequest\t$httpBackend",
+			"contents": "verifyNoOutstandingRequest()"
+		},
+        {
+			"trigger": "when\t$httpBackend",
+			"contents": "when(${1:method}, ${2:url}${3:, ${4:data}${5:, ${6:headers}}})"
+		},
+        {
+			"trigger": "whenDELETE\t$httpBackend",
+			"contents": "whenDELETE(${1:url}${2:, ${3:headers}})"
+		},
+        {
+			"trigger": "whenGET\t$httpBackend",
+			"contents": "whenGET(${1:url}${2:, ${3:headers}})"
+		},
+        {
+			"trigger": "whenHEAD\t$httpBackend",
+			"contents": "whenHEAD(${1:url}${2:, ${3:headers}})"
+		},
+        {
+			"trigger": "whenJSONP\t$httpBackend",
+			"contents": "whenJSONP(url)"
+		},
+        {
+			"trigger": "whenPOST\t$httpBackend",
+			"contents": "whenPOST(${1:url}${2:, ${3:data}${4:, ${5:headers}}})"
+		},
+        {
+			"trigger": "whenPUT\t$httpBackend",
+			"contents": "whenPUT(${1:url}${2:, ${3:data}${4:, ${5:headers}}})"
+		},
+
+
+        // $injector
+        {
+			"trigger": "annotate\t$injector",
+			"contents": "annotate(${1:fn})"
+		},
+        {
+			"trigger": "get\t$injector",
+			"contents": "get(${1:name})"
+		},
+        {
+			"trigger": "has\t$injector",
+			"contents": "has(${1:name})"
+		},
+        {
+			"trigger": "instantiate\t$injector",
+			"contents": "instantiate(${1:Type}${2:, ${3:locals}})"
+		},
+        {
+			"trigger": "invoke\t$injector",
+			"contents": "invoke(${1:fn}${2:, ${3:self}${4:, ${5:locals}}})"
+		},
+
+
+        // $interpolateProvider
+        {
+			"trigger": "endSymbol\t$interpolateProvider",
+			"contents": "endSymbol(${1:value})"
+		},
+        {
+			"trigger": "startSymbol\t$interpolateProvider",
+			"contents": "startSymbol(${1:value})"
+		},
+
+
+        // $interval
+        {
+			"trigger": "cancel\t$interval",
+			"contents": "cancel(${1:promise})"
+		},
+        {
+			"trigger": "flush\t$interval",
+			"contents": "flush(${1:millis})"
+		},
+
+
+        // $locale
+        {
+			"trigger": "id\t$locale",
+			"contents": "id"
+		},
+
+
+        // $location
+        {
+			"trigger": "absUrl\t$location",
+			"contents": "absUrl()"
+		},
+        {
+			"trigger": "hash\t$location",
+			"contents": "hash(${1:hash})"
+		},
+        {
+			"trigger": "host\t$location",
+			"contents": "host()"
+		},
+        {
+			"trigger": "path\t$location",
+			"contents": "path(${1:path})"
+		},
+        {
+			"trigger": "port\t$location",
+			"contents": "port()"
+		},
+        {
+			"trigger": "protocol\t$location",
+			"contents": "protocol()"
+		},
+        {
+			"trigger": "replace\t$location",
+			"contents": "replace()"
+		},
+        {
+			"trigger": "search\t$location",
+			"contents": "search(${1:search}${2:, ${3:paramValue}})"
+		},
+        {
+			"trigger": "url\t$location",
+			"contents": "url(${1:${2:url}${3:, ${4:replace}}})"
+		},
+
+
+        // $locationProvider
+        {
+			"trigger": "hashPrefix\t$locationProvider",
+			"contents": "hashPrefix(${1:prefix})"
+		},
+        {
+			"trigger": "html5Mode\t$locationProvider",
+			"contents": "html5Mode(${1:true})"
+		},
+
+
+        // $log
+        {
+			"trigger": "debug\t$log",
+			"contents": "debug()"
+		},
+        {
+			"trigger": "error\t$log",
+			"contents": "error()"
+		},
+        {
+			"trigger": "info\t$log",
+			"contents": "info()"
+		},
+        {
+			"trigger": "log\t$log",
+			"contents": "log()"
+		},
+        {
+			"trigger": "warn\t$log",
+			"contents": "warn()"
+		},
+        {
+			"trigger": "assertEmpty\t$log",
+			"contents": "assertEmpty()"
+		},
+        {
+			"trigger": "reset\t$log",
+			"contents": "reset()"
+		},
+
+
+        // $logProvider
+        {
+			"trigger": "debugEnabled\t$logProvider",
+			"contents": "debugEnabled(${1:true})"
+		},
+
+
+        // $parseProvider
+        {
+			"trigger": "logPromiseWarnings\t$parseProvider",
+			"contents": "logPromiseWarnings(${1:false})"
+		},
+        {
+			"trigger": "unwrapPromises\t$parseProvider",
+			"contents": "unwrapPromises(${1:true})"
+		},
+
+
+        // $provide
+        {
+			"trigger": "constant\t$provide",
+			"contents": "constant(${1:name}, ${2:value})"
+		},
+        {
+			"trigger": "decorator\t$provide",
+			"contents": "decorator(${1:name}, ['\\$delegate', function(\\$delegate){\n\t$2\n\treturn \\$delegate\n}])"
+		},
+        {
+			"trigger": "factory\t$provide",
+			"contents": "factory(${1:name}, [${2:'$3', }function($3){\n\treturn function ${4:name}(){\n\t\t$5\n\t};\n}])"
+		},
+        {
+			"trigger": "provider\t$provide",
+			"contents": "provider(${1:name}, ${2:provider})"
+		},
+        {
+			"trigger": "service\t$provide",
+			"contents": "service(${1:name}, ${2:constructor})"
+		},
+        {
+			"trigger": "value\t$provide",
+			"contents": "value(${1:name}, ${2:value})"
+		},
+
+
+        // $q
+        {
+			"trigger": "all\t$q",
+			"contents": "all(${1:promises})"
+		},
+        {
+			"trigger": "defer\t$q",
+			"contents": "defer()"
+		},
+        {
+			"trigger": "reject\t$q",
+			"contents": "reject(${1:reason})"
+		},
+        {
+			"trigger": "when\t$q",
+			"contents": "when(${1:value})"
+		},
+
+        // $scope
+        {
+			"trigger": "apply\t$apply",
+			"contents": "\\$apply(${1:exp})"
+		},
+        {
+			"trigger": "broadcast\t$broadcast",
+			"contents": "\\$broadcast(${1:name}, ${2:args})"
+		},
+        {
+			"trigger": "destroy\t$destroy",
+			"contents": "\\$destroy()"
+		},
+        {
+			"trigger": "digest\t$digest",
+			"contents": "\\$digest()"
+		},
+        {
+			"trigger": "emit\t$emit",
+			"contents": "\\$emit(${1:name}, ${2:args})"
+		},
+        {
+			"trigger": "eval\t$eval",
+			"contents": "\\$eval(${1:${2:expression}${3:, ${4:locals}}})"
+		},
+        {
+			"trigger": "evalAsync\t$evalAsync",
+			"contents": "\\$evalAsync(${1:expression})"
+		},
+        {
+			"trigger": "new\t$new",
+			"contents": "\\$new(${1:isolate})"
+		},
+        {
+			"trigger": "on\t$on",
+			"contents": "\\$on('${1:name}', ${2:function(){$3}});"
+		},
+        {
+			"trigger": "parent\t$parent",
+			"contents": "\\$parent."
+		},
+        {
+			"trigger": "root\t$root",
+			"contents": "\\$root."
+		},
+        {
+			"trigger": "watch\t$watch",
+			"contents": "\\$watch('${1:watchExpression}', function(newValue, oldValue, scope) {\n\t$2\n}${3:, ${4:objectEquality}});"
+		},
+        {
+			"trigger": "watchCollection\t$watchCollection",
+			"contents": "\\$watchCollection(${1:obj}, function(newCollection, oldCollection, scope) {\n\t$2\n});"
+		},
+        {
+			"trigger": "id\t$id",
+			"contents": "\\$id"
+		},
+
+
+        // $rootScopeProvider
+        {
+			"trigger": "digestTtl\t$rootScopeProvider",
+			"contents": "digestTtl(${1:limit})"
+		},
+
+
+        // $sce
+        {
+			"trigger": "getTrusted\t$sce",
+			"contents": "getTrusted(${1:type}, ${2:maybeTrusted})"
+		},
+        {
+			"trigger": "getTrustedCss\t$sce",
+			"contents": "getTrustedCss(${1:value})"
+		},
+        {
+			"trigger": "getTrustedHtml\t$sce",
+			"contents": "getTrustedHtml(${1:value})"
+		},
+        {
+			"trigger": "getTrustedJs\t$sce",
+			"contents": "getTrustedJs(${1:value})"
+		},
+        {
+			"trigger": "getTrustedResourceUrl\t$sce",
+			"contents": "getTrustedResourceUrl(${1:value})"
+		},
+        {
+			"trigger": "getTrustedUrl\t$sce",
+			"contents": "getTrustedUrl(${1:value})"
+		},
+        {
+			"trigger": "parse\t$sce",
+			"contents": "parse(${1:type}, ${2:expression})"
+		},
+        {
+			"trigger": "parseAsCss\t$sce",
+			"contents": "parseAsCss(${1:expression})"
+		},
+        {
+			"trigger": "parseAsHtml\t$sce",
+			"contents": "parseAsHtml(${1:expression})"
+		},
+        {
+			"trigger": "parseAsJs\t$sce",
+			"contents": "parseAsJs(${1:expression})"
+		},
+        {
+			"trigger": "parseAsResourceUrl\t$sce",
+			"contents": "parseAsResourceUrl(${1:expression})"
+		},
+        {
+			"trigger": "parseAsUrl\t$sce",
+			"contents": "parseAsUrl(${1:expression})"
+		},
+        {
+			"trigger": "trustAs\t$sce",
+			"contents": "trustAs(${1:type}, ${2:value})"
+		},
+        {
+			"trigger": "trustAsHtml\t$sce",
+			"contents": "trustAsHtml(${1:value})"
+		},
+        {
+			"trigger": "trustAsJs\t$sce",
+			"contents": "trustAsJs(${1:value})"
+		},
+        {
+			"trigger": "trustAsResourceUrl\t$sce",
+			"contents": "trustAsResourceUrl(${1:value})"
+		},
+        {
+			"trigger": "trustAsUrl\t$sce",
+			"contents": "trustAsUrl(${1:value})"
+		},
+        {
+			"trigger": "isEnabled\t$sce",
+			"contents": "isEnabled()"
+		},
+
+
+        // $sceDelegate
+        {
+			"trigger": "getTrusted\t$sceDelegate",
+			"contents": "getTrusted(${1:type}, ${2:maybeTrusted})"
+		},
+        {
+			"trigger": "trustAs\t$sceDelegate",
+			"contents": "trustAs(${1:type}, ${2:value})"
+		},
+        {
+			"trigger": "valueOf\t$sceDelegate",
+			"contents": "valueOf(${1:value})"
+		},
+
+
+        // $sceDelegateProvider
+        {
+			"trigger": "resourceUrlBlacklist\t$sceDelegateProvider",
+			"contents": "resourceUrlBlacklist(${1:blacklist})"
+		},
+        {
+			"trigger": "resourceUrlWhitelist\t$sceDelegateProvider",
+			"contents": "resourceUrlWhitelist(${1:whitelist})"
+		},
+
+
+        // $sceProvider
+        {
+			"trigger": "enabled\t$sceProvider",
+			"contents": "enabled(${1:value})"
+		},
+
+
+        // $timeout
+        {
+			"trigger": "cancel\t$timeout",
+			"contents": "cancel(${1:promise})"
+		},
+        {
+			"trigger": "flush\t$timeout",
+			"contents": "flush(${1:delay})"
+		},
+
+
+        // $cookieStore
+        {
+			"trigger": "get\t$cookieStore",
+			"contents": "get(${1:key})"
+		},
+        {
+			"trigger": "put\t$cookieStore",
+			"contents": "put(${1:key}, ${2:value})"
+		},
+        {
+			"trigger": "remove\t$cookieStore",
+			"contents": "remove(${1:key})"
+		},
+
+
+        // $route
+        {
+			"trigger": "reload\t$route",
+			"contents": "reload()"
+		},
+        {
+			"trigger": "current\t$route",
+			"contents": "current"
+		},
+        {
+			"trigger": "routes\t$route",
+			"contents": "routes"
+		},
+
+
+        // $routeProvider
+        {
+			"trigger": "otherwise\t$routeProvider",
+			"contents": "otherwise(${1:params})"
+		},
+        {
+			"trigger": "when\t$routeProvider",
+			"contents": "when(${1:path}, ${2:route})"
+		},
+
+
+        // $swipe
+        {
+			"trigger": "bind\t$swipe",
+			"contents": "bind(${1:element})"
+		},
+
+
+        // mock
+        {
+			"trigger": "dump\tmock",
+			"contents": "dump(${1:object})"
+		},
+        {
+			"trigger": "module\tmock",
+			"contents": "module(${1:fns})"
+		},
+
+
+        // events
+        {
+			"trigger": "locationChangeStart\t$locationChangeStart",
+			"contents": "\\$locationChangeStart"
+		},
+        {
+			"trigger": "locationChangeSuccess\t$locationChangeSuccess",
+			"contents": "\\$locationChangeSuccess"
+		},
+        {
+			"trigger": "destroy\t$destroy",
+			"contents": "\\$destroy"
+		},
+        {
+			"trigger": "includeContentLoaded\t$includeContentLoaded",
+			"contents": "\\$includeContentLoaded"
+		},
+        {
+			"trigger": "includeContentRequested\t$includeContentRequested",
+			"contents": "\\$includeContentRequested"
+		},
+        {
+			"trigger": "routeChangeError\t$routeChangeError",
+			"contents": "\\$routeChangeError"
+		},
+        {
+			"trigger": "routeChangeStart\t$routeChangeStart",
+			"contents": "\\$routeChangeStart"
+		},
+        {
+			"trigger": "routeChangeSuccess\t$routeChangeSuccess",
+			"contents": "\\$routeChangeSuccess"
+		},
+        {
+			"trigger": "routeUpdate\t$routeUpdate",
+			"contents": "\\$routeUpdate"
+		},
+        {
+			"trigger": "viewContentLoaded\t$viewContentLoaded",
+			"contents": "\\$viewContentLoaded"
+		},
+
+
+        // attrs
+        {
+			"trigger": "addClass\t$addClass",
+			"contents": "\\$addClass(${1:classVal})"
+		},
+        {
+			"trigger": "observe\t$observe",
+			"contents": "\\$observe(${1:key}, ${2:fn})"
+		},
+        {
+			"trigger": "removeClass\t$removeClass",
+			"contents": "\\$removeClass(${1:classVal})"
+		},
+        {
+			"trigger": "set\t$set",
+			"contents": "\\$set(${1:name}, ${2:value})"
+		},
+        {
+			"trigger": "updateClass\t$updateClass",
+			"contents": "\\$updateClass(newClasses, oldClasses)"
+		},
+        {
+			"trigger": "attr\t$attr",
+			"contents": "\\$attr"
+		}
+    ]
+}

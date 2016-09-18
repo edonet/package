@@ -131,6 +131,7 @@ tag_list = [
     ("ie:gte\tFix", "!--[if gte IE ${1:8}]>$2<![endif]-->"),
 
 
+    # svg
     ("svg\tSVG", "svg version=\"1.1\" \n\txmlns=\"http://www.w3.org/2000/svg\" \n\txmlns:xlink=\"http://www.w3.org/1999/xlink\" \n\txmlns:ev=\"http://www.w3.org/2001/xml-events\" \n\tx=\"${1:0}\" y=\"${2:0}\" width=\"${3:100%}\" height=\"${4:100%}\" viewBox=\"${5:0 0 100 100}\" \n\txml:space=\"preserve\">\n\t$6\n</svg>"),
     ("desc\tSVG", "desc>$1</desc>"),
     ("defs\tSVG", "defs>\n\t$1\n</defs>"),
@@ -150,7 +151,16 @@ tag_list = [
     ("symbol\tSVG", "symbol id=\"$1\">\n\t$2\n</symbol>"),
     ("linearGadient\tSVG", "linearGradient id=\"$1\" gradientUnits=\"objectBoundingBox\" x1=\"$2\" y1=\"$3\" x2=\"$4\" y2=\"$5\">\n\t$6\n</linearGradient>"),
     ("radialGradient\tSVG", "radialGradient id=\"$1\" gradientUnits=\"objectBoundingBox\" x1=\"$2\" y1=\"$3\" x2=\"$4\" y2=\"$5\">\n\t$6\n</radialGradient>"),
-    ("stop\tSVG", "stop offset=\"$1\" stop-color=\"$2\" stop-opacity=\"${3:1}\"></stop>")
+    ("stop\tSVG", "stop offset=\"$1\" stop-color=\"$2\" stop-opacity=\"${3:1}\"></stop>"),
+
+
+    # angularjs
+    ("ng-include\tAngularJS", "ng-include src=\"'$1'\"${2: scope=\"$3\"}${4: onload=\"$5\"}></ng-include>"),
+    ("ng-pluralize\tAngularJS", "ng-pluralize count=\"${1:string}\" when=\"$2\" offset=\"$4\"></ng-pluralize>"),
+    ("ng-select\tAngularJS", "select ngModel=\"${1:string}\"${2:${3: name=\"${4:string}\"}${5: required}${6: ngRequired=\"${7:string}\"}${8: ngOptions=\"${9:comprehension_expression}\"}}>$10</select>$0"),
+    ("ng-template\tAngularJS", "script type=\"text/ng-template\"${1: id=\"$2\"}>$0</script>"),
+    ("ng-textarea\tAngularJS", "textarea ngModel=\"${1:string}\"${2:${3: name=\"${4:string}\"}${5: required}${6: ngRequired=\"${7:string}\"}${8: ngMinlength=\"${9:number}\"}${10: ngMaxlength=\"${11:number}\"}${12: ngPattern=\"${13:string}\"}${14: ngChange=\"${15:string}\"}}>$16</textarea>$0"),
+    ("ng-view\tAngularJS", "ng-view></ng-view>")
 ]
 
 # SVG Tag List
@@ -196,6 +206,7 @@ base_attr = [
     ("tabindex\tAttr", 'tabindex="$1"'),
     ("translate\tAttr", 'translate="$1"'),
 
+    # evnets
     ("onclick\tAttr", 'onclick="$1"'),
     ("ondblclick\tAttr", 'ondblclick="$1"'),
     ("onmousedown\tAttr", 'onmousedown="$1"'),
@@ -245,7 +256,100 @@ base_attr = [
     ("onpopstate\tAttr", 'onpopstate="$1"'),
     ("onredo\tAttr", 'onredo="$1"'),
     ("onstorage\tAttr", 'onstorage="$1"'),
-    ("onundo\tAttr", 'onundo="$1"')
+    ("onundo\tAttr", 'onundo="$1"'),
+
+
+    # angularjs
+    ("ng-app\tAngularJS", "ng-app=\"${1:string}\"$0"),
+    ("ng-bind\tAngularJS", "ng-bind=\"${1:expression}\"$0"),
+    ("ng-bind-html\tAngularJS", "ng-bind-html=\"${1:expression}\"$0"),
+    ("ng-bind-html-unsafe\tAngularJS", "ng-bind-html-unsafe=\"${1:expression}\"$0"),
+    ("ng-bind-template\tAngularJS", "ng-bind-template=\"${1:string}\"$0"),
+    ("ng-blur\tAngularJS", "ng-blur=\"${1:expression}\"$0"),
+    ("ng-change\tAngularJS", "ng-change=\"${1:function()}\"$0"),
+    ("ng-checked\tAngularJS", "ng-checked=\"${1:expression}\"$0"),
+    ("ng-class\tAngularJS", "ng-class=\"${1:expression}\"$0"),
+    ("ng-class-even\tAngularJS", "ng-class-even=\"${1:expression}\"$0"),
+    ("ng-class-odd\tAngularJS", "ng-class-odd=\"${1:expression}\"$0"),
+    ("ng-click\tAngularJS", "ng-click=\"${1:expression}\"$0"),
+    ("ng-cloak\tAngularJS", "ng-cloak$0"),
+    ("ng-controller\tAngularJS", "ng-controller=\"$1\"$2"),
+    ("ng-copy\tAngularJS", "ng-copy=\"${1:expression}\"$0"),
+    ("ng-csp\tAngularJS", "ng-csp$0"),
+    ("ng-cut\tAngularJS", "ng-cut=\"${1:expression}\"$0"),
+    ("ng-dblclick\tAngularJS", "ng-dblclick=\"${1:expression}\"$0"),
+    ("ng-disabled\tAngularJS", "ng-disabled=\"${1:expression}\"$0"),
+    ("ng-focus\tAngularJS", "ng-focus=\"${1:expression}\"$0"),
+    ("ng-form\tAngularJS", "ng-form name=\"${1:string}\"$0"),
+    ("ng-hide\tAngularJS", "ng-hide=\"${1:expression}\"$0"),
+    ("ng-href\tAngularJS", "ng-href=\"${1:template}\"$0"),
+    ("ng-if\tAngularJS", "ng-if=\"${1:expression}\"$0"),
+    ("ng-include\tAngularJS", "ng-include=\"'${1:string}'\" ${2:scope=\"$3\"} ${4:onload=\"$5\"}"),
+    ("ng-init\tAngularJS", "ng-init=\"${1:expression}\"$0"),
+    ("ng-keydown\tAngularJS", "ng-keydown=\"${1:expression}\"$0"),
+    ("ng-keypress\tAngularJS", "ng-keypress=\"${1:expression}\"$0"),
+    ("ng-keyup\tAngularJS", "ng-keyup=\"${1:expression}\"$0"),
+    ("ng-list\tAngularJS", "ng-list=\"${1:string}\"$0"),
+    ("ng-model\tAngularJS", "ng-model$0"),
+    ("ng-mousedown\tAngularJS", "ng-mousedown=\"${1:expression}\"$0"),
+    ("ng-mouseenter\tAngularJS", "ng-mouseenter=\"${1:expression}\"$0"),
+    ("ng-mouseleave\tAngularJS", "ng-mouseleave=\"${1:expression}\"$0"),
+    ("ng-mousemove\tAngularJS", "ng-mousemove=\"${1:expression}\"$0"),
+    ("ng-mouseover\tAngularJS", "ng-mouseover=\"${1:expression}\"$0"),
+    ("ng-mouseup\tAngularJS", "ng-mouseup=\"${1:expression}\"$0"),
+    ("ng-multiple\tAngularJS", "ng-multiple=\"${1:expression}\"$0"),
+    ("ng-non-bindable\tAngularJS", "ng-non-bindable$0"),
+    ("ng-open\tAngularJS", "ng-open=\"${1:expression}\"$0"),
+    ("ng-paste\tAngularJS", "ng-paste=\"${1:expression}\"$0"),
+    ("ng-options\tAngularJS", "ng-options=\"${1:select} as ${2:label} for ${3:value} in ${4:array}\""),
+    ("ng-pluralize\tAngularJS", "ng-pluralize count=\"${1:string}\" when=\"$2\" offset=\"$4\"$0"),
+    ("ng-readonly\tAngularJS", "ng-readonly=\"${1:expression}\"$0"),
+    ("ng-repeat\tAngularJS", "ng-repeat=\"${1:(${2:key}, ${3:value})} in ${4:dataset}\"$0"),
+    ("ng-repeat-end\tAngularJS", "ng-repeat-end$0"),
+    ("ng-repeat-start\tAngularJS", "ng-repeat-start=\"${1:(${2:key}, ${3:value})} in ${4:dataset}\"$0"),
+    ("ng-selected\tAngularJS", "ng-selected=\"${1:string}\"$0"),
+    ("ng-show\tAngularJS", "ng-show=\"${1:expression}\"$0"),
+    ("ng-src\tAngularJS", "ng-src=\"${1:template}\"$0"),
+    ("ng-srcset\tAngularJS", "ng-srcset=\"${1:template}\"$0"),
+    ("ng-style\tAngularJS", "ng-style=\"${1:expression}\"$0"),
+    ("ng-submit\tAngularJS", "ng-submit=\"${1:expression}\"$0"),
+    ("ng-swipe-left\tAngularJS", "ng-swipe-left=\"${1:expression}\"$0"),
+    ("ng-swipe-right\tAngularJS", "ng-swipe-right=\"${1:expression}\"$0"),
+    ("ng-switch\tAngularJS", "ng-switch on=\"${1:expression}\"$0"),
+    ("ng-switch-when\tAngularJS", "ng-switch-when=\"${1:string}\"$0"),
+    ("ng-switch-default\tAngularJS", "ng-switch-default$0"),
+    ("ng-transclude\tAngularJS", "ng-transclude$0"),
+    ("ng-trim\tAngularJS", "ng-trim$0"),
+    ("ng-value\tAngularJS", "ng-value=\"${1:string}\"$0"),
+    ("ng-view\tAngularJS", "ng-view$0"),
+
+
+    # angular-ui
+    ("ui-jq\tAngularUI", "ui-jq=\"${1:string}\"$0"),
+    ("ui-options\tAngularUI", "ui-options=\"${1:string}\"$0"),
+    ("ui-codemirror\tAngularUI", "ui-codemirror=\"${1:{theme:'${2:monokai}'\\}}\"$0"),
+    ("ui-event\tAngularUI", "ui-event=\"{${1:event}:'${2:function()}'}\"$0"),
+    ("ui-calendar\tAngularUI", "ui-calendar=\"{${1:height: 450, editable: true}}\"$0"),
+    ("ui-map\tAngularUI", "ui-map=\"${1:myMap}\"$0"),
+    ("ui-map-marker\tAngularUI", "ui-map-marker=\"${1:myMarkers}[\\$index]\"$0"),
+    ("ui-map-info-window\tAngularUI", "ui-map-info-window=\"${1:myInfoWindow}\"$0"),
+    ("ui-date\tAngularUI", "ui-date$0"),
+    ("ui-keypress\tAngularUI", "ui-keypress=\"{${1:key identifier}:'${2:keypressCallback}(\\$event)'}\"$0"),
+    ("ui-keydown\tAngularUI", "ui-keydown=\"{${1:key identifier}:'${2:keypressCallback}(\\$event)'}\"$0"),
+    ("ui-keyup\tAngularUI", "ui-keyup=\"{${1:key identifier}:'${2:keypressCallback}(\\$event)'}\"$0"),
+    ("ui-mask\tAngularUI", "ui-mask=\"'${1:99-99-9999}'\"$0"),
+    ("ui-if\tAngularUI", "ui-if=\"${1:false}\"$0"),
+    ("ui-reset\tAngularUI", "ui-reset${1:=\" '${2:Empty}' \"}$0"),
+    ("ui-animate\tAngularUI", "ui-animate$0"),
+    ("ui-scrollfix\tAngularUI", "ui-scrollfix${1:=\"${2:number}\"}$0"),
+    ("ui-select2\tAngularUI", "ui-select2$0"),
+    ("ui-show\tAngularUI", "ui-show=\"${1:showHide}\"$0"),
+    ("ui-hide\tAngularUI", "ui-hide=\"${1:showHide}\"$0"),
+    ("ui-toggle\tAngularUI", "ui-toggle=\"${1:showHide}\"$0"),
+    ("ui-tinymce\tAngularUI", "ui-tinymce$0"),
+    ("ui-sortable\tAngularUI", "ui-sortable${1:=\"{${2:connectWith}:'${3:.children}'\\}\"}$0"),
+    ("ui-currency\tAngularUI", "ui-currency${1:=\"{symbol:'${2:\\$}'${3:, zero: '${4:my-zero-class}'}\\}\"}$0"),
+    ("ui-route\tAngularUI", "ui-route=\"${1:#}/${2:route-path}\"$0")
 ]
 
 # SVG Attr
