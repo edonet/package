@@ -1583,7 +1583,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#ffffff0f</string>
+        <string>#ffffff00</string>
         <key>fontStyle</key>
         <string>bold</string>
         <key>foreground</key>

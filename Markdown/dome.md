@@ -160,100 +160,100 @@ $ NODE_ENV=production node app
 
 ```javascript
 
-  // 异步创建文件目录
-  function mkdirAsync(dir, callback) {
-      stat(dir, err => {
-          if (!err) {
-              return callback(null);
-          }
+    // 异步创建文件目录
+    function mkdirAsync(dir, callback) {
+            stat(dir, err => {
+                    if (!err) {
+                            return callback(null);
+                    }
 
-          let parent = path.dirname(dir);
+                    let parent = path.dirname(dir);
 
-          if (parent === dir) {
-              return callback(new Error('the dir root is not exists!'));
-          }
+                    if (parent === dir) {
+                            return callback(new Error('the dir root is not exists!'));
+                    }
 
-          mkdirAsync(parent, err => {
-              if (err) {
-                  return callback(err);
-              }
+                    mkdirAsync(parent, err => {
+                            if (err) {
+                                    return callback(err);
+                            }
 
-              fs.mkdir(dir, callback);
-          });
-      });
-  }
+                            fs.mkdir(dir, callback);
+                    });
+            });
+    }
 
 ```
 
 ```json
-  {
-    "name": "ntils",
-    "version": "0.0.1",
-    "description": "node utils",
-    "main": "./src/index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/edonet/ntils.git"
-    },
-    "keywords": [
-      "node",
-      "utils"
-    ],
-    "author": "lifx",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/edonet/ntils/issues"
-    },
-    "homepage": "https://github.com/edonet/ntils#readme"
-  }
+    {
+        "name": "ntils",
+        "version": "0.0.1",
+        "description": "node utils",
+        "main": "./src/index.js",
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "repository": {
+            "type": "git",
+            "url": "git+https://github.com/edonet/ntils.git"
+        },
+        "keywords": [
+            "node",
+            "utils"
+        ],
+        "author": "lifx",
+        "license": "MIT",
+        "bugs": {
+            "url": "https://github.com/edonet/ntils/issues"
+        },
+        "homepage": "https://github.com/edonet/ntils#readme"
+    }
 ```
 
 ```html
-  <tr>
-    <td class="left">受理人</td>
-    <td class="detail">
-      <span class="origin" data-type="accept_operator">李芳雄</span>
-      <a href="javascript:;" class="edit-a">修改</a>
-    </td>
-  </tr>
+    <tr>
+        <td class="left">受理人</td>
+        <td class="detail">
+            <span class="origin" data-type="accept_operator">李芳雄</span>
+            <a href="javascript:;" class="edit-a">修改</a>
+        </td>
+    </tr>
 ```
 
 ```sass
-  @charset "utf-8";
+    @charset "utf-8";
 
-  // arrow
-  @mixin arrow-r($size: 10px, $color: $borderColor) {
-      position: relative;
+    // arrow
+    @mixin arrow-r($size: 10px, $color: $borderColor) {
+            position: relative;
 
-      &::after {
-          content: "";
-          display: block;
-          width: rem($size);
-          height: rem($size);
-          position: absolute;
-          top: 50%;
-          right: rem(10px);
-          transform: translateY(-50%) rotate(45deg);
-          border-width: rem(1px, 1px, 0, 0);
-          border-style: solid;
-          border-color: $color;
-      }
-  }
+            &::after {
+                    content: "";
+                    display: block;
+                    width: rem($size);
+                    height: rem($size);
+                    position: absolute;
+                    top: 50%;
+                    right: rem(10px);
+                    transform: translateY(-50%) rotate(45deg);
+                    border-width: rem(1px, 1px, 0, 0);
+                    border-style: solid;
+                    border-color: $color;
+            }
+    }
 
 ```
 
 ```css
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-      content: '';
-      content: none;
-  }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+            content: '';
+            content: none;
+    }
 
-  table {
-      border-collapse: collapse;
-      border-spacing: 0;
-  }
+    table {
+            border-collapse: collapse;
+            border-spacing: 0;
+    }
 ```
