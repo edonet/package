@@ -21,7 +21,7 @@ scope: text.html.markdown
 variables:
 
   # 分隔符
-  begin: '^(```|~~~)'
+  begin: '^(```|~~~)\s*'
   end: '^(```|~~~)\s*$'
 
 
