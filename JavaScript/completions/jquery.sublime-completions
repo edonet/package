@@ -1,5 +1,5 @@
 {
-    "scope": "source.js.jquery -string -comment -constant -meta.selector",
+    "scope": "source.js",
 
     "completions": [
         { "trigger": "jQuery", "contents": "jQuery(${1})$0" },

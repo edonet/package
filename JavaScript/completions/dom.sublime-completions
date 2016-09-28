@@ -245,123 +245,123 @@
 
         // node
         {
-            "trigger": "baseURI\tNode",
+            "trigger": "baseURI\tElement",
             "contents": "baseURI"
         },
         {
-            "trigger": "childNodes\tNode",
+            "trigger": "childNodes\tElement",
             "contents": "childNodes"
         },
         {
-            "trigger": "firstChild\tNode",
+            "trigger": "firstChild\tElement",
             "contents": "firstChild"
         },
         {
-            "trigger": "lastChild\tNode",
+            "trigger": "lastChild\tElement",
             "contents": "lastChild"
         },
         {
-            "trigger": "localName\tNode",
+            "trigger": "localName\tElement",
             "contents": "localName"
         },
         {
-            "trigger": "namespaceURI\tNode",
+            "trigger": "namespaceURI\tElement",
             "contents": "namespaceURI"
         },
         {
-            "trigger": "nextSibling\tNode",
+            "trigger": "nextSibling\tElement",
             "contents": "nextSibling"
         },
         {
-            "trigger": "nodeName\tNode",
+            "trigger": "nodeName\tElement",
             "contents": "nodeName"
         },
         {
-            "trigger": "nodeType\tNode",
+            "trigger": "nodeType\tElement",
             "contents": "nodeType"
         },
         {
-            "trigger": "nodeValue\tNode",
+            "trigger": "nodeValue\tElement",
             "contents": "nodeValue"
         },
         {
-            "trigger": "ownerDocument\tNode",
+            "trigger": "ownerDocument\tElement",
             "contents": "ownerDocument"
         },
         {
-            "trigger": "parentElement\tNode",
+            "trigger": "parentElement\tElement",
             "contents": "parentElement"
         },
         {
-            "trigger": "parentNode\tNode",
+            "trigger": "parentNode\tElement",
             "contents": "parentNode"
         },
         {
-            "trigger": "prefix\tNode",
+            "trigger": "prefix\tElement",
             "contents": "prefix"
         },
         {
-            "trigger": "previousSibling\tNode",
+            "trigger": "previousSibling\tElement",
             "contents": "previousSibling"
         },
         {
-            "trigger": "textContent\tNode",
+            "trigger": "textContent\tElement",
             "contents": "textContent"
         },
         {
-            "trigger": "appendChild\tNode",
+            "trigger": "appendChild\tElement",
             "contents": "appendChild(${1:aChild})"
         },
         {
-            "trigger": "cloneNode\tNode",
+            "trigger": "cloneNode\tElement",
             "contents": "cloneNode(${1:deep})"
         },
         {
-            "trigger": "compareDocumentPosition\tNode",
+            "trigger": "compareDocumentPosition\tElement",
             "contents": "compareDocumentPosition(${1:otherNode})"
         },
         {
-            "trigger": "contains\tNode",
+            "trigger": "contains\tElement",
             "contents": "contains(${1:otherNode})"
         },
         {
-            "trigger": "hasAttributes\tNode",
+            "trigger": "hasAttributes\tElement",
             "contents": "hasAttributes()"
         },
         {
-            "trigger": "hasChildNodes\tNode",
+            "trigger": "hasChildNodes\tElement",
             "contents": "hasChildNodes()"
         },
         {
-            "trigger": "insertBefore\tNode",
+            "trigger": "insertBefore\tElement",
             "contents": "insertBefore(${1:newElement}, ${2:referenceElement})"
         },
         {
-            "trigger": "isDefaultNamespace\tNode",
+            "trigger": "isDefaultNamespace\tElement",
             "contents": "isDefaultNamespace(${1:namespaceURI})"
         },
         {
-            "trigger": "isEqualNode\tNode",
+            "trigger": "isEqualNode\tElement",
             "contents": "isEqualNode(${1:arg})"
         },
         {
-            "trigger": "lookupNamespaceURI\tNode",
+            "trigger": "lookupNamespaceURI\tElement",
             "contents": "lookupNamespaceURI()"
         },
         {
-            "trigger": "lookupPrefix\tNode",
+            "trigger": "lookupPrefix\tElement",
             "contents": "lookupPrefix()"
         },
         {
-            "trigger": "normalize\tNode",
+            "trigger": "normalize\tElement",
             "contents": "normalize()"
         },
         {
-            "trigger": "removeChild\tNode",
+            "trigger": "removeChild\tElement",
             "contents": "removeChild(${1:child})"
         },
         {
-            "trigger": "replaceChild\tNode",
+            "trigger": "replaceChild\tElement",
             "contents": "replaceChild(${1:newChild}, ${2:oldChild})"
         }
     ]
