@@ -1,21 +1,9 @@
 {
-    "cmd": ["node", "--use-strict", "$file"],
+    "cmd": ["server", "-m", "md", "-p", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-    "selector": "source.js",
+    "selector": "text.html.markdown",
     "shell": true,
     "encoding": "utf-8",
-
-    "windows": {
-        "cmd": ["taskkill", "/F", "/IM", "node.exe", "&", "node", "$file"]
-    },
-
-    "linux": {
-        "cmd": ["killall node; node", "$file"]
-    },
-
-    "osx": {
-        "cmd": ["killall node; node $file"]
-    },
 
     "variants": [
         {

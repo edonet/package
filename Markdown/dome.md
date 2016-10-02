@@ -19,20 +19,23 @@ dog's back.
 
 ### Header 3
 
+> ## This is an H2 in a blockquote
+>
 > This is a blockquote.
 >
 > This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote
--------------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.block-level.markdown
 markup.quote.markdown
 
 
+
 Some of these words *are emphasized*.
 Some of these words _are emphasized also_.
--------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.paragraph.markdown
 markup.italic.markdown
@@ -40,19 +43,24 @@ markup.italic.markdown
 
 * Use two asterisks for **strong emphasis**.
 * Or, if you prefer, __use two underscores instead__.
---------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.paragraph.markdown
 markup.bold.markdown
 
+
 *   Candy.
 *   Gum.
 *   Booze.
----------------------------------------------
+
+<!----------------------------->
 text.html.markdown
 markup.list.unnumbered.markdown
 meta.paragraph.list.markdown
 
+
+### Unnumbered list
 +   Candy.
 +   Gum.
 +   Booze.
@@ -61,9 +69,12 @@ meta.paragraph.list.markdown
 -   Gum.
 -   Booze.
 
+
+### Numbered list
 1.  Red
 2.  Green
 3.  Blue
+
 --------------------------------------------------
 text.html.markdown
 markup.list.numbered.markdown
@@ -72,12 +83,13 @@ meta.paragraph.list.markdown
 1. This is an [example link](http://example.com/).
 2. This is an [example link](http://example.com/ "With a Title").
 
-------------------------------------
+<!----------------------------->
 text.html.markdown
 meta.paragraph.markdown
 meta.link.inline.markdown
 string.other.link.title.markdown
-------------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.paragraph.markdown
 meta.link.inline.markdown
@@ -87,12 +99,14 @@ text.html.markdown markup.list.numbered.markdown meta.paragraph.list.markdown me
 
 I get 10 times more traffic from [Google][1] than from
 [Yahoo][2] or [MSN][3].
------------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.paragraph.markdown
 meta.link.reference.markdown
 string.other.link.title.markdown
--------------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.paragraph.markdown
 meta.link.reference.markdown
@@ -101,15 +115,18 @@ constant.other.reference.link.markdown
 [1]: http://google.com/        "Google"
 [2]: http://search.yahoo.com/  "Yahoo Search"
 [3]: http://search.msn.com/    "MSN Search"
------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.link.reference.def.markdown
 constant.other.reference.link.markdown
------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.link.reference.def.markdown
 markup.underline.link.markdown
------------------------------
+
+<!----------------------------->
 text.html.markdown
 meta.link.reference.def.markdown
 string.other.link.description.title.markdown

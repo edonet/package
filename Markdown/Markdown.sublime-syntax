@@ -96,7 +96,7 @@ contexts:
           pop: true
         - include: paragraph
 
-    - match: '^\s*(?x)(\d+\.?)'
+    - match: '^\s*(?x)(\d+\.)'
       scope: markup.list.numbered.markdown
       captures:
         1: punctuation.definition.list_item.markdown
