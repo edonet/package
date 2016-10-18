@@ -107,6 +107,10 @@
             "contents": "setImmediate(${1:func}, ${2:delay})"
         },
         {
+            "trigger": "setTimeout\tWindow",
+            "contents": "setTimeout(${1:timeId})"
+        },
+        {
             "trigger": "clearInterval\tWindow",
             "contents": "clearInterval(${1:timeId})"
         },
@@ -267,6 +271,20 @@
         {
             "trigger": "toPrecision(precision)\tNumber",
             "contents": "toPrecision(${1:precision})"
+        },
+
+        // JSON
+        {
+            "trigger": "JSON\tJSON",
+            "contents": "JSON"
+        },
+        {
+            "trigger": "parse\tJSON",
+            "contents": "parse(${0:string})"
+        },
+        {
+            "trigger": "stringify\tJSON",
+            "contents": "stringify(${0:data})"
         }
     ]
 }

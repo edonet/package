@@ -1,0 +1,18 @@
+import os
+import subprocess
+
+working_dir = os.path.dirname(__file__)
+
+# 执行命令
+def exec_command(cmd):
+    print(cmd)
+    subprocess.call(cmd, shell = True)
+
+# 执行【node】命令
+def node_command(cmd):
+    cmd = os.path.join(working_dir, 'bin', cmd)
+    exec_command(['node', cmd])
+
+
+# node_command('start')
+node_command('exit')
