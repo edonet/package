@@ -1,0 +1,23 @@
+{
+  "name": "edoner",
+  "version": "0.0.1",
+  "description": "Edoner Sublime Text Package",
+  "main": "index.js",
+  "bin": {
+    "edoner": "exit.js"
+  },
+  "scripts": {
+    "test": "node ./bin/start.js"
+  },
+  "keywords": [
+    "Edoner",
+    "Sublime",
+    "Text",
+    "Package"
+  ],
+  "author": "edoner",
+  "license": "ISC",
+  "devDependencies": {
+    "socket.io": "^1.5.0"
+  }
+}
