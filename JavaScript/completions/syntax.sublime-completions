@@ -168,6 +168,10 @@
             "trigger": "extends\tSyntax",
             "contents": "extends"
         },
+        {
+            "trigger": "define\tSyntax",
+            "contents": "define(function(require, exports, module){\n\t$0\n});"
+        },
 
         // function
         {
