@@ -24,6 +24,10 @@ dog's back.
 > This is a blockquote.
 >
 > This is the second paragraph in the blockquote.
+>
+> this is new line
+>
+> this is another new line
 
 <!----------------------------->
 text.html.markdown
@@ -31,7 +35,7 @@ meta.block-level.markdown
 markup.quote.markdown
 
 
-
+#### Header 4
 Some of these words *are emphasized*.
 Some of these words _are emphasized also_.
 
@@ -142,10 +146,11 @@ I start my morning with a cup of coffee and
 
 [ny times]: http://www.nytimes.com/
 
-![alt text](/path/to/img.jpg "Title")
 ![alt text][id]
 
-[id]: /path/to/img.jpg "Title"
+![alt text](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png "Title")
+
+[id]: https://g2.liuker.xyz/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Title"
 
 I strongly recommend against using any `<blink>` tags.
 
