@@ -251,7 +251,7 @@
         },
         {
             "trigger": "disconnect\tcluster",
-            "contents": "disconnect(${1:cb})"
+            "contents": "disconnect(${1:callback})"
         },
         {
             "trigger": "setMaxListeners\tcluster",
@@ -795,7 +795,7 @@
         },
         {
             "trigger": "realpath\tfs",
-            "contents": "realpath(${1:p}, ${2:cache}, ${3:cb})"
+            "contents": "realpath(${1:p}, ${2:cache}, ${3:callback})"
         },
         {
             "trigger": "createReadStream\tfs",
@@ -875,15 +875,15 @@
         },
         {
             "trigger": "ClientRequest\thttp",
-            "contents": "ClientRequest(${1:options}, ${2:cb})"
+            "contents": "ClientRequest(${1:options}, ${2:callback})"
         },
         {
             "trigger": "request\thttp",
-            "contents": "request(${1:options}, ${2:cb})"
+            "contents": "request(${1:options}, ${2:callback})"
         },
         {
             "trigger": "get\thttp",
-            "contents": "get(${1:options}, ${2:cb})"
+            "contents": "get(${1:options}, ${2:callback})"
         },
         {
             "trigger": "Server\thttp",
@@ -1267,7 +1267,7 @@
         },
         {
             "trigger": "connect\ttls",
-            "contents": "connect(${1:/*}, ${2:[port}, ${3:host]}, ${4:options}, ${5:cb}, ${6:*/})"
+            "contents": "connect(${1:/*}, ${2:[port}, ${3:host]}, ${4:options}, ${5:callback}, ${6:*/})"
         },
         {
             "trigger": "createSecurePair\ttls",

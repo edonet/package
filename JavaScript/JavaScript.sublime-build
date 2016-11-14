@@ -19,6 +19,22 @@
 
     "variants": [
         {
+            "name": "Start",
+            "shell": true,
+
+            "windows": {
+                "cmd": ["node", "--use-strict", "$file"]
+            },
+
+            "linux": {
+                "cmd": ["node", "--use-strict", "$file"]
+            },
+
+            "osx": {
+                "cmd": ["node", "--use-strict", "$file"]
+            }
+        },
+        {
             "name": "Exit",
             "shell": true,
 

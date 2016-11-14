@@ -182,5 +182,15 @@
             "trigger": "function name\tSyntax",
             "contents": "function $1($2) {\n\t$3\n}"
         },
+
+        // keyword
+        {
+            "trigger": "callback\tSyntax",
+            "contents": "callback"
+        },
+        {
+            "trigger": "handler\tSyntax",
+            "contents": "handler"
+        }
     ]
 }
