@@ -107,8 +107,8 @@
             "contents": "setImmediate(${1:func}, ${2:delay})"
         },
         {
-            "trigger": "setTimeout\tWindow",
-            "contents": "setTimeout(${1:timeId})"
+            "trigger": "clearTimeout\tWindow",
+            "contents": "clearTimeout(${1:timeId})"
         },
         {
             "trigger": "clearInterval\tWindow",
