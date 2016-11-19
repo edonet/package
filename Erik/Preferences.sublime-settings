@@ -1,0 +1,26 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+    "remember_full_screen": true,
+    "font_face":  "Courier New",
+    "font_size":  14,
+    "line_padding_top":  1,
+    "line_padding_bottom":  1,
+    "highlight_line":  true,
+    "highlight_modified_tabs":  true,
+    "fade_fold_buttons":  false,
+    "word_wrap":  true,
+    "save_on_focus_lost":  true,
+    "show_encoding": true,
+    "trim_trailing_white_space_on_save": true,
+    "tab_size":  4,
+    "translate_tabs_to_spaces":  true,
+    "rulers":  [ 100 ],
+    "spell_check": false,
+    "scroll_past_end": true,
+    "show_line_endings": true,
+    "trim_trailing_white_space_on_save": true,
+    "default_line_ending": "unix",
+    "use_simple_full_screen": false,
+    "open_files_in_new_window": false
+}

@@ -973,7 +973,13 @@ pseude_class = [
     ("after\tClass", ':after'),
     ("first-letter\tClass", ':first-letter'),
     ("first-line\tClass", ':first-line'),
-    ("selection\tClass", ':selection')
+    ("selection\tClass", ':selection'),
+
+    ("choices\tClass", ':choices'),
+    ("frepeat-index\tClass", ':frepeat-index'),
+    ("repeat-item\tClass", ':repeat-item'),
+    ("value\tClass", ':value'),
+    ("placeholder\tClass", ':placeholder')
 ]
 
 # CSS Extends Style

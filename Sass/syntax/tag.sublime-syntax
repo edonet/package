@@ -20,7 +20,7 @@ variables:
   d: 'noscript|object|ol|optgroup|option|output|param|pre|progress|p|q|rb|rp|rtc?|ruby|samp|script|section|select|small|source'
   e: 'span|strong|style|sub|summary|sup|svg|s|table|tbody|td|template|textarea|tfoot|thead|th|time|title|track|tr|ul?|var|video|wbr'
   f: 'svg|desc|defs|g|line|rect|circle|ellipse|polyline|polygon|path|text|tspan|use|clipPath|pattern|symbol|linearGadient|radialGradient|stop'
-  tag: '({{a}}|{{b}}|{{c}}|{{d}}|{{d}}|{{f}})'
+  tag: '({{a}}|{{b}}|{{c}}|{{d}}|{{e}}|{{f}})'
 
 # =======================
 # 定义语法内容

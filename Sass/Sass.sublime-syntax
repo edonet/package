@@ -370,7 +370,7 @@ contexts:
   type-pseudo-class:
     - match: ':(visited|valid|root|right|required|read-write|read-only|out-range|optional|only-of-type|only-child|nth-of-type|nth-last-of-type|nth-last-child|nth-child|not|link|left|last-of-type|last-child|lang|invalid|indeterminate|in-range|hover|focus|first-of-type|first-line|first-letter|first-child|first|enabled|empty|disabled|default|checked|before|after|active)'
       scope: entity.other.attribute-name.tag.pseudo-class.sass
-    - match: '::(after|before|choices|first-letter|first-line|repeat-index|repeat-item|selection|value)'
+    - match: '::(after|before|choices|first-letter|first-line|repeat-index|repeat-item|selection|value|placeholder)'
       scope: entity.other.attribute-name.tag.pseudo-element.sass
     - match: '::?(-webkit-|-moz-|-ms-|-o-)[\w-]+'
       scope: entity.other.attribute-name.tag.pseudo.sass
