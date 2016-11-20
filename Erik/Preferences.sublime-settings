@@ -24,7 +24,7 @@
     "remember_full_screen": true,
     "remember_open_files": true,
     "save_on_focus_lost":  true,
-    "scroll_past_end": true,
+    "scroll_past_end": false,
     "show_encoding": true,
     "show_line_endings": true,
     "spell_check": false,
