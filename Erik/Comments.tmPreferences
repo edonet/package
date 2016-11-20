@@ -5,7 +5,7 @@
   <key>name</key>
   <string>Comments</string>
   <key>scope</key>
-  <string>source.scss, source.sass</string>
+  <string>source.js, source.scss, source.sass</string>
   <key>settings</key>
   <dict>
     <key>shellVariables</key>
