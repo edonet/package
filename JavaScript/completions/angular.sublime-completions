@@ -232,7 +232,7 @@
 		},
         {
 			"trigger": "run\tangular",
-			"contents": "run('${1:name}', [${2:'$3', }function($3){\n\t$4\n}])"
+			"contents": "run(function($1){\n\t$2\n})"
 		},
         {
 			"trigger": "service\tangular",
