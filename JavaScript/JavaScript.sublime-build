@@ -14,7 +14,9 @@
     },
 
     "osx": {
-        "cmd": ["killall node; node $file"]
+        "cmd": ["killall node; node $file"],
+        "path": "/usr/local/bin:/usr/bin"
+
     },
 
     "variants": [
@@ -23,15 +25,16 @@
             "shell": true,
 
             "windows": {
-                "cmd": ["node", "--use-strict", "$file"]
+                "cmd": ["node --use-strict $file"]
             },
 
             "linux": {
-                "cmd": ["node", "--use-strict", "$file"]
+                "cmd": ["node --use-strict $file"]
             },
 
             "osx": {
-                "cmd": ["node", "--use-strict", "$file"]
+                "cmd": ["node --use-strict $file"],
+                "path": "/usr/local/bin"
             }
         },
         {
@@ -47,7 +50,8 @@
             },
 
             "osx": {
-                "cmd": ["killall node"]
+                "cmd": ["killall node"],
+                "path": "/usr/bin"
             }
         }
     ]
