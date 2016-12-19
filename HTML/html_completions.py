@@ -210,7 +210,9 @@ tag_list = [
     ("ion-thumbnail", "ion-thumbnail>\n\t$0\n</ion-thumbnail>"),
     ("ion-title", "ion-title>$0</ion-title>"),
     ("ion-toggle", "ion-toggle [(ngModel)]=\"$1\">$0</ion-toggle>"),
-    ("ion-toolbar", "ion-toolbar>\n\t<ion-title>$0</ion-title>\n</ion-toolbar>")
+    ("ion-toolbar", "ion-toolbar>\n\t<ion-title>$0</ion-title>\n</ion-toolbar>"),
+    ("ion-view", "ion-view>$0</ion-view>"),
+    ("ion-nav-view", "ion-nav-view>$0</ion-nav-view>")
 ]
 
 # SVG Tag List
