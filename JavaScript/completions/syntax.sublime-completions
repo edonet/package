@@ -101,6 +101,10 @@
             "contents": "break;"
         },
         {
+            "trigger": "yield\tSyntax",
+            "contents": "yield$1;"
+        },
+        {
             "trigger": "return\tSyntax",
             "contents": "return$1;"
         },
