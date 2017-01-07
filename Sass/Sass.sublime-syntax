@@ -147,7 +147,7 @@ contexts:
   at-rule:
     - match: '((@)(charset|import|font-face|namespace|viewport))\b'
       scope: keyword.control.sass
-    - match: '@(at-root|debug|error|extend|for|each|return|warn|while|if|else|content)\b'
+    - match: '@(at-root|debug|error|extend|for|each|return|warn|while|if|else if|else|content)\b'
       scope: keyword.control.sass
     - match: '(@include)\s([\w-]+)\(?'
       captures:
@@ -287,8 +287,13 @@ contexts:
       scope: keyword.control.sass
 
   type-unquoted-string:
-    - match: '(?<=[\s\(])[\w\.\-\/]+(?=[\s\)])'
+    - match: '(?<=[\s\(])[\w\.\-\/]+'
       scope: string.unquoted.sass
+      push:
+        - match: '[\w\.\-\/]*(?=[\s\)\;])'
+          scope: string.unquoted.sass
+          pop: true
+        - include: type-paramter-decode
 
   type-bracket:
     - match: '(?<=\s)\('
