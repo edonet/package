@@ -283,7 +283,7 @@ contexts:
         - include: type-paramter
 
   type-operator:
-    - match: '(?<=\s)([>\+\/\-%=\*]+)(?=\s)'
+    - match: '(?<=\s)([>\+\/\-%=\*!]+)(?=\s)'
       scope: keyword.control.sass
 
   type-unquoted-string:
