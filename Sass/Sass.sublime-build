@@ -1,7 +1,15 @@
 {
-    "cmd": ["sass", "$file", "${file_path}/${file_base_name}.css", "--no-cache", "--style", "compact"],
+    "cmd": ["sass", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.scss",
     "encoding": "utf-8",
-    "shell": true
+    "shell": true,
+
+    "variants": [
+        {
+            "name": "ruby",
+            "cmd": ["sass", "$file", "${file_path}/${file_base_name}.css", "--no-cache", "--style", "compact"],
+            "shell": true
+        }
+    ]
 }

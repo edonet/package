@@ -53,7 +53,7 @@ variables:
   padding: 'padding-bottom|padding-left|padding-right|padding-top|padding'
   position: 'position|left|right|top|bottom|z-index'
   size: 'height|width|max-height|max-width|min-height|min-width|zoom|max-zoom|min-zoom|max-lines|initial-scale|min-scale|max-scale|user-zoom'
-  scroll: 'scroll-snap-coordinate|scroll-snap-destination|scroll-snap-points-x|scroll-snap-points-y|scroll-snap-type'
+  scroll: 'scrollbar-face-color|scrollbar-highlight-color|scrollbar-shadow-color|scrollbar-3Dlight-color|scrollbar-arrow-color|scrollbar-track-color|scrollbar-darkshadow-color|scroll-snap-coordinate|scroll-snap-destination|scroll-snap-points-x|scroll-snap-points-y|scroll-snap-type'
   shape: 'shape-image-threshold|shape-margin|shape-outside|image-orientation|image-resolution'
   text: 'direction|text-align-last|text-align|text-combine-upright|text-decoration-color|text-decoration-line|text-decoration-skip|text-decoration-style|text-decoration|text-emphasis-color|text-emphasis-position|text-emphasis-style|text-emphasis|text-height|text-indent|text-justify|text-orientation|text-overflow|text-shadow|text-transform|text-underline-position|font-smoothing|text-stroke-width|osx-font-smoothing'
   transform: 'transform-box|transform-origin|transform-style|transform|perspective|perspective-origin'
