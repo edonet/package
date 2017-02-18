@@ -64,4 +64,4 @@ export GREP_OPTIONS='--color=auto'
 #
 ##
 export TERM="xterm-color"
-export PS1='\n\[\033[33m\][\t] \[\033[00m\]\u@\h: \[\033[36m\]\w \n\[\033[00m\]\$ '
+export PS1='\n\[\033[33m\][\t] \[\033[00m\]\u@\h: \[\033[36m\]\w/ \n\[\033[00m\]\$ '
