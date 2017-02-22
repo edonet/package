@@ -38,3 +38,6 @@ jspm_packages
 
 # MPV cache file
 watch_later
+
+# mac
+.DS_Store

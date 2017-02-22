@@ -1,0 +1,79 @@
+# Virtual Hosts
+#
+# Required modules: mod_log_config
+
+# If you want to maintain multiple domains/hostnames on your
+# machine you can setup VirtualHost containers for them. Most configurations
+# use only name-based virtual hosts so the server doesn't need to worry about
+# IP addresses. This is indicated by the asterisks in the directives below.
+#
+# Please see the documentation at
+# <URL:http://httpd.apache.org/docs/2.4/vhosts/>
+# for further details before you try to setup virtual hosts.
+#
+# You may use the command line option '-S' to verify your virtual host
+# configuration.
+
+#
+# VirtualHost example:
+# Almost any Apache directive may go into a VirtualHost container.
+# The first VirtualHost section is used for all requests that do not
+# match a ServerName or ServerAlias in any <VirtualHost> block.
+#
+
+# App: appcheckroom
+<VirtualHost *:10088>
+    ServerAdmin edonet@163.com
+    DocumentRoot "/Users/lifx/www/appcheckroom/www"
+    ServerName appcheckroom.com
+    ServerAlias www.appcheckroom.com
+    ErrorLog "/private/var/log/apache2/appcheckroom.com-error_log"
+    CustomLog "/private/var/log/apache2/appcheckroom.com-access_log" common
+</VirtualHost>
+
+# App: appcontractor
+<VirtualHost *:10089>
+    ServerAdmin edonet@163.com
+    DocumentRoot "/Users/lifx/www/appcontractor/www"
+    ServerName appcontractor.com
+    ServerAlias www.appcontractor.com
+    ErrorLog "/private/var/log/apache2/appcontractor.com-error_log"
+    CustomLog "/private/var/log/apache2/appcontractor.com-access_log" common
+</VirtualHost>
+
+# PC: mobilecheckroom
+<VirtualHost *:80>
+    ServerAdmin edonet@163.com
+    DocumentRoot "/Users/lifx/www/mobilecheckroom/web"
+    ServerName yf-dev.myysq.com.cn
+    ServerAlias yf-dev.myysq.com.cn
+    ErrorLog "/private/var/log/apache2/mobilecheckroom.com-error_log"
+    CustomLog "/private/var/log/apache2/mobilecheckroom.com-access_log" common
+</VirtualHost>
+
+# PC: mobilehouseinspection
+<VirtualHost *:80>
+    Header add Access-Control-Allow-Origin *
+    Header add Access-Control-Allow-Credentials true
+    Header add Access-Control-Allow-Methods 'GET, POST, OPTIONS'
+    Header add Access-Control-Allow-Headers 'Keep-Alive,User-Agent,If-Modified-Since,Content-Type'
+    Header add Access-Control-Max-Age 1728000
+
+    ServerAdmin edonet@163.com
+    DocumentRoot "/Users/lifx/www/mobilehouseinspection/web"
+    ServerName appyf-dev.myysq.com.cn
+    ServerAlias appyf-dev.myysq.com.cn
+    ErrorLog "/private/var/log/apache2/mobilehouseinspection.com-error_log"
+    CustomLog "/private/var/log/apache2/mobilehouseinspection.com-access_log" common
+</VirtualHost>
+
+# PC: passport
+<VirtualHost *:80>
+    ServerAdmin edonet@163.com
+    DocumentRoot "/Users/lifx/www/passport/web"
+    ServerName passport-dev.myysq.com.cn
+    ServerAlias passport-dev.myysq.com.cn
+    ErrorLog "/private/var/log/apache2/passport.com-error_log"
+    CustomLog "/private/var/log/apache2/passport.com-access_log" common
+</VirtualHost>
+

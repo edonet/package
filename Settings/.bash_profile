@@ -32,7 +32,7 @@
 ##
 export CLICOLOR=1
 export LS_OPTIONS='--color=auto'
-export LSCOLORS=gxfxaxdxcxegedabagacad
+export LSCOLORS=gxfxaxdxbxegedabagacdx
 
 ##
 # Tell grep to highlight matches

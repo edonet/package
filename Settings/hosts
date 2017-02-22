@@ -34,9 +34,32 @@
 
 
 ###########################
-# Sublime Text Start
-50.116.34.243 packagecontrol.io
-50.116.34.243 sublime.wbond.net
-# Sublime Text End
+# Mysoft Start
+127.0.0.1   api-dev.myysq.com.cn
+127.0.0.1   yd-dev.myysq.com.cn
+127.0.0.1   kefu-dev.myysq.com.cn
+127.0.0.1   qyfw-dev.myysq.com.cn
+127.0.0.1   game-dev.myysq.com.cn
+127.0.0.1   manage-dev.myysq.com.cn
+127.0.0.1   member-dev.myysq.com.cn
+127.0.0.1   yf-dev.myysq.com.cn
+127.0.0.1   appyf-dev.myysq.com.cn
+127.0.0.1   app-dev.myysq.com.cn
+127.0.0.1   passport-dev.myysq.com.cn
+127.0.0.1   property-dev.myysq.com.cn
+127.0.0.1   wx-dev.myysq.com.cn
+127.0.0.1   rental-dev.myysq.com.cn
+127.0.0.1   reportcenter-dev.myysq.com.cn
+127.0.0.1   fw-dev.myysq.com.cn
+127.0.0.1   vyd-dev.myysq.com.cn
+127.0.0.1   vengineer-dev.myysq.com.cn
+127.0.0.1   vgame-dev.myysq.com.cn
+127.0.0.1   vmember-dev.myysq.com.cn
+127.0.0.1   vfw-dev.myysq.com.cn
+127.0.0.1   vshop-dev.myysq.com.cn
+127.0.0.1   msg-dev.myysq.com.cn
+127.0.0.1   info-dev.myysq.com.cn
+127.0.0.1   tenant-dev.myysq.com.cn
+# Mysoft End
 ###########################
 
