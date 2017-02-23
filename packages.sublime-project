@@ -6,5 +6,19 @@
             "folder_exclude_patterns": ["backup", "node_modules"],
             "follow_symlinks": true
 		}
+	],
+	"build_systems":
+	[
+		// install
+        {
+            "name": "Install",
+            "shell": true,
+            "cmd": ["node bin/install.js \"$packages\""],
+            "working_dir": "${project_path:${folder}}",
+
+            "osx": {
+		        "path": "/usr/local/bin:/usr/bin"
+		    }
+        }
 	]
 }

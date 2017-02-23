@@ -1,0 +1,28 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "sublime text packages",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "node bin/index.js"
+  },
+  "packages": [
+    "Erik", "HTML", "JavaScript", "Markdown", "Sass", "SVG"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edonet/packages.git"
+  },
+  "keywords": [
+    "sublime",
+    "text",
+    "packages"
+  ],
+  "author": "lifx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edonet/packages/issues"
+  },
+  "homepage": "https://github.com/edonet/packages#readme"
+}
