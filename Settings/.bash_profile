@@ -65,3 +65,30 @@ export GREP_OPTIONS='--color=auto'
 ##
 export TERM="xterm-color"
 export PS1='\n\[\033[33m\][\t] \[\033[00m\]\u@\h: \[\033[36m\]\w/ \n\[\033[00m\]\$ '
+
+
+##
+#
+# ————————————————————————————————————————————————————
+# Sublime Text Command line
+# ————————————————————————————————————————————————————
+# Usage: subl [arguments] [files]         edit the given files
+#    or: subl [arguments] [directories]   open the given directories
+#    or: subl [arguments] -               edit stdin
+#
+# Arguments:
+#   --project <project>: Load the given project
+#   --command <command>: Run the given command
+#   -n or --new-window:  Open a new window
+#   -a or --add:         Add folders to the current window
+#   -w or --wait:        Wait for the files to be closed before returning
+#   -b or --background:  Don't activate the application
+#   -s or --stay:        Keep the application activated after closing the file
+#   -h or --help:        Show help (this message) and exit
+#   -v or --version:     Show version and exit
+#
+# --wait is implied if reading from stdin. Use --stay to not switch back
+# to the terminal when a file is closed (only relevant if waiting for a file).
+#
+##
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
