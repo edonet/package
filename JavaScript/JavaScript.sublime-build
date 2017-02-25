@@ -21,7 +21,7 @@
 
     "variants": [
         {
-            "name": "Start",
+            "name": "Run",
             "shell": true,
 
             "windows": {
@@ -35,23 +35,6 @@
             "osx": {
                 "cmd": ["node --use-strict $file"],
                 "path": "/usr/local/bin"
-            }
-        },
-        {
-            "name": "Exit",
-            "shell": true,
-
-            "windows": {
-                "cmd": ["taskkill", "/F", "/IM", "node.exe"]
-            },
-
-            "linux": {
-                "cmd": ["killall node"]
-            },
-
-            "osx": {
-                "cmd": ["killall node"],
-                "path": "/usr/bin"
             }
         }
     ]

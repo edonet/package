@@ -29,7 +29,7 @@ packages.length && packages.forEach(name => {
 		dist = path.resolve(dir, name);
 
 	// 输出关联目录
-	console.log(`--> ${src} : ${dist}`);
+	console.log(`==> ${src} : ${dist}`);
 
 	// 生成软链接
 	fs.symlink(src, dist, err => err && console.error(err));

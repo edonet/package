@@ -11,14 +11,26 @@
 	[
 		// install
         {
-            "name": "Install",
+            "name": "Packages: Install",
             "shell": true,
-            "cmd": ["node bin/install.js \"$packages\""],
             "working_dir": "${project_path:${folder}}",
 
             "osx": {
+                "cmd": ["node bin/install.js \"$packages\""],
 		        "path": "/usr/local/bin:/usr/bin"
 		    }
+        },
+
+        // config
+        {
+            "name": "Packages: Config",
+            "shell": true,
+            "working_dir": "${project_path:${folder}}",
+
+            "osx": {
+                "cmd": ["node bin/config.js"],
+                "path": "/usr/local/bin:/usr/bin"
+            }
         }
 	]
 }

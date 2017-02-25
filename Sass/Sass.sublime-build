@@ -5,6 +5,11 @@
     "encoding": "utf-8",
     "shell": true,
 
+    "osx": {
+        "cmd": ["sass $file"],
+        "path": "/usr/local/bin:/usr/bin"
+    },
+
     "variants": [
         {
             "name": "ruby",
