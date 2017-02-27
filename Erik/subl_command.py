@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+import os
 import subprocess
 
 
@@ -8,6 +9,10 @@ class SublCommand(sublime_plugin.WindowCommand):
 
     # 执行【Subl】命令
     def run(self, args = []):
+
+        # 替换参数中的环境变量
+        env = self.window.extract_variables()
+        args = [sublime.expand_variables(x, env) for x in args]
 
         # 获取【sublime】执行路径
         executable_path = sublime.executable_path()

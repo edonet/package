@@ -60,30 +60,10 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/lifx/web/Packages/Erik/switch_project.py",
+			"file": "HTML/HTML.sublime-syntax",
 			"settings":
 			{
-				"buffer_size": 2448,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "switch_project.py"
-			}
-		},
-		{
-			"file": "/Users/lifx/web/Packages/Erik/subl_command.py",
-			"settings":
-			{
-				"buffer_size": 887,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "subl_command.py"
-			}
-		},
-		{
-			"file": "Erik/Default (OSX).sublime-keymap",
-			"settings":
-			{
-				"buffer_size": 66,
+				"buffer_size": 15680,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -284,6 +264,14 @@
 		"height": 190.0,
 		"history":
 		[
+			"window.show_input_panel('abc', '', print, print, print)",
+			"window.show_input_panel('abc')",
+			"window.run_command('subl', { 'args': ['-v', '$file'] })",
+			"window.run_command('subl', { 'args': ['-v', '$name'] })",
+			"window.run_command('subl', { 'args': ['-v', '$filename'] })",
+			"window.run_command('subl', { 'argv': ['-v', '$filename'] })",
+			"window.run_command('subl', { 'args': ['-v', '$file'] })",
+			"window.run_command('subl', { 'argv': ['-v', '$file'] })",
 			"window.extract_variables()",
 			"window.run_command('subl', {'args': ['-n'] })",
 			"window.run_command('subl', {'args': ['-v', '$file'] })",
@@ -330,15 +318,20 @@
 	"expanded_folders":
 	[
 		"/Users/lifx/web/packages",
-		"/Users/lifx/web/packages/bin",
-		"/Users/lifx/web/packages/Edoner",
 		"/Users/lifx/web/packages/Erik",
-		"/Users/lifx/web/packages/Sass",
-		"/Users/lifx/web/packages/Sass/completions"
+		"/Users/lifx/web/packages/HTML",
+		"/Users/lifx/web/packages/Settings"
 	],
 	"file_history":
 	[
+		"/Users/lifx/web/packages/Settings/hosts",
 		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
+		"/Users/lifx/web/packages/Erik/subl_command.py",
+		"/Users/lifx/web/packages/Erik/switch_project.py",
+		"/Users/lifx/web/packages/Settings/.gitconfig",
+		"/Users/lifx/web/Packages/Erik/switch_project.py",
+		"/Users/lifx/web/Packages/Erik/subl_command.py",
+		"/Users/lifx/web/packages/Erik/Default (OSX).sublime-keymap",
 		"/Users/lifx/web/packages/Settings/.bash_profile",
 		"/Users/lifx/web/packages/JavaScript/JavaScript.sublime-build",
 		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
@@ -348,7 +341,6 @@
 		"/Users/lifx/web/packages/packages.sublime-project",
 		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
 		"/Users/lifx/web/Packages/bin/config.js",
-		"/Users/lifx/web/packages/Settings/.gitconfig",
 		"/Users/lifx/web/packages/package.json",
 		"/Users/lifx/web/packages/npm-debug.log",
 		"/Users/lifx/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -374,7 +366,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -388,6 +380,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"entity",
 			"load_json_file",
 			"packages",
 			"target",
@@ -434,92 +427,32 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/lifx/web/Packages/Erik/switch_project.py",
+					"file": "HTML/HTML.sublime-syntax",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2448,
+						"buffer_size": 15680,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2097,
-								2097
+								7897,
+								7897
 							]
 						],
 						"settings":
 						{
-							"auto_name": "switch_project.py",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1416.0,
+						"translation.y": 3995.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/lifx/web/Packages/Erik/subl_command.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 887,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"auto_name": "subl_command.py",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Erik/Default (OSX).sublime-keymap",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 66,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								66,
-								66
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]

@@ -68,7 +68,11 @@ def format_project(data):
     # 替换项目文件路径
     path = re.sub('\.sublime-workspace$', '.sublime-project', data)
 
-    return [name, path]
+    # 获取用户文件夹目录
+    upath = os.path.expanduser('~')
+
+    # 返回项目信息
+    return { 'desc': [name, path.replace(upath, '~')], 'path': path }
 
 
 # 定义切换项目命令
@@ -85,7 +89,7 @@ class SwitchProjectCommand(sublime_plugin.WindowCommand):
             return None
 
         # 获取项目文件路径
-        fpath = project[1]
+        fpath = project['path']
 
         # 选择的不是当前项目时执行
         if fpath != self.current_project:
@@ -113,7 +117,7 @@ class SwitchProjectCommand(sublime_plugin.WindowCommand):
 
             # 显示项目选择列表
             self.window.show_quick_panel(
-                items = self.projects,
+                items = [ x['desc'] for x in self.projects ],
                 on_select = lambda idx: self.on_select_project(idx, self.projects[idx])
             )
 
