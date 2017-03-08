@@ -1,7 +1,7 @@
 {
     "cmd": ["sass", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-    "selector": "source.scss",
+    "selector": "source.sass",
     "encoding": "utf-8",
     "shell": true,
 

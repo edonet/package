@@ -59,15 +59,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "HTML/HTML.sublime-syntax",
-			"settings":
-			{
-				"buffer_size": 15680,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
@@ -320,10 +311,15 @@
 		"/Users/lifx/web/packages",
 		"/Users/lifx/web/packages/Erik",
 		"/Users/lifx/web/packages/HTML",
+		"/Users/lifx/web/packages/Sass",
 		"/Users/lifx/web/packages/Settings"
 	],
 	"file_history":
 	[
+		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
+		"/Users/lifx/web/packages/Erik/Preferences (OSX).sublime-settings",
+		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
+		"/Users/lifx/web/packages/HTML/HTML.sublime-syntax",
 		"/Users/lifx/web/packages/Settings/hosts",
 		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
 		"/Users/lifx/web/packages/Erik/subl_command.py",
@@ -334,12 +330,10 @@
 		"/Users/lifx/web/packages/Erik/Default (OSX).sublime-keymap",
 		"/Users/lifx/web/packages/Settings/.bash_profile",
 		"/Users/lifx/web/packages/JavaScript/JavaScript.sublime-build",
-		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
 		"/Users/lifx/web/packages/Settings/.eslintrc",
 		"/Users/lifx/web/packages/bin/config.js",
 		"/Users/lifx/web/packages/bin/install.js",
 		"/Users/lifx/web/packages/packages.sublime-project",
-		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
 		"/Users/lifx/web/Packages/bin/config.js",
 		"/Users/lifx/web/packages/package.json",
 		"/Users/lifx/web/packages/npm-debug.log",
@@ -366,7 +360,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -422,39 +416,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "HTML/HTML.sublime-syntax",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15680,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7897,
-								7897
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3995.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
