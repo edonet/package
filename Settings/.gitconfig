@@ -5,6 +5,30 @@
 [core]
     quotepath = false
 
+# [color]
+#     branch = auto
+#     diff = auto
+#     status = auto
+#     grep = auto
+#     ui = auto
+#     interactive = auto
+
+# [color "branch"]
+#     current = yellow reverse
+#     local = yellow
+#     remote = green
+
+[color "diff"]
+#     meta = yellow
+#     frag = magenta
+#     old = red
+    new = yellow
+
+# [color "status"]
+#     added = yellow
+#     changed = green
+#     untracked = cyan
+
 [gui]
 
     # 代码库统一使用utf-8

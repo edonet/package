@@ -59,6 +59,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Erik/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1170,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
@@ -316,6 +325,7 @@
 	],
 	"file_history":
 	[
+		"/Users/lifx/web/packages/Settings/.gitconfig",
 		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
 		"/Users/lifx/web/packages/Erik/Preferences (OSX).sublime-settings",
 		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
@@ -324,7 +334,6 @@
 		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
 		"/Users/lifx/web/packages/Erik/subl_command.py",
 		"/Users/lifx/web/packages/Erik/switch_project.py",
-		"/Users/lifx/web/packages/Settings/.gitconfig",
 		"/Users/lifx/web/Packages/Erik/switch_project.py",
 		"/Users/lifx/web/Packages/Erik/subl_command.py",
 		"/Users/lifx/web/packages/Erik/Default (OSX).sublime-keymap",
@@ -416,8 +425,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Erik/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
