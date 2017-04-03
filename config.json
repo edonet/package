@@ -1,0 +1,20 @@
+{
+    "settings": [
+        ".vimrc",
+        ".bash_profile",
+        ".yarnrc",
+        ".gitconfig",
+        ".eslintrc"
+    ],
+    "etc": [
+        "hosts"
+    ],
+    "packages": [
+        "Erik",
+        "HTML",
+        "JavaScript",
+        "Markdown",
+        "Sass",
+        "SVG"
+    ]
+}

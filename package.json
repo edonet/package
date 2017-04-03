@@ -6,12 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "settings": [
-    ".vimrc", ".bash_profile", ".gitconfig", ".eslintrc"
-  ],
-  "packages": [
-    "Erik", "HTML", "JavaScript", "Markdown", "Sass", "SVG"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edonet/packages.git"
@@ -26,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/edonet/packages/issues"
   },
-  "homepage": "https://github.com/edonet/packages#readme"
+  "homepage": "https://github.com/edonet/packages#readme",
+  "bin": {
+    "nlink": "bin/nlink.js"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
+    "gulp": "^3.9.1",
+    "react-native-cli": "^2.0.1",
+    "webpack": "^2.3.2"
+  }
 }

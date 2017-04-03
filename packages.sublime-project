@@ -31,6 +31,54 @@
                 "cmd": ["node bin/config.js"],
                 "path": "/usr/local/bin:/usr/bin"
             }
+        },
+
+        // hosts
+        {
+            "name": "Packages: Hosts",
+            "shell": true,
+            "working_dir": "${project_path:${folder}}",
+
+            "osx": {
+                "cmd": ["node bin/hosts.js"],
+                "path": "/usr/local/bin:/usr/bin"
+            }
+        },
+
+        // link
+        {
+            "name": "Packages: Link",
+            "shell": true,
+            "working_dir": "${project_path:${folder}}",
+
+            "osx": {
+                "cmd": ["node bin/nlink.js"],
+                "path": "/usr/local/bin:/usr/bin"
+            }
+        },
+
+        // link
+        {
+            "name": "Packages: Unlink",
+            "shell": true,
+            "working_dir": "${project_path:${folder}}",
+
+            "osx": {
+                "cmd": ["node bin/nlink.js -d"],
+                "path": "/usr/local/bin:/usr/bin"
+            }
+        },
+
+        // clean
+        {
+            "name": "Packages: Clean",
+            "shell": true,
+            "working_dir": "${project_path:${folder}}",
+
+            "osx": {
+                "cmd": ["node bin/clean.js"],
+                "path": "/usr/local/bin:/usr/bin"
+            }
         }
 	]
 }

@@ -92,3 +92,59 @@ export PS1='\n\[\033[33m\][\t] \[\033[00m\]\u@\h: \[\033[36m\]\w/ \n\[\033[00m\]
 #
 ##
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+
+##
+#
+# ————————————————————————————————————————————————————
+# 替换【homebrew】默认源
+# ————————————————————————————————————————————————————
+# 参考：https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git
+#
+# ————————————————————————————————————————————————————
+# 【homebrew】主要分两部分：
+# ————————————————————————————————————————————————————
+#    1. git repo（位于GitHub）
+#    2. 二进制bottles（位于bintray）
+#
+# ————————————————————————————————————————————————————
+# 替换为【中科大镜像】【brew.git】:
+# ————————————————————————————————————————————————————
+# cd "$(brew --repo)"
+# git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+#
+# ————————————————————————————————————————————————————
+# 重置【brew.git】:
+# ————————————————————————————————————————————————————
+# cd "$(brew --repo)"
+# git remote set-url origin https://github.com/Homebrew/brew.git
+#
+# ————————————————————————————————————————————————————
+# 替换为【中科大镜像】【homebrew-core.git】:
+# ————————————————————————————————————————————————————
+# cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+# git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+#
+# ————————————————————————————————————————————————————
+# 重置【homebrew-core.git】:
+# ————————————————————————————————————————————————————
+# cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+# git remote set-url origin https://github.com/Homebrew/homebrew-core.git
+#
+# ————————————————————————————————————————————————————
+# 替换【Homebrew Bottles】源
+# ————————————————————————————————————————————————————
+#
+##
+export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles'
+
+
+##
+#
+# ————————————————————————————————————————————————————
+# 添加用户【bin】路径
+# ————————————————————————————————————————————————————
+# 添加当前【node_modules/.bin】目录到用户文件夹
+#
+##
+export PATH="$PATH:$HOME/.bin"
