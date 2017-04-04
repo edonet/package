@@ -52,6 +52,6 @@ function remove(dir, files) {
  * 移除配置文件
  ***************************************
  */
-remove(homedir, ['.bin']);
 remove(homedir, config.settings);
+remove(homedir, ['.bin', '.config/mpv']);
 remove('/usr/local/bin', config.bin);

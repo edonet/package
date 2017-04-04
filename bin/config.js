@@ -15,8 +15,7 @@ const
     symlink = require('./symlink'),
     config = require('../config.json'),
     cwd = process.cwd(),
-    homedir = os.homedir(),
-    settings = path.resolve(cwd, 'settings');
+    homedir = os.homedir();
 
 
 /*
@@ -25,7 +24,7 @@ const
  ***************************************
  */
 symlink(
-    settings,
+    path.resolve(cwd, 'settings'),
     homedir,
     config.settings || []
 );
@@ -39,4 +38,15 @@ symlink(
     path.resolve(cwd, 'node_modules'),
     homedir,
     ['.bin']
+);
+
+/*
+ ***************************************
+ * 执行生成【mpv】配置目录
+ ***************************************
+ */
+symlink(
+    cwd,
+    path.resolve(homedir, '.config'),
+    ['mpv']
 );
