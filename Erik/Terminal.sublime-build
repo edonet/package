@@ -2,8 +2,7 @@
     "shell": true,
 
     "osx": {
-        "cmd": ["terminal"],
-        "path": "/usr/local/bin:/usr/bin"
+        "cmd": ["terminal"]
     },
 
     "variants": [
@@ -43,8 +42,7 @@
             "shell": true,
 
             "osx": {
-                "cmd": ["dist --config=$file"],
-                "path": "/usr/local/bin:/usr/bin"
+                "cmd": ["dist --config=$file"]
             }
         },
 
@@ -55,8 +53,7 @@
             "working_dir": "${file_path:${folder}}",
 
             "osx": {
-                "cmd": ["server $file_path"],
-                "path": "/usr/local/bin:/usr/bin"
+                "cmd": ["server $file_path"]
             }
         }
     ]

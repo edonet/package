@@ -7,7 +7,7 @@
 
     "osx": {
         "cmd": ["sass $file"],
-        "path": "/usr/local/bin:/usr/bin"
+        "shell": true
     },
 
     "variants": [

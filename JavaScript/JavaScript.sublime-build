@@ -14,9 +14,7 @@
     },
 
     "osx": {
-        "cmd": ["killall node; node $file"],
-        "path": "/usr/local/bin:/usr/bin"
-
+        "cmd": ["killall node; node $file"]
     },
 
     "variants": [
@@ -33,8 +31,7 @@
             },
 
             "osx": {
-                "cmd": ["node --use-strict $file"],
-                "path": "/usr/local/bin"
+                "cmd": ["node --use-strict $file"]
             }
         }
     ]

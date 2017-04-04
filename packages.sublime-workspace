@@ -79,26 +79,8 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Settings/.bash_profile",
-			"settings":
-			{
-				"buffer_size": 4402,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bin/thunkify.js",
-			"settings":
-			{
-				"buffer_size": 520,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
-	"build_system": "Packages: Link",
+	"build_system": "Packages: Config",
 	"build_system_choices":
 	[
 		[
@@ -441,7 +423,7 @@
 				]
 			],
 			[
-				"Packages: Unlink",
+				"Packages: Link",
 				""
 			]
 		],
@@ -501,7 +483,7 @@
 				]
 			],
 			[
-				"Packages: Link",
+				"Packages: Config",
 				""
 			]
 		],
@@ -840,39 +822,41 @@
 	[
 		"/Users/lifx/web/packages",
 		"/Users/lifx/web/packages/bin",
-		"/Users/lifx/web/packages/Settings"
+		"/Users/lifx/web/packages/Erik",
+		"/Users/lifx/web/packages/JavaScript"
 	],
 	"file_history":
 	[
+		"/Users/lifx/web/packages/Erik/Preferences (OSX).sublime-settings",
+		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
+		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
+		"/Users/lifx/web/packages/JavaScript/JavaScript.sublime-build",
+		"/Users/lifx/web/packages/bin/config.js",
+		"/Users/lifx/web/packages/bin/clean.js",
+		"/Users/lifx/web/packages/MPV/input.conf",
+		"/Users/lifx/web/packages/package.json",
+		"/Users/lifx/web/packages/Settings/.bash_profile",
 		"/Users/lifx/web/packages/config.json",
 		"/Users/lifx/web/packages/packages.sublime-project",
-		"/Users/lifx/web/packages/package.json",
 		"/Users/lifx/web/packages/bin/nlink.js",
 		"/Users/lifx/web/packages/bin/thunkify.js",
 		"/Users/lifx/web/Packages/config.json",
 		"/Users/lifx/web/packages/bin/bin.js",
-		"/Users/lifx/web/packages/bin/clean.js",
 		"/Users/lifx/web/packages/bin/hosts.js",
-		"/Users/lifx/web/packages/bin/config.js",
 		"/Users/lifx/web/Packages/bin/symlink.js",
 		"/Users/lifx/web/Packages/bin/copy.js",
 		"/Users/lifx/web/packages/bin/stat.js",
 		"/Users/lifx/web/packages/bin/install.js",
 		"/Users/lifx/web/packages/Settings/hosts",
-		"/Users/lifx/web/packages/Settings/.bash_profile",
 		"/Users/lifx/web/Packages/Settings/.yarnrc",
 		"/Users/lifx/web/packages/Erik/Default (OSX).sublime-keymap",
 		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
 		"/Users/lifx/web/packages/Settings/.gitconfig",
-		"/Users/lifx/web/packages/Erik/Preferences (OSX).sublime-settings",
-		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
 		"/Users/lifx/web/packages/HTML/HTML.sublime-syntax",
-		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
 		"/Users/lifx/web/packages/Erik/subl_command.py",
 		"/Users/lifx/web/packages/Erik/switch_project.py",
 		"/Users/lifx/web/Packages/Erik/switch_project.py",
 		"/Users/lifx/web/Packages/Erik/subl_command.py",
-		"/Users/lifx/web/packages/JavaScript/JavaScript.sublime-build",
 		"/Users/lifx/web/packages/Settings/.eslintrc",
 		"/Users/lifx/web/Packages/bin/config.js",
 		"/Users/lifx/web/packages/npm-debug.log",
@@ -899,7 +883,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -913,6 +897,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"speed",
 			"stat",
 			"bin",
 			"symlink",
@@ -965,69 +950,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Settings/.bash_profile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4402,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3843,
-								3914
-							],
-							[
-								4321,
-								4321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1947.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "bin/thunkify.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 520,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								439,
-								439
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
