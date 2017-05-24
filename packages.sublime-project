@@ -1,84 +1,89 @@
 {
+	"build_systems":
+	[
+		{
+			"name": "Packages: Install",
+			"osx":
+			{
+				"cmd":
+				[
+					"node bin/install.js \"$packages\""
+				],
+				"path": "/usr/local/bin:/usr/bin"
+			},
+			"shell": true,
+			"working_dir": "${project_path:${folder}}"
+		},
+		{
+			"name": "Packages: Config",
+			"osx":
+			{
+				"cmd":
+				[
+					"node bin/config.js"
+				],
+				"path": "/usr/local/bin:/usr/bin"
+			},
+			"shell": true,
+			"working_dir": "${project_path:${folder}}"
+		},
+		{
+			"name": "Packages: Hosts",
+			"osx":
+			{
+				"cmd":
+				[
+					"node bin/hosts.js"
+				],
+				"path": "/usr/local/bin:/usr/bin"
+			},
+			"shell": true,
+			"working_dir": "${project_path:${folder}}"
+		},
+		{
+			"name": "Packages: Link",
+			"osx":
+			{
+				"cmd":
+				[
+					"node bin/nlink.js"
+				],
+				"path": "/usr/local/bin:/usr/bin"
+			},
+			"shell": true,
+			"working_dir": "${project_path:${folder}}"
+		},
+		{
+			"name": "Packages: Unlink",
+			"osx":
+			{
+				"cmd":
+				[
+					"node bin/nlink.js -d"
+				],
+				"path": "/usr/local/bin:/usr/bin"
+			},
+			"shell": true,
+			"working_dir": "${project_path:${folder}}"
+		},
+		{
+			"name": "Packages: Clean",
+			"osx":
+			{
+				"cmd":
+				[
+					"node bin/clean.js"
+				],
+				"path": "/usr/local/bin:/usr/bin"
+			},
+			"shell": true,
+			"working_dir": "${project_path:${folder}}"
+		}
+	],
 	"folders":
 	[
 		{
-			"path": ".",
-            "folder_exclude_patterns": ["backup", "node_modules"],
-            "follow_symlinks": true
+			"path": "."
 		}
-	],
-	"build_systems":
-	[
-		// install
-        {
-            "name": "Packages: Install",
-            "shell": true,
-            "working_dir": "${project_path:${folder}}",
-
-            "osx": {
-                "cmd": ["node bin/install.js \"$packages\""],
-		        "path": "/usr/local/bin:/usr/bin"
-		    }
-        },
-
-        // config
-        {
-            "name": "Packages: Config",
-            "shell": true,
-            "working_dir": "${project_path:${folder}}",
-
-            "osx": {
-                "cmd": ["node bin/config.js"],
-                "path": "/usr/local/bin:/usr/bin"
-            }
-        },
-
-        // hosts
-        {
-            "name": "Packages: Hosts",
-            "shell": true,
-            "working_dir": "${project_path:${folder}}",
-
-            "osx": {
-                "cmd": ["node bin/hosts.js"],
-                "path": "/usr/local/bin:/usr/bin"
-            }
-        },
-
-        // link
-        {
-            "name": "Packages: Link",
-            "shell": true,
-            "working_dir": "${project_path:${folder}}",
-
-            "osx": {
-                "cmd": ["node bin/nlink.js"],
-                "path": "/usr/local/bin:/usr/bin"
-            }
-        },
-
-        // link
-        {
-            "name": "Packages: Unlink",
-            "shell": true,
-            "working_dir": "${project_path:${folder}}",
-
-            "osx": {
-                "cmd": ["node bin/nlink.js -d"],
-                "path": "/usr/local/bin:/usr/bin"
-            }
-        },
-
-        // clean
-        {
-            "name": "Packages: Clean",
-            "shell": true,
-            "working_dir": "${project_path:${folder}}",
-
-            "osx": {
-                "cmd": ["node bin/clean.js"],
-                "path": "/usr/local/bin:/usr/bin"
-            }
-        }
 	]
 }

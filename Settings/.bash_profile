@@ -43,6 +43,38 @@ export GREP_OPTIONS='--color=auto'
 ##
 #
 # ————————————————————————————————————————————————————
+# 获取当前项目【git】分支名称
+# ————————————————————————————————————————————————————
+# 1.【git】是存在分支的，当前所在的【git】分支可以通过【git branch】来察看。
+# 2. 获取【.git/HEAD】文件中的内容，格式是：ref: refs/heads/BRANCH-NAME
+#
+##
+function find_git_branch {
+    local dir=. head
+    until [ "$dir" -ef / ]; do
+        if [ -f "$dir/.git/HEAD" ]; then
+            head=$(< "$dir/.git/HEAD")
+            if [[ $head == ref:\ refs/heads/* ]]; then
+                GIT_BRANCH="(${head#*/*/})"
+            elif [[ $head != '' ]]; then
+                GIT_BRANCH='(detached)'
+            else
+                GIT_BRANCH='(unknown)'
+            fi
+            return
+        fi
+        dir="../$dir"
+    done
+    GIT_BRANCH=''
+}
+
+# 【shell】在执行【PS1】前，会先执行【PROMPT_COMMAND】这个指令
+PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
+
+
+##
+#
+# ————————————————————————————————————————————————————
 # 环境变量PS1就是终端的提示文字格式，默认为: \h:\W \u\$
 # PS2则是换行后的提示符，默认为: >
 # ————————————————————————————————————————————————————
@@ -64,7 +96,7 @@ export GREP_OPTIONS='--color=auto'
 #
 ##
 export TERM="xterm-color"
-export PS1='\n\[\033[33m\][\t] \[\033[00m\]\u@\h: \[\033[36m\]\w/ \n\[\033[00m\]\$ '
+export PS1="\n\[\033[33m\][\t] \[\033[00m\]\u@\h: \[\033[36m\]\w/ \[\033[35m\]\$GIT_BRANCH\[\033[00m\]\n\$ "
 
 
 ##
@@ -148,3 +180,26 @@ export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles'
 #
 ##
 export PATH="$PATH:$HOME/.bin"
+
+##
+#
+# ————————————————————————————————————————————————————
+# 添加【Android HOME】路径
+# ————————————————————————————————————————————————————
+# 如果你不是通过【Android Studio】安装的【sdk】，则其路径可能不同，请自行确定清楚。
+#
+##
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+
+
+##
+#
+# ————————————————————————————————————————————————————
+# 设置【git】路径
+# ————————————————————————————————————————————————————
+# 系统自带路径为【/usr/bin/git】
+# 启用用户自定义安装的【/usr/local/bin/git】
+#
+##
+alias git='/usr/local/bin/git'

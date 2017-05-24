@@ -4,6 +4,6 @@
     "font_face":  "Courier New",
     "find_selected_text": true,
     "build_env": {
-        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.bin"
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.bin:~/.node_modules"
     }
 }

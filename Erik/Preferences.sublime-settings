@@ -1,6 +1,7 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
+    "atomic_save": false,
     "auto_complete_triggers": [
         {
             "characters": "< ",
@@ -15,7 +16,16 @@
     "ensure_newline_at_eof_on_save": true,
     "fade_fold_buttons":  false,
     "font_size":  16,
-    "folder_exclude_patterns": ["node_modules", ".git", ".idea", ".*-cache"],
+    "file_exclude_patterns": [
+        "*.lock",
+        "*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib",
+        "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db",
+        "*.sublime-workspace"
+    ],
+    "folder_exclude_patterns": [
+        "node_modules",
+        ".git", ".svn", ".bin", ".idea", ".*-cache", ".hg", "CVS"
+    ],
     "highlight_line":  true,
     "highlight_modified_tabs":  true,
     "line_padding_bottom":  1,

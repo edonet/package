@@ -820,13 +820,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/lifx/web/packages",
-		"/Users/lifx/web/packages/bin",
-		"/Users/lifx/web/packages/Erik",
-		"/Users/lifx/web/packages/JavaScript"
+		"/Users/lifx/web/Packages",
+		"/Users/lifx/web/Packages/Sass"
 	],
 	"file_history":
 	[
+		"/Users/lifx/web/Packages/Sass/Sass.sublime-build",
+		"/Users/lifx/web/Packages/Erik/Preferences.sublime-settings",
+		"/Users/lifx/web/Packages/Settings/.bash_profile",
+		"/Users/lifx/web/Packages/package.json",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Local/Session.sublime_session",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Local/Auto Save Session.sublime_session",
+		"/Users/lifx/web/packages/packages.sublime-project",
+		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
+		"/Users/lifx/web/packages/Settings/hosts",
+		"/tmp/3A0388CC-AE4C-4AB0-9213-12FDBE6881CC/86559B1C-39B2-4408-85A5-ABEC87F237E9",
+		"/private/tmp/0E93A32A-6204-4B1F-B5E5-A5E47DF93085/manifest.xml",
 		"/Users/lifx/web/packages/Erik/Preferences (OSX).sublime-settings",
 		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
 		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
@@ -837,7 +846,6 @@
 		"/Users/lifx/web/packages/package.json",
 		"/Users/lifx/web/packages/Settings/.bash_profile",
 		"/Users/lifx/web/packages/config.json",
-		"/Users/lifx/web/packages/packages.sublime-project",
 		"/Users/lifx/web/packages/bin/nlink.js",
 		"/Users/lifx/web/packages/bin/thunkify.js",
 		"/Users/lifx/web/Packages/config.json",
@@ -847,10 +855,8 @@
 		"/Users/lifx/web/Packages/bin/copy.js",
 		"/Users/lifx/web/packages/bin/stat.js",
 		"/Users/lifx/web/packages/bin/install.js",
-		"/Users/lifx/web/packages/Settings/hosts",
 		"/Users/lifx/web/Packages/Settings/.yarnrc",
 		"/Users/lifx/web/packages/Erik/Default (OSX).sublime-keymap",
-		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
 		"/Users/lifx/web/packages/Settings/.gitconfig",
 		"/Users/lifx/web/packages/HTML/HTML.sublime-syntax",
 		"/Users/lifx/web/packages/Erik/subl_command.py",
@@ -890,6 +896,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/tmp"
 		]
 	},
 	"find_state":
@@ -897,6 +904,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"CURR_GIT_BRANCH",
+			"git_branch",
+			"photoshop",
+			"adobe",
 			"speed",
 			"stat",
 			"bin",
